@@ -685,6 +685,7 @@
     <Content Include="website4\test\.jshintrc" />
     <Content Include="website4\Web.config" />
     <Content Include="export\office-export.reg" />
+    <Content Include="webparts\Content Editor.dwp" />
     <None Include="website4\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
