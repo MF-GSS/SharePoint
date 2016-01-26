@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="table.css" rel="stylesheet" />
+    <script src="table.js"></script>
+    <script src="jquery-ui.js"></script>
+    <style>
+input {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+.select2 {
+    width: auto;
+    min-width: 150px;
+}
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#button').on('click', function () {
+                $('.tablesaw').find('tbody').append($('<tr><td><input type="text" placeholder="Name" /></td><td class="title"><input type="text" placeholder="Title" /></td><td><select class="e1"><option value="0">-- User --</option><option>Name 1</option><option>Name 2</option><option>Name 3</option></select></td><td><select class="e2"><option value="#fff">-- Status --</option><option value="#00ff00">Complete</option><option value="#ffff00">In Progress</option><option value="#ff0000">Incomplete</option></select></td><td><input type="datetime" placeholder="Select Date" class="datepicker" /></td><td><input type="text" placeholder="Description" /></td></tr>'));
+                $('.e1').select2();
+                $('.e2').select2().on('change', function () {
+                    $(this).next()
+                        .find('.select2-selection')
+                        .css({ backgroundColor: this.value });
+                }).trigger('change');
+            });
+            $('.datepicker').datepicker({
+                inline: true
+        });
+        });
+    </script>
+</head>
+<body>
+    <div class="docs-main">
+        <h2>Workflows</h2>
+        <table class="tablesaw" data-tablesaw-mode="stack" data-tablesaw-sortable data-tablesaw-sortable-switch data-tablesaw-minimap data-tablesaw-mode-switch>
+            <thead>
+                <tr>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Workflow Name</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Title</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Assigned To</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Status</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Due Date</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">Outcome</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <input type="submit" value="Add Row" id="button" />
+    </div>
+</body>
+</html>

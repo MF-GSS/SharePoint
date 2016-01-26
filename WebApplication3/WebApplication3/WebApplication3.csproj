@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83732C86-3661-4B99-8B6C-EC4A3AA7A9EE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication3</RootNamespace>
+    <AssemblyName>WebApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <ApplicationInsightsResourceId>/subscriptions/5d9c4502-9a23-4bb6-a36c-eb80ac1d2077/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/WebApplication3</ApplicationInsightsResourceId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="website4\datepicker.html" />
+    <Content Include="website4\demo\ajax-init-stack.html" />
+    <Content Include="website4\demo\ajax-init.html" />
+    <Content Include="website4\demo\bare.html" />
+    <Content Include="website4\demo\caption.html" />
+    <Content Include="website4\demo\demo.css" />
+    <Content Include="website4\demo\issues\109.html" />
+    <Content Include="website4\demo\issues\110.html" />
+    <Content Include="website4\demo\issues\ajax-init-tbody.html" />
+    <Content Include="website4\demo\issues\hideempty.html" />
+    <Content Include="website4\demo\issues\issue-31.html" />
+    <Content Include="website4\demo\issues\issue-32.html" />
+    <Content Include="website4\demo\issues\issue-35.html" />
+    <Content Include="website4\demo\issues\issue-37.html" />
+    <Content Include="website4\demo\issues\issue-48-49.html" />
+    <Content Include="website4\demo\issues\issue-65.html" />
+    <Content Include="website4\demo\issues\issue-74.html" />
+    <Content Include="website4\demo\kitchensink-nomodeswitch.html" />
+    <Content Include="website4\demo\kitchensink.html" />
+    <Content Include="website4\demo\modeswitch.html" />
+    <Content Include="website4\demo\sort-custom.html" />
+    <Content Include="website4\demo\sort.html" />
+    <Content Include="website4\demo\stack.html" />
+    <Content Include="website4\demo\stackonly.html" />
+    <Content Include="website4\demo\swipe-config.html" />
+    <Content Include="website4\demo\swipe-container.html" />
+    <Content Include="website4\demo\swipe-fixcols-media.html" />
+    <Content Include="website4\demo\swipe.html" />
+    <Content Include="website4\demo\toggle.html" />
+    <Content Include="website4\dist\bare\tablesaw.bare.css" />
+    <Content Include="website4\dist\demohead.css" />
+    <Content Include="website4\dist\dependencies\jquery.js" />
+    <Content Include="website4\dist\dependencies\qunit.css" />
+    <Content Include="website4\dist\dependencies\qunit.js" />
+    <Content Include="website4\dist\dependencies\respond.js" />
+    <Content Include="website4\dist\loadfont.js" />
+    <Content Include="website4\dist\stackonly\tablesaw.stackonly.css" />
+    <Content Include="website4\dist\stackonly\tablesaw.stackonly.js" />
+    <Content Include="website4\dist\tablesaw-init.js" />
+    <Content Include="website4\dist\tablesaw.css" />
+    <Content Include="website4\dist\tablesaw.js" />
+    <Content Include="website4\docs\columntoggle-minimap.gif" />
+    <Content Include="website4\docs\mode-switch.gif" />
+    <Content Include="website4\docs\sortable.png" />
+    <Content Include="website4\docs\stack.gif" />
+    <Content Include="website4\docs\swipe-minimap.gif" />
+    <Content Include="website4\Gruntfile.js" />
+    <Content Include="website4\jquery-ui.js" />
+    <Content Include="website4\jquery-ui.min.js" />
+    <Content Include="website4\src\tables-init.js" />
+    <Content Include="website4\src\tables.btnmarkup.js" />
+    <Content Include="website4\src\tables.columntoggle.css" />
+    <Content Include="website4\src\tables.columntoggle.js" />
+    <Content Include="website4\src\tables.css" />
+    <Content Include="website4\src\tables.js" />
+    <Content Include="website4\src\tables.minimap.css" />
+    <Content Include="website4\src\tables.minimap.js" />
+    <Content Include="website4\src\tables.modeswitch.js" />
+    <Content Include="website4\src\tables.skin.css" />
+    <Content Include="website4\src\tables.sortable.css" />
+    <Content Include="website4\src\tables.sortable.js" />
+    <Content Include="website4\src\tables.stack-default-breakpoint.css" />
+    <Content Include="website4\src\tables.stack.css" />
+    <Content Include="website4\src\tables.stack.js" />
+    <Content Include="website4\src\tables.swipetoggle.css" />
+    <Content Include="website4\src\tables.swipetoggle.js" />
+    <Content Include="website4\src\tables.toolbar.css" />
+    <Content Include="website4\table.css" />
+    <Content Include="website4\table.html" />
+    <Content Include="website4\table.js" />
+    <Content Include="website4\test\tablesaw.html" />
+    <Content Include="website4\test\tablesaw_bare.html" />
+    <Content Include="website4\test\tablesaw_test.js" />
+    <Content Include="z\ArticleLeft.aspx" />
+    <Content Include="z\ArticleLinks.aspx" />
+    <Content Include="z\ArticleRight.aspx" />
+    <Content Include="z\BlankWebPartPage.aspx" />
+    <Content Include="z\CatalogArticle.aspx" />
+    <Content Include="z\CatalogWelcome.aspx" />
+    <Content Include="z\Display Templates\Content Web Parts\Control_List.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Control_ListWithPaging.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Control_List_Specter-commented.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Control_List_Specter-commented.js" />
+    <Content Include="z\Display Templates\Content Web Parts\Control_List_Specter.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Control_List_Specter.js" />
+    <Content Include="z\Display Templates\Content Web Parts\Control_Slideshow.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Group_Content.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_Diagnostic.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_LargePicture.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_LargePicture_Specter-commented.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_LargePicture_Specter-commented.js" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_LargePicture_Specter.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_LargePicture_Specter.js" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_Picture3Lines.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_PictureOnTop.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_RecommendationsClickLogging.html" />
+    <Content Include="z\Display Templates\Content Web Parts\Item_TwoLines.html" />
+    <Content Include="z\Display Templates\Filters\Control_Refinement.html" />
+    <Content Include="z\Display Templates\Filters\Control_TaxonomyRefinement.html" />
+    <Content Include="z\Display Templates\Filters\Filter_Default.html" />
+    <Content Include="z\Display Templates\Filters\Filter_eDiscoveryExchangeRefinement.html" />
+    <Content Include="z\Display Templates\Filters\Filter_eDiscoveryExchangeTypeRefinement.html" />
+    <Content Include="z\Display Templates\Filters\Filter_eDiscoverySharePointRefinement.html" />
+    <Content Include="z\Display Templates\Filters\Filter_MultiValue.html" />
+    <Content Include="z\Display Templates\Filters\Filter_MultiValue_Body.html" />
+    <Content Include="z\Display Templates\Filters\Filter_Slider.html" />
+    <Content Include="z\Display Templates\Filters\Filter_SliderBarGraph.html" />
+    <Content Include="z\Display Templates\Filters\Filter_TaxonomyRefinement.html" />
+    <Content Include="z\Display Templates\Language Files\en-us\CustomStrings.js" />
+    <Content Include="z\Display Templates\Search\Control_Blank.html" />
+    <Content Include="z\Display Templates\Search\Control_SearchBox.html" />
+    <Content Include="z\Display Templates\Search\Control_SearchBox_Compact.html" />
+    <Content Include="z\Display Templates\Search\Control_SearchResults.html" />
+    <Content Include="z\Display Templates\Search\Group_Default.html" />
+    <Content Include="z\Display Templates\Search\Item_BestBet.html" />
+    <Content Include="z\Display Templates\Search\Item_CommonHoverPanel_Actions.html" />
+    <Content Include="z\Display Templates\Search\Item_CommonHoverPanel_Body.html" />
+    <Content Include="z\Display Templates\Search\Item_CommonHoverPanel_Header.html" />
+    <Content Include="z\Display Templates\Search\Item_CommonItem_Body.html" />
+    <Content Include="z\Display Templates\Search\Item_Community.html" />
+    <Content Include="z\Display Templates\Search\Item_Community_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Default.html" />
+    <Content Include="z\Display Templates\Search\Item_Default_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Discussion.html" />
+    <Content Include="z\Display Templates\Search\Item_Discussion_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Excel.html" />
+    <Content Include="z\Display Templates\Search\Item_Excel_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_MicroBlog.html" />
+    <Content Include="z\Display Templates\Search\Item_MicroBlog_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_OfficeDocument.html" />
+    <Content Include="z\Display Templates\Search\Item_OfficeDocument_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_OneNote.html" />
+    <Content Include="z\Display Templates\Search\Item_OneNote_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_PDF.html" />
+    <Content Include="z\Display Templates\Search\Item_PDF_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Person.html" />
+    <Content Include="z\Display Templates\Search\Item_PersonalFavorite.html" />
+    <Content Include="z\Display Templates\Search\Item_Person_CompactHorizontal.html" />
+    <Content Include="z\Display Templates\Search\Item_Person_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Picture.html" />
+    <Content Include="z\Display Templates\Search\Item_Picture_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_PowerPoint.html" />
+    <Content Include="z\Display Templates\Search\Item_PowerPoint_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Reply.html" />
+    <Content Include="z\Display Templates\Search\Item_Reply_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Site.html" />
+    <Content Include="z\Display Templates\Search\Item_Site_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Video.html" />
+    <Content Include="z\Display Templates\Search\Item_Video_CompactHorizontal.html" />
+    <Content Include="z\Display Templates\Search\Item_Video_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_WebPage.html" />
+    <Content Include="z\Display Templates\Search\Item_WebPage_HoverPanel.html" />
+    <Content Include="z\Display Templates\Search\Item_Word.html" />
+    <Content Include="z\Display Templates\Search\Item_Word_HoverPanel.html" />
+    <Content Include="z\Display Templates\Server Style Sheets\ServerRenderTemplate.xsl" />
+    <Content Include="z\Display Templates\System\Control_CatalogDefault.html" />
+    <Content Include="z\Display Templates\System\Control_eDiscoveryExchangeResult.html" />
+    <Content Include="z\Display Templates\System\Control_eDiscoverySharePointResult.html" />
+    <Content Include="z\Display Templates\System\Control_QueryBuilderPreview.html" />
+    <Content Include="z\Display Templates\System\Control_QueryBuilderRefinement.html" />
+    <Content Include="z\Display Templates\System\Control_Recommendations.html" />
+    <Content Include="z\Display Templates\System\Control_TopReport.html" />
+    <Content Include="z\Display Templates\System\Filter_RefinementPreview.html" />
+    <Content Include="z\Display Templates\System\Group_QueryBuilderPreview.html" />
+    <Content Include="z\Display Templates\System\Item_CatalogDateTime.html" />
+    <Content Include="z\Display Templates\System\Item_CatalogDefault.html" />
+    <Content Include="z\Display Templates\System\Item_CatalogItemPicker.html" />
+    <Content Include="z\Display Templates\System\Item_CatalogItemPicker_HoverPanel.html" />
+    <Content Include="z\Display Templates\System\Item_CatalogRich.html" />
+    <Content Include="z\Display Templates\System\Item_CatalogTitle.html" />
+    <Content Include="z\Display Templates\System\Item_CommunityPortal.html" />
+    <Content Include="z\Display Templates\System\Item_eDiscoveryExchangeResult.html" />
+    <Content Include="z\Display Templates\System\Item_eDiscoveryExchange_HoverPanel.html" />
+    <Content Include="z\Display Templates\System\Item_eDiscoverySharePointResult.html" />
+    <Content Include="z\Display Templates\System\Item_eDiscoverySharePoint_HoverPanel.html" />
+    <Content Include="z\Display Templates\System\Item_QueryBuilderPreview.html" />
+    <Content Include="z\Display Templates\System\Item_QueryBuilderRefinement.html" />
+    <Content Include="z\Display Templates\System\Item_Recommendations.html" />
+    <Content Include="z\Display Templates\System\Item_TopReport.html" />
+    <Content Include="z\Display Templates\System\Item_VideoVertical.html" />
+    <Content Include="z\Editing Menu\CustomEditingMenu.xml" />
+    <Content Include="z\Editing Menu\CustomQuickAccess.xml" />
+    <Content Include="z\Editing Menu\CustomSiteAction.xml" />
+    <Content Include="z\Editing Menu\RTE2ToolbarExtension.xml" />
+    <Content Include="z\en-us\Preview Images\ArticleBodyOnly.png" />
+    <Content Include="z\en-us\Preview Images\ArticleLeft.png" />
+    <Content Include="z\en-us\Preview Images\ArticleLinks.png" />
+    <Content Include="z\en-us\Preview Images\ArticleRight.png" />
+    <Content Include="z\en-us\Preview Images\BlankWebPartPage.png" />
+    <Content Include="z\en-us\Preview Images\DefaultMasterPage.png" />
+    <Content Include="z\en-us\Preview Images\DefaultPageLayout.png" />
+    <Content Include="z\en-us\Preview Images\RedirectPage.png" />
+    <Content Include="z\en-us\Preview Images\WelcomeLinks.png" />
+    <Content Include="z\en-us\Preview Images\WelcomeSplash.png" />
+    <Content Include="z\en-us\Preview Images\WelcomeTOC.png" />
+    <Content Include="z\EnterpriseWiki.aspx" />
+    <Content Include="z\ErrorLayout.aspx" />
+    <Content Include="z\index.html" />
+    <Content Include="z\oslo.html" />
+    <Content Include="z\PageFromDocLayout.aspx" />
+    <Content Include="z\PageLayoutTemplate.aspx" />
+    <Content Include="z\ProjectPage.aspx" />
+    <Content Include="z\PublishingImageRenditions.xml" />
+    <Content Include="z\RedirectPageLayout.aspx" />
+    <Content Include="z\seattle.html" />
+    <Content Include="z\spectergroup\css\bootstrap-full.min.css" />
+    <Content Include="z\spectergroup\css\bootstrap-responsive.css" />
+    <Content Include="z\spectergroup\css\bootstrap-responsive.min.css" />
+    <Content Include="z\spectergroup\css\bootstrap.css" />
+    <Content Include="z\spectergroup\css\bootstrap.min.css" />
+    <Content Include="z\spectergroup\css\elements.css" />
+    <Content Include="z\spectergroup\css\isotope.css" />
+    <Content Include="z\spectergroup\css\Marcus-Custom.css" />
+    <Content Include="z\spectergroup\css\nivo-slider.css" />
+    <Content Include="z\spectergroup\css\style.css" />
+    <Content Include="z\spectergroup\css\superfish.css" />
+    <Content Include="z\spectergroup\FloorPlans.aspx" />
+    <Content Include="z\spectergroup\FloorPlans.html" />
+    <Content Include="z\spectergroup\fonts\mensch-webfont.svg" />
+    <Content Include="z\spectergroup\img\128px\anchor.png" />
+    <Content Include="z\spectergroup\img\128px\aperture.png" />
+    <Content Include="z\spectergroup\img\128px\arap.png" />
+    <Content Include="z\spectergroup\img\128px\arrow-down.png" />
+    <Content Include="z\spectergroup\img\128px\arrow-up.png" />
+    <Content Include="z\spectergroup\img\128px\art.png" />
+    <Content Include="z\spectergroup\img\128px\barchart.png" />
+    <Content Include="z\spectergroup\img\128px\batteryfull.png" />
+    <Content Include="z\spectergroup\img\128px\batterylow.png" />
+    <Content Include="z\spectergroup\img\128px\bike.png" />
+    <Content Include="z\spectergroup\img\128px\biker.png" />
+    <Content Include="z\spectergroup\img\128px\bikewheel.png" />
+    <Content Include="z\spectergroup\img\128px\blimp.png" />
+    <Content Include="z\spectergroup\img\128px\bolt.png" />
+    <Content Include="z\spectergroup\img\128px\bomb.png" />
+    <Content Include="z\spectergroup\img\128px\booklet.png" />
+    <Content Include="z\spectergroup\img\128px\bookshelf.png" />
+    <Content Include="z\spectergroup\img\128px\briefcase.png" />
+    <Content Include="z\spectergroup\img\128px\brightness.png" />
+    <Content Include="z\spectergroup\img\128px\browser.png" />
+    <Content Include="z\spectergroup\img\128px\brush-pencil.png" />
+    <Content Include="z\spectergroup\img\128px\calculator.png" />
+    <Content Include="z\spectergroup\img\128px\calendar+1.png" />
+    <Content Include="z\spectergroup\img\128px\calendar+2.png" />
+    <Content Include="z\spectergroup\img\128px\calendar.png" />
+    <Content Include="z\spectergroup\img\128px\camera.png" />
+    <Content Include="z\spectergroup\img\128px\car.png" />
+    <Content Include="z\spectergroup\img\128px\cart+1.png" />
+    <Content Include="z\spectergroup\img\128px\cart+2.png" />
+    <Content Include="z\spectergroup\img\128px\cart.png" />
+    <Content Include="z\spectergroup\img\128px\carwheel.png" />
+    <Content Include="z\spectergroup\img\128px\caution.png" />
+    <Content Include="z\spectergroup\img\128px\chat.png" />
+    <Content Include="z\spectergroup\img\128px\check.png" />
+    <Content Include="z\spectergroup\img\128px\circlecompass.png" />
+    <Content Include="z\spectergroup\img\128px\clapboard.png" />
+    <Content Include="z\spectergroup\img\128px\clipboard.png" />
+    <Content Include="z\spectergroup\img\128px\clock+1.png" />
+    <Content Include="z\spectergroup\img\128px\clock+2.png" />
+    <Content Include="z\spectergroup\img\128px\clock.png" />
+    <Content Include="z\spectergroup\img\128px\cloud.png" />
+    <Content Include="z\spectergroup\img\128px\cmyk.png" />
+    <Content Include="z\spectergroup\img\128px\colorwheel.png" />
+    <Content Include="z\spectergroup\img\128px\compass.png" />
+    <Content Include="z\spectergroup\img\128px\compose+1.png" />
+    <Content Include="z\spectergroup\img\128px\compose.png" />
+    <Content Include="z\spectergroup\img\128px\computer.png" />
+    <Content Include="z\spectergroup\img\128px\cone.png" />
+    <Content Include="z\spectergroup\img\128px\contacts.png" />
+    <Content Include="z\spectergroup\img\128px\contrast.png" />
+    <Content Include="z\spectergroup\img\128px\countdown.png" />
+    <Content Include="z\spectergroup\img\128px\creditcard.png" />
+    <Content Include="z\spectergroup\img\128px\crop.png" />
+    <Content Include="z\spectergroup\img\128px\crossroads+1.png" />
+    <Content Include="z\spectergroup\img\128px\crossroads+2.png" />
+    <Content Include="z\spectergroup\img\128px\crossroads.png" />
+    <Content Include="z\spectergroup\img\128px\cruise.png" />
+    <Content Include="z\spectergroup\img\128px\cursor.png" />
+    <Content Include="z\spectergroup\img\128px\denied.png" />
+    <Content Include="z\spectergroup\img\128px\dev.png" />
+    <Content Include="z\spectergroup\img\128px\die.png" />
+    <Content Include="z\spectergroup\img\128px\document.png" />
+    <Content Include="z\spectergroup\img\128px\dolly.png" />
+    <Content Include="z\spectergroup\img\128px\door.png" />
+    <Content Include="z\spectergroup\img\128px\download.png" />
+    <Content Include="z\spectergroup\img\128px\easel.png" />
+    <Content Include="z\spectergroup\img\128px\email.png" />
+    <Content Include="z\spectergroup\img\128px\eye.png" />
+    <Content Include="z\spectergroup\img\128px\eyedropper.png" />
+    <Content Include="z\spectergroup\img\128px\fashion.png" />
+    <Content Include="z\spectergroup\img\128px\filmreel.png" />
+    <Content Include="z\spectergroup\img\128px\filmroll.png" />
+    <Content Include="z\spectergroup\img\128px\flag.png" />
+    <Content Include="z\spectergroup\img\128px\flame.png" />
+    <Content Include="z\spectergroup\img\128px\flash.png" />
+    <Content Include="z\spectergroup\img\128px\flower.png" />
+    <Content Include="z\spectergroup\img\128px\focus.png" />
+    <Content Include="z\spectergroup\img\128px\folder.png" />
+    <Content Include="z\spectergroup\img\128px\frames.png" />
+    <Content Include="z\spectergroup\img\128px\gamecontroller.png" />
+    <Content Include="z\spectergroup\img\128px\gas.png" />
+    <Content Include="z\spectergroup\img\128px\gear.png" />
+    <Content Include="z\spectergroup\img\128px\genius.png" />
+    <Content Include="z\spectergroup\img\128px\global.png" />
+    <Content Include="z\spectergroup\img\128px\globe.png" />
+    <Content Include="z\spectergroup\img\128px\gps.png" />
+    <Content Include="z\spectergroup\img\128px\grat.png" />
+    <Content Include="z\spectergroup\img\128px\hazard.png" />
+    <Content Include="z\spectergroup\img\128px\heart.png" />
+    <Content Include="z\spectergroup\img\128px\helicopter.png" />
+    <Content Include="z\spectergroup\img\128px\hotair.png" />
+    <Content Include="z\spectergroup\img\128px\hourglass.png" />
+    <Content Include="z\spectergroup\img\128px\image.png" />
+    <Content Include="z\spectergroup\img\128px\interstate.png" />
+    <Content Include="z\spectergroup\img\128px\key.png" />
+    <Content Include="z\spectergroup\img\128px\keyboard.png" />
+    <Content Include="z\spectergroup\img\128px\lens.png" />
+    <Content Include="z\spectergroup\img\128px\lightbulb.png" />
+    <Content Include="z\spectergroup\img\128px\loading.png" />
+    <Content Include="z\spectergroup\img\128px\location.png" />
+    <Content Include="z\spectergroup\img\128px\locked.png" />
+    <Content Include="z\spectergroup\img\128px\magicwand.png" />
+    <Content Include="z\spectergroup\img\128px\magnifyingglass.png" />
+    <Content Include="z\spectergroup\img\128px\mail+1.png" />
+    <Content Include="z\spectergroup\img\128px\mail.png" />
+    <Content Include="z\spectergroup\img\128px\map.png" />
+    <Content Include="z\spectergroup\img\128px\megaphone.png" />
+    <Content Include="z\spectergroup\img\128px\megaphone2.png" />
+    <Content Include="z\spectergroup\img\128px\memorycard.png" />
+    <Content Include="z\spectergroup\img\128px\merge.png" />
+    <Content Include="z\spectergroup\img\128px\mic.png" />
+    <Content Include="z\spectergroup\img\128px\microphone.png" />
+    <Content Include="z\spectergroup\img\128px\money.png" />
+    <Content Include="z\spectergroup\img\128px\motorcycle.png" />
+    <Content Include="z\spectergroup\img\128px\music.png" />
+    <Content Include="z\spectergroup\img\128px\news.png" />
+    <Content Include="z\spectergroup\img\128px\paintbrush.png" />
+    <Content Include="z\spectergroup\img\128px\paintbrush2.png" />
+    <Content Include="z\spectergroup\img\128px\paintcan.png" />
+    <Content Include="z\spectergroup\img\128px\paintroller.png" />
+    <Content Include="z\spectergroup\img\128px\parachute.png" />
+    <Content Include="z\spectergroup\img\128px\pencil.png" />
+    <Content Include="z\spectergroup\img\128px\phone+1.png" />
+    <Content Include="z\spectergroup\img\128px\phone.png" />
+    <Content Include="z\spectergroup\img\128px\piechart.png" />
+    <Content Include="z\spectergroup\img\128px\pin.png" />
+    <Content Include="z\spectergroup\img\128px\pin2.png" />
+    <Content Include="z\spectergroup\img\128px\plane.png" />
+    <Content Include="z\spectergroup\img\128px\play.png" />
+    <Content Include="z\spectergroup\img\128px\plugin.png" />
+    <Content Include="z\spectergroup\img\128px\polaroid.png" />
+    <Content Include="z\spectergroup\img\128px\polaroidcamera.png" />
+    <Content Include="z\spectergroup\img\128px\polaroids.png" />
+    <Content Include="z\spectergroup\img\128px\power.png" />
+    <Content Include="z\spectergroup\img\128px\present.png" />
+    <Content Include="z\spectergroup\img\128px\profle+1.png" />
+    <Content Include="z\spectergroup\img\128px\profle+2.png" />
+    <Content Include="z\spectergroup\img\128px\profle.png" />
+    <Content Include="z\spectergroup\img\128px\quote.png" />
+    <Content Include="z\spectergroup\img\128px\racingflags.png" />
+    <Content Include="z\spectergroup\img\128px\radio.png" />
+    <Content Include="z\spectergroup\img\128px\radiotower.png" />
+    <Content Include="z\spectergroup\img\128px\rainbow.png" />
+    <Content Include="z\spectergroup\img\128px\recycle.png" />
+    <Content Include="z\spectergroup\img\128px\rgb.png" />
+    <Content Include="z\spectergroup\img\128px\ribbon.png" />
+    <Content Include="z\spectergroup\img\128px\rmis.png" />
+    <Content Include="z\spectergroup\img\128px\roadblock.png" />
+    <Content Include="z\spectergroup\img\128px\rocket.png" />
+    <Content Include="z\spectergroup\img\128px\rulertriangle.png" />
+    <Content Include="z\spectergroup\img\128px\running.png" />
+    <Content Include="z\spectergroup\img\128px\sailboat.png" />
+    <Content Include="z\spectergroup\img\128px\schooolbus.png" />
+    <Content Include="z\spectergroup\img\128px\scissors.png" />
+    <Content Include="z\spectergroup\img\128px\scooter.png" />
+    <Content Include="z\spectergroup\img\128px\security.png" />
+    <Content Include="z\spectergroup\img\128px\selftimer.png" />
+    <Content Include="z\spectergroup\img\128px\settings.png" />
+    <Content Include="z\spectergroup\img\128px\shipwheel.png" />
+    <Content Include="z\spectergroup\img\128px\shoeprints+1.png" />
+    <Content Include="z\spectergroup\img\128px\shoeprints+2.png" />
+    <Content Include="z\spectergroup\img\128px\shoeprints.png" />
+    <Content Include="z\spectergroup\img\128px\shop.png" />
+    <Content Include="z\spectergroup\img\128px\skateboard.png" />
+    <Content Include="z\spectergroup\img\128px\slr.png" />
+    <Content Include="z\spectergroup\img\128px\smartphone.png" />
+    <Content Include="z\spectergroup\img\128px\spaceshuttle.png" />
+    <Content Include="z\spectergroup\img\128px\speaker.png" />
+    <Content Include="z\spectergroup\img\128px\speedometer.png" />
+    <Content Include="z\spectergroup\img\128px\spraypaint.png" />
+    <Content Include="z\spectergroup\img\128px\stack.png" />
+    <Content Include="z\spectergroup\img\128px\star.png" />
+    <Content Include="z\spectergroup\img\128px\steeringwheel.png" />
+    <Content Include="z\spectergroup\img\128px\stop.png" />
+    <Content Include="z\spectergroup\img\128px\sub.png" />
+    <Content Include="z\spectergroup\img\128px\submarine.png" />
+    <Content Include="z\spectergroup\img\128px\support.png" />
+    <Content Include="z\spectergroup\img\128px\swatches.png" />
+    <Content Include="z\spectergroup\img\128px\tablet.png" />
+    <Content Include="z\spectergroup\img\128px\takeoff.png" />
+    <Content Include="z\spectergroup\img\128px\target.png" />
+    <Content Include="z\spectergroup\img\128px\taxi.png" />
+    <Content Include="z\spectergroup\img\128px\toolbox.png" />
+    <Content Include="z\spectergroup\img\128px\tools.png" />
+    <Content Include="z\spectergroup\img\128px\tractor.png" />
+    <Content Include="z\spectergroup\img\128px\traffic.png" />
+    <Content Include="z\spectergroup\img\128px\train.png" />
+    <Content Include="z\spectergroup\img\128px\travelerbag+1.png" />
+    <Content Include="z\spectergroup\img\128px\travelerbag+2.png" />
+    <Content Include="z\spectergroup\img\128px\travelerbag.png" />
+    <Content Include="z\spectergroup\img\128px\trends.png" />
+    <Content Include="z\spectergroup\img\128px\tripod.png" />
+    <Content Include="z\spectergroup\img\128px\trips.png" />
+    <Content Include="z\spectergroup\img\128px\trophy.png" />
+    <Content Include="z\spectergroup\img\128px\truck.png" />
+    <Content Include="z\spectergroup\img\128px\tv.png" />
+    <Content Include="z\spectergroup\img\128px\typography.png" />
+    <Content Include="z\spectergroup\img\128px\ufo.png" />
+    <Content Include="z\spectergroup\img\128px\umbrella.png" />
+    <Content Include="z\spectergroup\img\128px\unicycle.png" />
+    <Content Include="z\spectergroup\img\128px\unlocked.png" />
+    <Content Include="z\spectergroup\img\128px\upload.png" />
+    <Content Include="z\spectergroup\img\128px\video.png" />
+    <Content Include="z\spectergroup\img\128px\videocameraclassic.png" />
+    <Content Include="z\spectergroup\img\128px\videocameracompact.png" />
+    <Content Include="z\spectergroup\img\128px\volume.png" />
+    <Content Include="z\spectergroup\img\128px\water.png" />
+    <Content Include="z\spectergroup\img\128px\weather.png" />
+    <Content Include="z\spectergroup\img\128px\windsock.png" />
+    <Content Include="z\spectergroup\img\128px\windy.png" />
+    <Content Include="z\spectergroup\img\128px\x+1.png" />
+    <Content Include="z\spectergroup\img\128px\x+2.png" />
+    <Content Include="z\spectergroup\img\128px\x.png" />
+    <Content Include="z\spectergroup\img\128px\zoomin+1.png" />
+    <Content Include="z\spectergroup\img\128px\zoomin+2.png" />
+    <Content Include="z\spectergroup\img\128px\zoomin.png" />
+    <Content Include="z\spectergroup\img\128px\zoomout+1.png" />
+    <Content Include="z\spectergroup\img\128px\zoomout+2.png" />
+    <Content Include="z\spectergroup\img\128px\zoomout.png" />
+    <Content Include="z\spectergroup\img\arap_logo.png" />
+    <Content Include="z\spectergroup\img\banner-one.jpg" />
+    <Content Include="z\spectergroup\img\banner-two.jpg" />
+    <Content Include="z\spectergroup\img\bird.png" />
+    <Content Include="z\spectergroup\img\bldg4905.jpg" />
+    <Content Include="z\spectergroup\img\bullets\arrow.png" />
+    <Content Include="z\spectergroup\img\bullets\check.png" />
+    <Content Include="z\spectergroup\img\bullets\heart.png" />
+    <Content Include="z\spectergroup\img\bullets\plus.png" />
+    <Content Include="z\spectergroup\img\bullets\star.png" />
+    <Content Include="z\spectergroup\img\communities-eagle-small.jpg" />
+    <Content Include="z\spectergroup\img\communities-otay-small.jpg" />
+    <Content Include="z\spectergroup\img\communities-spruce-small.jpg" />
+    <Content Include="z\spectergroup\img\divider-tagline.png" />
+    <Content Include="z\spectergroup\img\glyphicons-halflings-white.png" />
+    <Content Include="z\spectergroup\img\glyphicons-halflings.png" />
+    <Content Include="z\spectergroup\img\header.png" />
+    <Content Include="z\spectergroup\img\homes-small-one.jpg" />
+    <Content Include="z\spectergroup\img\icon-arrows-vert.png" />
+    <Content Include="z\spectergroup\img\icon-arrows.png" />
+    <Content Include="z\spectergroup\img\icon-bird.png" />
+    <Content Include="z\spectergroup\img\icon-close.png" />
+    <Content Include="z\spectergroup\img\icon-contact+1.png" />
+    <Content Include="z\spectergroup\img\icon-contact.png" />
+    <Content Include="z\spectergroup\img\icon-home+1.png" />
+    <Content Include="z\spectergroup\img\icon-home.png" />
+    <Content Include="z\spectergroup\img\icon-homes-home.png" />
+    <Content Include="z\spectergroup\img\icon-homes-view.png" />
+    <Content Include="z\spectergroup\img\icon-login+1.png" />
+    <Content Include="z\spectergroup\img\icon-login.png" />
+    <Content Include="z\spectergroup\img\icon-register+1.png" />
+    <Content Include="z\spectergroup\img\icon-register.png" />
+    <Content Include="z\spectergroup\img\icon-search+1.png" />
+    <Content Include="z\spectergroup\img\icon-search.png" />
+    <Content Include="z\spectergroup\img\icon-view-photos.png" />
+    <Content Include="z\spectergroup\img\icon-view-tour.png" />
+    <Content Include="z\spectergroup\img\icon-view-video.png" />
+    <Content Include="z\spectergroup\img\info-blue.png" />
+    <Content Include="z\spectergroup\img\info-green.png" />
+    <Content Include="z\spectergroup\img\info-red.png" />
+    <Content Include="z\spectergroup\img\info-yellow.png" />
+    <Content Include="z\spectergroup\img\loading.gif" />
+    <Content Include="z\spectergroup\img\logo.gif" />
+    <Content Include="z\spectergroup\img\Safety_Crest_with_Army_fw.png" />
+    <Content Include="z\spectergroup\img\social\500px.png" />
+    <Content Include="z\spectergroup\img\social\AddThis.png" />
+    <Content Include="z\spectergroup\img\social\Behance.png" />
+    <Content Include="z\spectergroup\img\social\Blogger.png" />
+    <Content Include="z\spectergroup\img\social\Deliciou.png" />
+    <Content Include="z\spectergroup\img\social\DeviantART.png" />
+    <Content Include="z\spectergroup\img\social\Digg.png" />
+    <Content Include="z\spectergroup\img\social\Dopplr.png" />
+    <Content Include="z\spectergroup\img\social\Dribbble.png" />
+    <Content Include="z\spectergroup\img\social\Evernote.png" />
+    <Content Include="z\spectergroup\img\social\Facebook+1.png" />
+    <Content Include="z\spectergroup\img\social\Facebook.png" />
+    <Content Include="z\spectergroup\img\social\Flickr.png" />
+    <Content Include="z\spectergroup\img\social\Forrst.png" />
+    <Content Include="z\spectergroup\img\social\GitHub.png" />
+    <Content Include="z\spectergroup\img\social\Google++1.png" />
+    <Content Include="z\spectergroup\img\social\Google+.png" />
+    <Content Include="z\spectergroup\img\social\Grooveshark.png" />
+    <Content Include="z\spectergroup\img\social\Instagram.png" />
+    <Content Include="z\spectergroup\img\social\Lastfm.png" />
+    <Content Include="z\spectergroup\img\social\LinkedIn+1.png" />
+    <Content Include="z\spectergroup\img\social\LinkedIn.png" />
+    <Content Include="z\spectergroup\img\social\Mail.png" />
+    <Content Include="z\spectergroup\img\social\MySpace.png" />
+    <Content Include="z\spectergroup\img\social\Path.png" />
+    <Content Include="z\spectergroup\img\social\Paypal.png" />
+    <Content Include="z\spectergroup\img\social\Picasa.png" />
+    <Content Include="z\spectergroup\img\social\Posterous.png" />
+    <Content Include="z\spectergroup\img\social\Reddit.png" />
+    <Content Include="z\spectergroup\img\social\RSS+1.png" />
+    <Content Include="z\spectergroup\img\social\RSS.png" />
+    <Content Include="z\spectergroup\img\social\ShareThis.png" />
+    <Content Include="z\spectergroup\img\social\Skype.png" />
+    <Content Include="z\spectergroup\img\social\Soundcloud.png" />
+    <Content Include="z\spectergroup\img\social\Spotify.png" />
+    <Content Include="z\spectergroup\img\social\StumbleUpon.png" />
+    <Content Include="z\spectergroup\img\social\Tumblr.png" />
+    <Content Include="z\spectergroup\img\social\Twitter+1.png" />
+    <Content Include="z\spectergroup\img\social\Twitter.png" />
+    <Content Include="z\spectergroup\img\social\Viddler.png" />
+    <Content Include="z\spectergroup\img\social\Vimeo.png" />
+    <Content Include="z\spectergroup\img\social\Virb.png" />
+    <Content Include="z\spectergroup\img\social\Windows.png" />
+    <Content Include="z\spectergroup\img\social\WordPress.png" />
+    <Content Include="z\spectergroup\img\social\YouTube+1.png" />
+    <Content Include="z\spectergroup\img\social\YouTube.png" />
+    <Content Include="z\spectergroup\img\social\Zerply.png" />
+    <Content Include="z\spectergroup\img\toggle-simple.png" />
+    <Content Include="z\spectergroup\img\toggle.png" />
+    <Content Include="z\spectergroup\js\bootstrap.js" />
+    <Content Include="z\spectergroup\js\bootstrap.min.js" />
+    <Content Include="z\spectergroup\js\hoverIntent.js" />
+    <Content Include="z\spectergroup\js\jquery-1.9.1.min.js" />
+    <Content Include="z\spectergroup\js\jquery-custom.js" />
+    <Content Include="z\spectergroup\js\jquery-migrate-1.1.0.min.js" />
+    <Content Include="z\spectergroup\js\jquery-ui-1.8.9.custom.min.js" />
+    <Content Include="z\spectergroup\js\jquery.isotope.min.js" />
+    <Content Include="z\spectergroup\js\jquery.nivo.slider.js" />
+    <Content Include="z\spectergroup\js\jquery.tabs.js" />
+    <Content Include="z\spectergroup\js\jquery.tweet.js" />
+    <Content Include="z\spectergroup\js\Marcus-Custom.js" />
+    <Content Include="z\spectergroup\js\masonry.pkgd.js" />
+    <Content Include="z\spectergroup\js\modernizr-2.6.2.custom.js" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\GPL-LICENSE.txt" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\jquery.poshytip.js" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\jquery.poshytip.min.js" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\MIT-LICENSE.txt" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\README.txt" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-darkgray\tip-darkgray.css" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-darkgray\tip-darkgray.png" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-darkgray\tip-darkgray_arrows.png" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-green\tip-green.css" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-green\tip-green_arrows.gif" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-skyblue\tip-skyblue.css" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-skyblue\tip-skyblue.png" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-skyblue\tip-skyblue_arrows.png" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-twitter\tip-twitter.css" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-twitter\tip-twitter_arrows.gif" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-violet\tip-violet.css" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-violet\tip-violet.png" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-violet\tip-violet_arrows.png" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-yellowsimple\tip-yellowsimple.css" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-yellowsimple\tip-yellowsimple_arrows.gif" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-yellow\tip-yellow.css" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-yellow\tip-yellow.png" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\tip-yellow\tip-yellow_arrows.png" />
+    <Content Include="z\spectergroup\js\superfish-1.4.8\jquery.bgiframe.min.js" />
+    <Content Include="z\spectergroup\js\superfish-1.4.8\superfish.js" />
+    <Content Include="z\spectergroup\js\superfish-1.4.8\supersubs.js" />
+    <Content Include="z\spectergroup\Specter Homepage.aspx" />
+    <Content Include="z\spectergroup\Specter Homepage.html" />
+    <Content Include="z\spectergroup\spectergroup.html" />
+    <Content Include="z\startermaster.html" />
+    <Content Include="z\VariationRootPageLayout.aspx" />
+    <Content Include="z\WelcomeLinks.aspx" />
+    <Content Include="z\WelcomeSplash.aspx" />
+    <Content Include="z\__DeviceChannelMappings.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="website4\.gitignore" />
+    <Content Include="website4\.jshintrc" />
+    <Content Include="website4\.travis.yml" />
+    <Content Include="website4\bower.json" />
+    <Content Include="website4\CONTRIBUTING.md" />
+    <Content Include="website4\demo\issues\charset-test-issue-106.php" />
+    <Content Include="website4\dist\stackonly\tablesaw.stackonly.scss" />
+    <Content Include="website4\LICENSE" />
+    <Content Include="website4\package.json" />
+    <Content Include="website4\README.md" />
+    <Content Include="website4\src\.jshintrc" />
+    <Content Include="website4\src\tables.stack-mixin.scss" />
+    <Content Include="website4\test\.jshintrc" />
+    <Content Include="website4\Web.config" />
+    <None Include="website4\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="z\minimal.master" />
+    <Content Include="z\oslo.master" />
+    <Content Include="z\oslo.preview" />
+    <Content Include="z\seattle.master" />
+    <Content Include="z\seattle.preview" />
+    <Content Include="z\spectergroup\fonts\mensch-webfont.eot" />
+    <Content Include="z\spectergroup\fonts\mensch-webfont.ttf" />
+    <Content Include="z\spectergroup\fonts\mensch-webfont.woff" />
+    <Content Include="z\spectergroup\js\bootstrap.min.js.map" />
+    <Content Include="z\spectergroup\js\poshytip-1.1\jquery.poshytip.min.js.map" />
+    <Content Include="z\spectergroup\spectergroup.master" />
+    <Content Include="z\v4.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="z\Themable\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>31125</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:31125/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
