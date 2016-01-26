@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Content Editor</Title>
+  <FrameType>Default</FrameType>
+  <Description>Allows authors to enter rich text content.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>wpz</ZoneID>
+  <PartOrder>0</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge>/_layouts/15/images/mscontl.gif</PartImageLarge>
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"><![CDATA[<h1 style="color: #333333;">I Want To...</h1>
+<p style="font-size: 9px;">Click to Make a Selection</p>
+<div class="grid" style="height: 360px; position: relative;">
+   <div class="grid-item" style="left: 0px; top: 0px; position: absolute;">
+      <div class="grid-item-content" id="box1">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/shoeprints+2.png" alt=""/>
+         <span>Submit a Footprints Ticket</span> </div>
+   </div>
+   <div class="grid-item" style="left: 120px; top: 0px; position: absolute;">
+      <div class="grid-item-content" id="box2">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/clock+2.png" alt=""/>
+         <span>Do My Timesheet</span> </div>
+   </div>
+   <div class="grid-item" style="left: 240px; top: 0px; position: absolute;">
+      <div class="grid-item-content" id="box3">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/calendar+2.png" alt=""/>
+         <span>Reserve a Room</span> </div>
+   </div>
+   <div class="grid-item" style="left: 360px; top: 0px; position: absolute;">
+      <div class="grid-item-content" id="box4">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/profle+2.png" alt=""/>
+         <span>Check Out Employee Roster</span> </div>
+   </div>
+   <div class="grid-item" style="left: 0px; top: 120px; position: absolute;">
+      <div class="grid-item-content" id="box5">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/x+2.png" alt=""/>
+         <span>See Who&#39;s Out Today</span> </div>
+   </div>
+   <div class="grid-item" style="left: 120px; top: 120px; position: absolute;">
+      <div class="grid-item-content" id="box6">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/cart+2.png" alt=""/>
+         <span>Go To Purchase Request Site</span> </div>
+   </div>
+   <div class="grid-item" style="left: 240px; top: 120px; position: absolute;">
+      <div class="grid-item-content" id="box7">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/travelerbag+2.png" alt=""/>
+         <span>Make a Vacation Request</span> </div>
+   </div>
+   <div class="grid-item" style="left: 360px; top: 120px; position: absolute;">
+      <div class="grid-item-content" id="box8">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/crossroads+2.png" alt=""/>  
+         <span>Find Other Links</span> </div>
+   </div>
+   <div class="grid-item" style="left: 0px; top: 240px; position: absolute;">
+      <div class="grid-item-content" id="box9">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/arap.png" alt=""/>
+         <span>ARAP</span> </div>
+   </div>
+   <div class="grid-item" style="left: 120px; top: 240px; position: absolute;">
+      <div class="grid-item-content" id="box10">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/grat.png" alt=""/>
+         <span>GRAT</span> </div>
+   </div>
+   <div class="grid-item" style="left: 240px; top: 240px; position: absolute;">
+      <div class="grid-item-content" id="box11">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/trips.png" alt=""/>
+         <span>TRiPS</span> </div>
+   </div>
+   <div class="grid-item" style="left: 360px; top: 240px; position: absolute;">
+      <div class="grid-item-content" id="box12">
+         <img src="/_catalogs/masterpage/spectergroup/img/128px/rmis.png" alt=""/> 
+         <div class="ms-rtestate-read ms-rte-wpbox" contenteditable="false">
+            <div class="ms-rtestate-notify  ms-rtestate-read dda995f1-9271-4e6f-aa0b-695dd094d6d6" id="div_dda995f1-9271-4e6f-aa0b-695dd094d6d6">
+            </div>
+            <div id="vid_dda995f1-9271-4e6f-aa0b-695dd094d6d6" style="display: none;">
+            </div>
+         </div> 
+         <span>RMIS</span> </div>
+   </div>
+</div>]]></Content>
+  <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+</WebPart>
