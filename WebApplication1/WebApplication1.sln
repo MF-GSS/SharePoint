@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{39CEDFDF-B876-40EA-8A91-E3E1FFEC9844}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\Downloads\MarcusPub-1.1.wsp = ..\..\..\..\Downloads\MarcusPub-1.1.wsp
+		..\..\..\..\Documents\office-export.reg = ..\..\..\..\Documents\office-export.reg
 	EndProjectSection
 EndProject
 Global
