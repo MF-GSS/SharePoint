@@ -1,0 +1,1009 @@
+<%-- SPG:
+
+This HTML file has been associated with a SharePoint Master Page (.master file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .master file, and any rename, move, or deletion operations will be reciprocated.
+
+To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://safec2zaspwfe1:18000/sites/G3Training/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fsafec2zaspwfe1%3A18000%2Fsites%2FG3Training%2F%5Fcatalogs%2Fmasterpage%2Fspectergroup%2Fspectergroup%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
+
+ --%>
+<%@Master language="C#"%>
+<%@Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="wssucw" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx"%>
+<%@Register TagPrefix="wssucmui" TagName="MUISelector" Src="~/_controltemplates/15/MUISelector.ascx"%>
+<%@Register TagPrefix="PublishingRibbon" TagName="PublishingRibbon" Src="~/_controltemplates/15/Ribbon.ascx"%>
+<%@Register TagPrefix="SearchWC" Namespace="Microsoft.Office.Server.Search.WebControls" Assembly="Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<!DOCTYPE HTML >
+<SharePoint:SPHtmlTag class="no-js" lang="en" runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;">
+    <head runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        
+        
+        
+        
+        <meta name="GENERATOR" content="Microsoft SharePoint" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <SharePoint:RobotsMetaTag runat="server">
+        </SharePoint:RobotsMetaTag>
+        <SharePoint:PageTitle runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+                <SharePoint:ProjectProperty Property="Title" runat="server">
+                </SharePoint:ProjectProperty>
+            </asp:ContentPlaceHolder>
+        </SharePoint:PageTitle>
+        <SharePoint:StartScript runat="server">
+        </SharePoint:StartScript>
+        <SharePoint:CssLink runat="server" Version="15">
+        </SharePoint:CssLink>
+        <SharePoint:CacheManifestLink runat="server">
+        </SharePoint:CacheManifestLink>
+        <SharePoint:PageRenderMode runat="server" RenderModeType="Standard">
+        </SharePoint:PageRenderMode>
+        <SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:CustomJSUrl runat="server">
+        </SharePoint:CustomJSUrl>
+        <SharePoint:SoapDiscoveryLink runat="server">
+        </SharePoint:SoapDiscoveryLink>
+        <SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">
+            </asp:ContentPlaceHolder>
+            <SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">
+            </SharePoint:DelegateControl>
+            <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">
+            </asp:ContentPlaceHolder>
+        </SharePoint:AjaxDelta>
+        <SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">
+        </SharePoint:CssRegistration>
+        <SharePoint:AjaxDelta id="DeltaSPWebPartManager" runat="server">
+            <WebPartPages:SPWebPartManager runat="server">
+            </WebPartPages:SPWebPartManager>
+        </SharePoint:AjaxDelta>
+        
+        <meta charset="utf-8" />
+        
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/bootstrap.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/bootstrap-responsive.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/superfish.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/nivo-slider.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/isotope.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/elements.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/style.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/Marcus-Custom.css" />
+        <!-- Modernizr enables HTML5 elements &#38; feature detects for optimal performance.
+     Include html5shiv 3.6. Our version is a custom build.
+    Create your own custom Modernizr build: www.modernizr.com/download/ -->
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/modernizr-2.6.2.custom.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <!--Grab Microsofts CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <!--place in head in case need to access jquery inline in SP page layout-->
+        <script src="/ajax/jQuery/jquery-1.9.1.min.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script>
+            <!--
+    document.write('<scr'+'ipt src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-5-collapse/js/jquery-1.9.1.min.js"></scr'+'ipt>');
+    -->
+        </script>
+        <!--used to help make old scripts work with jquery 1.9-->
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery-migrate-1.1.0.min.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <!--js libraries-->
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery-ui-1.8.9.custom.min.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/hoverIntent.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/superfish-1.4.8/superfish.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/superfish-1.4.8/supersubs.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery.nivo.slider.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery.isotope.min.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery.tweet.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery.tabs.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/poshytip-1.1/jquery.poshytip.min.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/bootstrap.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <!--custom scripts-->
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery-custom.js">//<![CDATA[
+        
+        
+    
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/Marcus-Custom.js">//<![CDATA[
+            
+
+
+            
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/masonry.pkgd.js">//<![CDATA[
+            
+
+
+            
+        
+        
+        //]]></script>
+        
+        
+        
+        
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/bootstrap.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/bootstrap-responsive.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/superfish.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/nivo-slider.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/isotope.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/elements.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/style.css" />
+        <link rel="stylesheet" href="/sites/G3Training/_catalogs/masterpage/spectergroup/css/Marcus-Custom.css" />
+        <!-- Modernizr enables HTML5 elements &#38; feature detects for optimal performance.
+        Include html5shiv 3.6. Our version is a custom build.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/modernizr-2.6.2.custom.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <!--Grab Microsofts CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <!--place in head in case need to access jquery inline in SP page layout-->
+        <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script>//<![CDATA[window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js">//<![CDATA[<\/script>')
+        
+        
+        //]]></script>
+        <!--used to help make old scripts work with jquery 1.9-->
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery-migrate-1.1.0.min.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <!--js libraries-->
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery-ui-1.8.9.custom.min.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/hoverIntent.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/superfish-1.4.8/superfish.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/superfish-1.4.8/supersubs.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery.nivo.slider.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery.isotope.min.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery.tweet.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery.tabs.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/poshytip-1.1/jquery.poshytip.min.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/bootstrap.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <!--custom scripts-->
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/jquery-custom.js">//<![CDATA[
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/Marcus-Custom.js">//<![CDATA[
+            
+        
+        
+        //]]></script>
+        <script src="/sites/G3Training/_catalogs/masterpage/spectergroup/js/masonry.pkgd.js">//<![CDATA[
+            
+        
+        
+        //]]></script>
+    </head>
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();"><SharePoint:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" /><SharePoint:ImageLink runat="server" /><SharePoint:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server"><asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+        
+        
+        
+        <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">
+            <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnonaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+            <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnoffaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+        </SharePoint:SPSecurityTrimmedControl>
+        <div id="ms-designer-ribbon">
+            <PublishingRibbon:PublishingRibbon runat="server" />
+            
+        </div>
+        
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer">
+                <!-- HEADER -->
+                <header>
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span8">
+                                <div id="logo">
+                                    <!--logo snippet-->
+                                    <div data-name="SiteLogo">
+                                        
+                                        
+                                        <SharePoint:AjaxDelta BlockElement="true" runat="server">
+                                            
+                                            <SharePoint:SPSimpleSiteLink CssClass="ms-siteicon-a" runat="server" ID="xe1b304b862264f908b0ae15560e3af26">
+                                                
+                                                <SharePoint:SiteLogoImage CssClass="ms-siteicon-img" name="onetidHeadbnnr0" ID="x09a827bc9ee74e0abb0fa47785a372a4" LogoImageUrl="/_layouts/15/images/siteIcon.png" runat="server">
+                                                    
+                                                </SharePoint:SiteLogoImage>
+                                                
+                                            </SharePoint:SPSimpleSiteLink>
+                                            
+                                        </SharePoint:AjaxDelta>
+                                        
+                                    </div>
+                                    <!--end logo snippet-->
+                                </div>
+                                <div class="tagline">
+                                    <h2>
+                                        <span>
+                                        US Army Combat Readiness Center
+
+
+                                    
+                                        
+                                        </span>
+
+
+
+
+                                    USACRC
+                                                                                                        </h2>
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <div class="searchbox">
+                                    <!--search box snippet-->
+                                    <div data-name="SearchBox">
+                                        
+                                        
+                                        <SearchWC:SearchBoxScriptWebPart UseSiteCollectionSettings="true" EmitStyleReference="false" ShowQuerySuggestions="false" ChromeType="None" UseSharedSettings="true" TryInplaceQuery="false" ServerInitialRender="true" runat="server">
+                                            
+                                        </SearchWC:SearchBoxScriptWebPart>
+                                        
+                                    </div>
+                                    <!--end search box snippet-->
+                                </div>
+                            </div>
+                            <div class="social cf">
+                                <ul class="cf">
+                                    <li>
+                                        <a href="#">
+                                            <img src="" title="Facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="" title="Twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="" title="Google" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="" title="LinkedIn" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="" title="RSS" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="" title="YouTube" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="social-toggle" title="Follow Us">
+                                Toggle
+
+
+                            
+                                
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- ENDS HEADER -->
+                <!-- nav -->
+                <nav id="topnav" class="ms-dialogHidden">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <div class="navbar navbar-inverse">
+                                    <div class="navbar-inner">
+                                        <div class="container">
+                                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                                <span class="icon-bar">
+                                                </span>
+                                                <span class="icon-bar">
+                                                </span>
+                                                <span class="icon-bar">
+                                                </span>
+                                            </a>
+                                            <div class="nav nav-collapse collapse">
+                                                <!--nav snippet-->
+                                                <div data-name="TopNavigationNoFlyoutWithStartNode">
+                                                    
+                                                    
+                                                    <SharePoint:AjaxDelta ID="DeltaTopNavigation" BlockElement="true" CssClass="ms-displayInline ms-core-navigation ms-dialogHidden" runat="server">
+                                                        
+                                                        <SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">
+                                                            
+                                                            <Template_Controls>
+                                                                <asp:SiteMapDataSource ShowStartingNode="True" SiteMapProvider="SPNavigationProvider" ID="topSiteMap" runat="server" StartingNodeUrl="sid:1002">
+                                                                </asp:SiteMapDataSource>
+                                                            </Template_Controls>
+                                                        </SharePoint:DelegateControl>
+                                                        <a name="startNavigation">
+                                                        </a>
+                                                        <asp:ContentPlaceHolder ID="PlaceHolderTopNavBar" runat="server">
+                                                            <SharePoint:AspMenu ID="TopNavigationMenu" runat="server" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="&lt;%$Resources:wss,navigation_accesskey%&gt;" UseSimpleRendering="true" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="2" AdjustForShowStartingNode="false" MaximumDynamicDisplayLevels="0" SkipLinkText="">
+                                                                
+                                                            </SharePoint:AspMenu>
+                                                        </asp:ContentPlaceHolder>
+                                                        
+                                                    </SharePoint:AjaxDelta>
+                                                    
+                                                </div>
+                                                <!--end nav snippet-->
+                                            </div>
+                                            <!--end class nav-->
+                                        </div>
+                                        <!--end container-->
+                                    </div>
+                                    <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">
+                                        <div class="site-access cf">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="/sites/G3Training/_catalogs/masterpage/spectergroup/img/icon-register.png" alt="Register" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <wssucw:Welcome runat="server" EnableViewState="false">
+                                                    </wssucw:Welcome>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </SharePoint:SPSecurityTrimmedControl>
+                                </div>
+                            </div>
+                            <!--end span 12-->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end fluid container-->
+                </nav>
+                <!-- ends nav -->
+                <!-- MAIN -->
+                <div role="main" id="main">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span3">
+                                <nav id="leftnav">
+                                    <!-- nav snippet -->
+                                    <div data-name="QuickLaunch">
+                                        
+                                        
+                                        
+                                        <div id="sideNavBox" class="ms-dialogHidden ms-forceWrap ms-noList">
+                                            <SharePoint:AjaxDelta ID="DeltaPlaceHolderLeftNavBar" BlockElement="true" CssClass="ms-core-navigation" runat="server">
+                                                <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBar" runat="server">
+                                                    <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarTop" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                    <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchTop" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                    <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarDataSource" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                    <asp:ContentPlaceHolder ID="PlaceHolderCalendarNavigator" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                    <asp:ContentPlaceHolder ID="PlaceHolderLeftActions" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                    <SharePoint:SPNavigationManager ID="QuickLaunchNavigationManager" runat="server" QuickLaunchControlId="v4QuickLaunchMenu" ContainedControl="QuickLaunch" EnableViewState="false">
+                                                        <SharePoint:DelegateControl runat="server" ControlId="QuickLaunchDataSource">
+                                                            <Template_Controls>
+                                                                <PublishingNavigation:PortalSiteMapDataSource runat="server" ID="SiteMapDS" SiteMapProvider="CurrentNavigation" EnableViewState="false" StartFromCurrentNode="true" ShowStartingNode="false" TrimNonCurrentTypes="Heading">
+                                                                </PublishingNavigation:PortalSiteMapDataSource>
+                                                            </Template_Controls>
+                                                        </SharePoint:DelegateControl>
+                                                        <SharePoint:AspMenu ID="V4QuickLaunchMenu" runat="server" EnableViewState="false" DataSourceId="QuickLaunchSiteMap" UseSimpleRendering="true" Orientation="Vertical" StaticDisplayLevels="3" AdjustForShowStartingNode="true" MaximumDynamicDisplayLevels="0" SkipLinkText="">
+                                                        </SharePoint:AspMenu>
+                                                    </SharePoint:SPNavigationManager>
+                                                    <SharePoint:SPNavigationManager ID="TreeViewNavigationManagerV4" runat="server" ContainedControl="TreeView" CssClass="ms-tv-box">
+                                                        <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/{0}/viewlsts.aspx" ID="idNavLinkSiteHierarchyV4" Text="&lt;%$Resources:wss,treeview_header%&gt;" accesskey="&lt;%$Resources:wss,quiklnch_allcontent_AK%&gt;" CssClass="ms-tv-header">
+                                                        </SharePoint:SPLinkButton>
+                                                        <SharePoint:DelegateControl runat="server" ControlId="TreeViewAndDataSource">
+                                                            <Template_Controls>
+                                                                <SharePoint:SPHierarchyDataSourceControl runat="server" ID="TreeViewDataSourceV4" RootContextObject="Web" IncludeDiscussionFolders="true">
+                                                                </SharePoint:SPHierarchyDataSourceControl>
+                                                                <SharePoint:SPRememberScroll runat="server" ID="TreeViewRememberScrollV4" onscroll="javascript:_spRecordScrollPositions(this);" style="overflow: auto;">
+                                                                    <SharePoint:SPTreeView ID="WebTreeViewV4" runat="server" ShowLines="false" DataSourceId="TreeViewDataSourceV4" ExpandDepth="0" SelectedNodeStyle-CssClass="ms-tv-selected" NodeStyle-CssClass="ms-tv-item" SkipLinkText="" NodeIndent="12" ExpandImageUrl="/{0}/images/tvclosed.png" ExpandImageUrlRtl="/{0}/images/tvclosedrtl.png" CollapseImageUrl="/{0}/images/tvopen.png" CollapseImageUrlRtl="/{0}/images/tvopenrtl.png" NoExpandImageUrl="/{0}/images/tvblank.gif">
+                                                                    </SharePoint:SPTreeView>
+                                                                </SharePoint:SPRememberScroll>
+                                                            </Template_Controls>
+                                                        </SharePoint:DelegateControl>
+                                                    </SharePoint:SPNavigationManager>
+                                                    <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchBottom" runat="server">
+                                                        <hr />
+                                                        <SharePoint:ClusteredSPLinkButton ID="idNavLinkViewAllV4" runat="server" Permissions="ViewFormPages" NavigateUrl="~site/{0}/viewlsts.aspx" Text="&lt;%$Resources:wss,quiklnch_allcontent_short%&gt;" accesskey="&lt;%$Resources:wss,quiklnch_allcontent_AK%&gt;" CssClass="ms-core-listMenu-item">
+                                                        </SharePoint:ClusteredSPLinkButton>
+                                                    </asp:ContentPlaceHolder>
+                                                </asp:ContentPlaceHolder>
+                                            </SharePoint:AjaxDelta>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- end nav snippet -->
+                                </nav>
+                                <div class="container-fluid">
+                                    <div class="row-fluid">
+                                        <div class="span12" id="usacrc-information">
+                                            <h4>
+                                            US Army Combat Readiness Center Information
+
+
+                                        
+                                            
+                                            </h4>
+                                            <div>
+                                                <img src="/sites/G3Training/_catalogs/masterpage/spectergroup/img/bldg4905.jpg" alt="" />
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a href="/Intranet%20Home%20Page%20Document%20Library/USACRC_Town_Hall_29Jan2015.pdf" target="_blank">
+                                                    USACRC Town Hall Brief
+
+
+                                                
+                                                    
+                                                    </a>
+
+
+
+
+                                                - January 29, 2015
+                                                                                                                                            </li>
+                                                <li>
+                                                    <a href="/Intranet%20Home%20Page%20Document%20Library/Mission%20vision%20goals.pdf" target="_blank">
+                                                    Mission, Vision and Goals
+
+
+                                                
+                                                    
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Intranet%20Home%20Page%20Document%20Library/Strategic_Plan_7May2014.pdf" target="_blank">
+                                                    USACRC/SC &amp; ASO Strategic Plan
+
+
+                                                
+                                                    
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Intranet%20Home%20Page%20Document%20Library/USACRC_Knowledge_Maps_15_May_2014.pdf" target="_blank">
+                                                    Consolidated Knowledge Maps
+
+
+                                                
+                                                    
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Intranet%20Home%20Page%20Document%20Library/USACRC_Org_Chart_Jun2015.pdf" target="_blank">
+                                                    Organizational Chart
+
+
+                                                
+                                                    
+                                                    </a>
+
+
+
+
+                                                - Updated June 1, 2015
+                                                                                                                                            </li>
+                                                <li>
+                                                    <a href="/Intranet%20Home%20Page%20Document%20Library/USACRC_and_ASO_Telephone_Roster_Diagram_10Aug2015.pdf" target="_blank">
+                                                    USACRC &amp; ASO Telephone Roster Diagram
+
+
+                                                
+                                                    
+                                                    </a>
+
+
+
+
+                                                - Updated August 10, 2015
+                                                                                                                                            </li>
+                                                <li>
+                                                    <a href="/VACANCIES/SitePages/Home.aspx">
+                                                    USACRC Vacancies
+
+
+                                                
+                                                    
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span9">
+                                <!--main content placerholder, use the following html as sample content for content placeholder-->
+                                
+                                
+                                <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">
+                                    <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                                        <div class="row-fluid">
+                                            <div class="span12">
+                                                <!-- SLIDER -->
+                                                <!-- ENDS SLIDER -->
+                                            </div>
+                                        </div>
+                                    </asp:ContentPlaceHolder>
+                                </SharePoint:AjaxDelta>
+                                
+                                <!--end content placerholder-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ENDS MAIN -->
+                <footer class="ms-dialogHidden">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <!--columns-->
+                            <div class="span4">
+                                <h4>
+                                Quick Links
+
+
+                            
+                                
+                                </h4>
+                                <p>
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <a href="#">
+                                            USACRC Public Website
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Outlook Web Access
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            ExSums
+                                        
+                                            
+                                            </a>
+                                            <span>
+                                            (Limited Access)
+                                        
+                                            
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Purchase Request Site
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <span>
+                                IT Helpdesk / DCPA Request System
+                            
+                                
+                                </span>
+                                <h6>
+                                Report a problem or request support.
+                            
+                                
+                                </h6>
+                                <ul class="contact">
+                                    <li class="phone">
+                                    255-2286
+
+
+                                
+                                    
+                                    </li>
+                                    <li class="email">
+                                        <a href="mailto:usarmy.rucker.hqda-secarmy.mbx.safe-support@mail.mil">
+                                        Email Us
+
+
+                                    
+                                        
+                                        </a>
+                                    </li>
+                                    <li class="fb">
+                                        <a href="http://143.69.9.197/">
+                                        Submit a Ticket
+
+
+                                    
+                                        
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span4">
+                                <h4>
+                                What's Hot, What's New
+
+
+                            
+                                
+                                </h4>
+                                <p>
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <a href="#">
+                                            USACRC Form 5A
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Sample Form
+                                        
+                                            
+                                            </a>
+
+
+                                        |                                                                                                                                     <a href="#">
+                                            Policy and Procedures
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            <a href="#">
+                                            Pentagon DSN Numbers
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Privileged User Agreement
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            FY 16 Federal Holiday &amp; DONSA Schedule
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Data Business Rules
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            </a>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            <a href="#">
+                                            Submit a Suggestion
+                                        
+                                            
+                                            </a>
+
+
+                                        |                                                                                                                                     <a href="#">
+                                            Resolved Items
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Submit a Suggestion
+                                        
+                                            
+                                            </a>
+                                            <span> - 12.04.13.pdf
+                                            
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="span4">
+                                <h4>
+                                IT Tips &amp; Training
+
+
+                            
+                                
+                                </h4>
+                                <p>
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <a href="#">
+                                            Internal Response to an Active Shooter
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            LOEWG Slides
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            USACRC AUP
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            Blackberry AUP
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            USACRC Website Content Management SOP
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            USACRC Website Short Links
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            USACRC BitLocker Guidance
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            <span>Make your own short URL (link) with the
+                                            
+                                            </span>
+                                            <br />
+                                            <a href="#">
+                                            USACRC ShrinkLink tool
+                                        
+                                            
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <!-- social -->
+                            <div class="sb-holder cf" style="display: none;">
+                                <ul id="social-bar" class="cf">
+                                    <li class="left-corner">
+                                        <i>
+                                        </i>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.facebook.com" title="Become a fan">
+                                            <img src="/sites/G3Training/_catalogs/masterpage/spectergroup/img/social/Facebook.png" alt="Facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.twitter.com" title="Follow my tweets">
+                                            <img src="/sites/G3Training/_catalogs/masterpage/spectergroup/img/social/Twitter.png" alt="twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.google.com" title="Add to the circle">
+                                            <img src="/sites/G3Training/_catalogs/masterpage/spectergroup/img/social/Google+.png" alt="Google plus" />
+                                        </a>
+                                    </li>
+                                    <li class="right-corner">
+                                        <i>
+                                        </i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ENDS social -->
+                            <!-- ENDS columns -->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end container-->
+                    <!--end wrapper-->
+                    <!-- bottom footer-->
+                    <!--<div class="footer-bottom">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span6 copyright">
+                                <p>
+                                    Copyright © 2013 - All Rights Reserved
+
+
+                                </p>
+                            </div>
+                            <div class="span6 sitemap">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Privacy Policy
+
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Legal Terms and Conditions
+
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Site Map
+
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                    <!--end bottom footer-->
+                </footer>
+            </div>
+        </div>
+    <SharePoint:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server"><asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server"><SharePoint:formdigest runat="server" /></asp:ContentPlaceHolder></SharePoint:AjaxDelta></SharePoint:SharePointForm><SharePoint:AjaxDelta id="DeltaPlaceHolderUtilityContent" runat="server"><asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server" /></SharePoint:AjaxDelta><asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSearchArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSiteName" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageDescription" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageImage" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderMiniConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderNavSpacer" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="WSSDesignConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="SPNavigation" Visible="False" runat="server" /></body>
+</SharePoint:SPHtmlTag>
