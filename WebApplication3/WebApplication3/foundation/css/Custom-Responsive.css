@@ -1,0 +1,168 @@
+/* Hide unnecessary page elements */
+.ms-core-listMenu-horizontalBox .ms-listMenu-editLink  /* Global navigation "Edit Links" when managed navigation is in use */ {
+	display: none !important;
+}
+
+/* Undo the crazy that SharePoint creates with table display set to DIVs*/
+#s4-titlerow .ms-table,
+#s4-titlerow .ms-tableRow,
+#s4-titlerow .ms-tableCell {
+	display: block;
+}
+
+/* Site logo wrapper */	
+#siteIcon {
+	float: none;  /* Remove OOTB float - this allows title row elements to return to typical block elements along with the table display changes above */
+	text-align: left;  /* Alter OOTB alignment */
+}
+
+/* Page title text */
+#pageTitle {
+	position: absolute;  /* Remove from content flow and create precise placement based on parent container */
+	top: 15px;  /* Position from top */
+	left: 180px;   /* Positioning from left */
+}
+  
+/* Top nav bar size */
+.ms-breadcrumb-box {
+	height: 30px;   /* Alter OOTB height */
+}
+
+/* Top nav bar placement & formatting */
+.ms-breadcrumb-top > .ms-core-navigation {
+	display: block;  /* Force respect of some declarations */
+	margin-top: 20px;  /* Create space between the site logo/title and nav bar */
+}
+  
+/* Search placement */
+.ms-mpSearchBox.ms-floatRight,
+#searchInputBox  {
+	float: none;  /* Remove OOTB float - this allows the search to move to the left under the top nav bar */
+} 
+  
+/* Adjust padding for content containers */
+#s4-bodyContainer {
+	padding-bottom: 60px;  /* Alter OOTB padding */
+}
+#contentRow {
+	padding-top: 80px;  /* Alter OOTB padding */
+}
+
+
+@media screen and (max-width: 966px) {
+
+/* --- Enterprise Wiki --- */
+	/* Content area wrapper, parent of col-fluid-1 and col-fluid-2 */
+	#contentBox {
+		min-width: inherit;   /* Reset OOTB min-width from fixed value to inherit which will take up the available space */
+	}
+
+	/* Alter right column on Enterprise Wiki default page */
+	.right-wp-zone-col {
+		float: none;  /* Remove OOTB float */
+	}
+
+	/* Sub content area wrappers, sibling to right-wp-zone-col */
+	.col-fluid-1,
+	.col-fluid-2 {
+		margin-right: 10px;  /* Alter OOTB margin */
+	}
+
+	
+/* --- Blog --- */
+	/* Reset min-widths on content containers */
+	#contentBox,
+	.ms-blog-MainArea {
+		min-width: inherit;   /* Reset OOTB min-width from fixed value to inherit which will take up the available space */
+	}
+
+	/* Table conversions so table cells will wrap */
+	.ms-blog-MainArea {
+		display: block;  /* Switch from a table display to a block level display, which forces other elements to be above or below */
+	}
+	.ms-blog-MainArea td:first-child, 
+	.ms-blog-LeftColumn {
+		display: inline-block;  /* Switch from a table cell display to an inline block level display, which allows other elements to be to the right or left */
+		width: auto;
+	}
+
+
+/* --- Team Site --- */
+	/* Reset min-widths on content container */
+	#contentBox {
+		min-width: inherit;   /* Reset OOTB min-width from fixed value to inherit which will take up the available space */
+	}
+
+	/* Table conversions so table cells will wrap */
+	#layoutsTable {
+		display: block;  /* Switch from a table display to a block level display, which forces other elements to be above or below */
+	}
+	#layoutsTable td {
+		display: inline-block;   /* Switch from a table cell display to an inline block level display, which allows other elements to be to the right or left */
+		width: auto;
+	}
+
+	/* Right side table cell */
+	.ms-wiki-columnSpacing {
+		padding-left: 0;  /* Alter OOTB padding */
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+
+/* --------- LEFT NAVIGATION OPTION 3 --------- */
+	
+	/* ---  Move the left nav ABOVE the content --- */
+
+		/* Hide child level navigation items */
+		ul.root ul {
+			display: none;
+		}
+
+		 /* Reset the margin of the content area */
+		#contentBox {
+			margin-left: 20px;
+		}
+
+		/* Remove the content area border */
+		.right-wp-zone-col {
+			border: 0;
+		}
+
+		/* Format left nav container and items */
+		#sideNavBox {
+			float: none;  /* Remove OOTB float so content appears beneath the nav */
+			border: 1px solid #999;  /* Bounding box */
+			border-radius: 15px;  /* Rounded corners */
+			padding: 5px 10px;  /* Add padding to space content from border */ 
+			margin-bottom: 15px;  /* Create space between left nav and content underneath */
+		}
+		.ms-core-sideNavBox-removeLeftMargin {
+			margin-left: 0;  /* Alter OOTB margin */
+		}
+		#sideNavBox .ms-core-listMenu-item {
+			padding: 3px 10px;  /* Alter OOTB padding */
+		}
+
+		/* Add header text */
+		#sideNavBox:before {
+			content: "Additional Resources:";  /* Header text */
+			padding-bottom: 7px;  /* Space out text from horizontal rule */
+			display: block;  /* Required for padding to work */
+			border-bottom: 1px solid #999;  /* Horizontal rule */
+		}
+
+		/* Hide child level navigation items and other unnecessary items */
+		#sideNavBox ul.root ul,
+		.ms-core-listMenu-verticalBox .ms-listMenu-editLink,  /* Current navigation "Edit Links" when managed navigation is in use */
+		.ms-core-sideNavBox-removeLeftMargin > .ms-core-listMenu-verticalBox  /* Site Contents */ {
+			display: none;
+		}
+}
+
+@media only screen and (min-width:58.75em) {
+    .top-bar-section ul li {
+        float: none !important;
+    } 
+}

@@ -89,6 +89,44 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="foundation\banded.aspx" />
+    <Content Include="foundation\banded.html" />
+    <Content Include="foundation\banner.aspx" />
+    <Content Include="foundation\banner.html" />
+    <Content Include="foundation\blog.aspx" />
+    <Content Include="foundation\blog.html" />
+    <Content Include="foundation\css\Custom-Responsive.css" />
+    <Content Include="foundation\css\foundation-custom.css" />
+    <Content Include="foundation\css\foundation.css" />
+    <Content Include="foundation\css\foundation.min.css" />
+    <Content Include="foundation\css\Marcus-Custom.css" />
+    <Content Include="foundation\css\normalize.css" />
+    <Content Include="foundation\foundation4.html" />
+    <Content Include="foundation\js\Custom-Responsive.js" />
+    <Content Include="foundation\js\foundation-custom.js" />
+    <Content Include="foundation\js\foundation.min.js" />
+    <Content Include="foundation\js\foundation\foundation.alerts.js" />
+    <Content Include="foundation\js\foundation\foundation.clearing.js" />
+    <Content Include="foundation\js\foundation\foundation.cookie.js" />
+    <Content Include="foundation\js\foundation\foundation.dropdown.js" />
+    <Content Include="foundation\js\foundation\foundation.forms.js" />
+    <Content Include="foundation\js\foundation\foundation.joyride.js" />
+    <Content Include="foundation\js\foundation\foundation.js" />
+    <Content Include="foundation\js\foundation\foundation.magellan.js" />
+    <Content Include="foundation\js\foundation\foundation.orbit.js" />
+    <Content Include="foundation\js\foundation\foundation.placeholder.js" />
+    <Content Include="foundation\js\foundation\foundation.reveal.js" />
+    <Content Include="foundation\js\foundation\foundation.section.js" />
+    <Content Include="foundation\js\foundation\foundation.tooltips.js" />
+    <Content Include="foundation\js\foundation\foundation.topbar.js" />
+    <Content Include="foundation\js\vendor\custom.modernizr.js" />
+    <Content Include="foundation\js\vendor\jquery.js" />
+    <Content Include="foundation\orbit.aspx" />
+    <Content Include="foundation\orbit.html" />
+    <Content Include="foundation\sidebar.aspx" />
+    <Content Include="foundation\sidebar.html" />
+    <Content Include="foundation\workspace.aspx" />
+    <Content Include="foundation\workspace.html" />
     <Content Include="spectergroup\css\bootstrap-full.min.css" />
     <Content Include="spectergroup\css\bootstrap-responsive.css" />
     <Content Include="spectergroup\css\bootstrap-responsive.min.css" />
@@ -1069,6 +1107,7 @@
     <Content Include="spectergroup\js\bootstrap.min.js.map" />
     <Content Include="spectergroup\js\poshytip-1.1\jquery.poshytip.min.js.map" />
     <Content Include="spectergroup\spectergroup.master" />
+    <Content Include="foundation\foundation4.master" />
     <None Include="website4\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

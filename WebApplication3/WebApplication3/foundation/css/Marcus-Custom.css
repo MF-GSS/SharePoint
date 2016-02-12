@@ -1,0 +1,128 @@
+﻿body * {
+	font-family: Verdana;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+footer a:hover {
+	color: #525050 !important;
+}
+
+		/* Left Navigation Styles */
+		#nav {
+			display: block;
+			width: 100%;
+			margin: 0;
+			-webkit-box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
+			-moz-box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
+			box-shadow: 3px 2px 3px rgba(0,0,0,0.7);
+		}
+
+			#nav li {
+				list-style: none;
+			}
+
+			#nav > li > a {
+				display: block;
+				text-transform: uppercase;
+				text-decoration: none;
+				text-align: center;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+				background-color: rgba(160, 160, 160, 0.8);
+			}
+
+				#nav > li > a:hover, #nav > li > a.open {
+					color: #ffcb05;
+					border-bottom-color: rgba(255, 255, 255, 0.7);
+					background-color: rgba(30, 30, 30, 0.8);
+				}
+
+			#nav li ul {
+				display: none;
+				background: rgba(30, 30, 30, 0.95);
+			}
+
+				#nav li ul li a {
+					display: block;
+					background: none;
+					padding: 10px 0;
+					padding-left: 30px;
+					margin-left: 0;
+					text-decoration: none;
+					color: white;
+				}
+
+					#nav li ul li a:hover {
+						color: #ffcb05;
+					}
+
+		#nav {
+			padding-left: 0 !important;
+		}
+
+		#nav .collapsible span {
+			color: black;
+		}
+
+		#nav .collapsible:hover span {
+			color: #ffcb05;
+		}
+
+		.top-bar#topnavbar li.static > a.selected {
+			background-color: rgba(160, 160, 160, 0.8) !important;
+			color: #111 !important;
+		}
+
+			.top-bar#topnavbar li.static > a.selected:hover {
+				background-color: rgba(160, 160, 160, 0.8) !important;
+				color: #ffcb05 !important;
+			}
+				
+		.top-bar#topnavbar li.static > a:hover {
+			background-color: #111 !important;
+			color: #ffcb05 !important;
+		}
+
+		#pageTitle {
+			font-weight: 200;
+			font-size: 1.25em;
+			color: #ffcb05;
+		}
+
+			.headtitle div {
+				color: black;
+			}
+
+            .row {
+                max-width: 120em !important;
+            }
+
+div.row.masthead.ms-dialogHidden {
+    background-image: url('../../images/header.png');
+}
+
+#SearchBox {
+    margin-top: 2.5em;
+    margin-left: 5em;
+}
+
+.row .column,
+.row .columns {
+    padding: 0 !important;
+}
+
+@media (max-width:767px) {
+    #SearchBox {
+        float: right;
+    }
+}
+
+@media screen and (max-width:488px){
+    #SearchBox {
+        width: 100% !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

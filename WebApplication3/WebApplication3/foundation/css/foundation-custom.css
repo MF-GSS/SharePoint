@@ -1,0 +1,530 @@
+/*foundation resets for SharePoint*/
+*, *:before, *:after {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box; /*border-box causes many issues with SP*/
+}
+* .columns, * .columns:before, * .columns:after,
+* .columns *, * .columns *:before, * .columns *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+img {
+	max-width: none;
+	width: auto;
+}
+* .columns img {
+	max-width: 100%; /*for images inside span grid*/
+}
+#scriptWPQ2 img, img.ms-webpart-menuArrowImg, #applist img  {
+	width: auto; /*within a span may still need to have width of image not 100% for SP2013 OOTB features/imges*/
+	max-width: none;
+}
+.ms-siteactions-imgspan {
+	float: none;
+	margin: 0px;
+}
+.navbar-inner {
+	padding: 0px;
+}
+/*foundation general table override*/
+/*foundation table layouts cause major issues on site setting pages templates, add them back for specific tables you use*/
+table { background: transparent; -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px; margin: 0px; border: none; }
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { display: table-cell; font-size: 14px; line-height: 18px; text-align: left; }
+table thead tr th, table tfoot tr td { padding: 0px; font-size: 14px; font-weight: bold; color: #222; }
+table thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
+table thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+table tbody tr:nth-child(even) { background: transparent; }
+table tbody tr td { color: #333; padding: 0px; vertical-align: top; border: none; }
+/*end foundation tables*/
+
+* .columns .ms-WPBody table, * .columns .ms-siteSettings-root table {
+    background: transparent none;
+    border: none;
+    border-radius: none;
+    margin: 0px;
+}
+* .columns .ms-WPBody table tbody tr td, * .columns .ms-siteSettings-root table tbody tr td {
+    border: none;
+    padding: 0px;
+}
+* .columns .ms-siteSettings-root table tbody tr td.ms-linksection-columnBox {
+	padding-right: 50px;
+}
+label {
+    display: inline-block;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+	display: inline-block;
+	width: inherit;
+}
+select {
+	display: inline-block;
+	width: auto;
+}
+.ms-dialog input[type="text"], .ms-dialog input[type="password"] {
+	width: 100%;;
+}
+.ms-dialog .sp-peoplepicker-topLevel, .ms-dialog .sp-peoplepicker-topLevelDisabled {
+    width: 371px !important;
+}
+/*end foundation resets*/
+
+/*template styles*/
+/* ribbon*/ 
+#s4-ribbonrow * {
+	font-size: 11px;
+}
+#s4-ribbonrow [class*="columns"] {
+    float: none;
+    margin-left: 0px;
+}
+#pageStatusBar[class], .ms-status-msg {
+	margin-bottom: 0px;
+}
+#suiteBarLeft {
+    background-color: #0088CC;
+}
+
+/*header*/
+.header {
+	margin-top: 10px;
+	float: left;
+	width: 100%;
+}
+.headlogo {
+	float: left;
+}
+.headtitle {
+	margin-left: 10px;
+	float: left;
+}
+#pageTitle {
+	margin: 0px 0px 5px;
+	font-size: 2em;
+}
+/* breadcrumb*/
+ul.s4-breadcrumb {
+	margin-bottom: 5px;
+}
+ul.s4-breadcrumb, ul.s4-breadcrumb ul {
+	margin: 0px 0px 2px;
+	margin-bottom: 5px;
+	list-style: none inside none;
+	display: inline-block;
+}
+ul.s4-breadcrumb .s4-breadcrumb-arrowcont {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: transparent url('../../foundation3OldInvalid/images/foundation/orbit/pause-black.png') no-repeat -11px -49px;
+}
+ul.s4-breadcrumb .s4-breadcrumb-arrowcont img {
+    display: none !important;
+}
+ul.s4-breadcrumb > li:first-child > span.s4-breadcrumb-arrowcont {
+	display: none;
+}
+ul.s4-breadcrumb a.s4-breadcrumbCurrentNode {
+	color: #000;
+}
+/* end breadcrumb*/
+
+/*search box*/
+.searchbox {
+	float: right;
+}
+.ms-srch-sb-border, .ms-srch-sb-border:hover, .ms-srch-sb-borderFocused {
+    border: none;
+}
+.ms-srch-sb > .ms-srch-sb-searchLink {
+    margin: 2px 0 0 1px;
+}
+.ms-srch-sb > .ms-srch-sb-searchLink:hover {
+	background: transparent none;
+}
+.ms-srch-sb > input {
+    margin: 0px 0px 10px 0px;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+	padding: 0 0 0 6px;
+}
+#SearchBox input {
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	padding: 3px 10px;
+	display: inline-block;
+}
+
+/*end search box*/
+/*end header*/
+
+/*top nav*/
+.nav ul {
+	margin: 0px;
+}
+.nav li {
+	list-style: none inside none;
+	position: relative;
+}
+#topnavbar.top-bar {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	height: 40px;
+	position: relative;
+	line-height: 1em;
+}
+.top-bar-section li a:not(.button) {
+	line-height: 1em;
+	padding: 0px;
+}
+.top-bar .toggle-topbar.menu-icon {
+    margin-top: 0px;
+    padding: 0px;
+    top: 8px;
+}
+.nav.ms-core-listMenu-horizontalBox li {
+    display: inline-block;
+    vertical-align: top;
+}
+.nav.ms-core-listMenu-horizontalBox li.static > a,
+.nav.ms-core-listMenu-horizontalBox li.dynamic > a {
+    color: #E6E6E6;
+    float: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 0px;
+    border: none;
+    width: auto;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 16px;
+}
+#topnavbar.top-bar li.static > a.selected,
+#topnavbar.top-bar li.static > a:hover {
+	background-color: #2284A1;
+    color: #FFFFFF;
+}
+#topnavbar.top-bar .listMenu-display ul.dynamic {
+    padding: 0px;
+    white-space: normal;
+    word-wrap: break-word;
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+#topnavbar.top-bar .listMenu-display ul.dynamic {
+	left: 0px !important;
+	top: 40px !important;
+	display: none;
+	margin-left: 0px;
+}
+#topnavbar.top-bar .listMenu-display ul.dynamic ul.dynamic {
+	margin: 0px;
+	top: 0px !important;
+	left: 145px !important;
+}
+#topnavbar.top-bar .listMenu-display ul.dynamic > li {
+	min-width: 200px;
+	float: none;
+	display: block;
+}
+#topnavbar.top-bar .listMenu-display ul.root > li:hover > ul.dynamic {
+	display: block;
+}
+#topnavbar.top-bar .listMenu-display li.dynamic:hover {
+	/*background-color: #ebebeb;*/
+}
+
+/*edit nav nodes inline*/
+.top-bar input, .top-bar .button {
+    height: auto;
+    line-height: 1em;
+    padding: 0 10px;
+    top: auto;
+}
+.ms-core-listMenu-horizontalBox > .ms-core-listMenu-root > .ms-listMenu-editLink {
+    margin-left: 0px;
+}
+.ms-navedit-editLinksText {
+	display: block;
+}
+.nav.ms-core-listMenu-horizontalBox .ms-navedit-editLinksText > span > .ms-metadata {
+    color: #eee;
+}
+.nav.ms-core-listMenu-horizontalBox .ms-navedit-editLinksText .ms-verticalAlignMiddle {
+    vertical-align: inherit;
+}
+.ms-navedit-editLinksIconWrapper {
+    margin-bottom: -3px;
+}
+.nav.ms-core-listMenu-horizontalBox li.static > span .ms-core-listMenuEdit .ms-navedit-linkCell,
+.nav.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenuEdit .ms-navedit-linkCell {
+	padding: 0px;
+}
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenuEdit .ms-navedit-deletelinkCell {
+    padding-right: 0px;
+}
+.nav.ms-core-listMenu-horizontalBox .dynamic.ms-navedit-dropNode {
+	display: list-item;
+	float: none;
+}
+.nav.ms-core-listMenu-horizontalBox .ms-navedit-editLinksText,
+.nav.ms-core-listMenu-horizontalBox a.static.ms-navedit-dropNode,
+.nav.ms-core-listMenu-horizontalBox div.ms-navedit-hiddenAppendArea {
+    color: #E6E6E6;
+    float: none;
+    padding: 10px 15px 9px;
+    text-decoration: none;
+    margin: 0px;
+    border: none;
+    width: auto;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 16px;
+}
+.ms-navedit-hidespan {
+	margin: 0px;
+}
+.nav.ms-core-listMenu-horizontalBox .ms-navedit-addNewLink {
+	padding: 10px;
+	margin-top: 0px;
+}
+.nav.ms-core-listMenu-horizontalBox .ms-navedit-editButton {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*end edit nav nodes inline*/
+/*end top nav*/
+
+/*left nav */
+#sideNavBox {
+    float: none;
+	margin: 0px;
+    width: auto;
+}
+#sideNavBox.large-3 {
+    float: left;
+    width: 25%;
+}
+.sidebar-nav {
+    padding: 0px;
+}
+#sideNavBox ul {
+	margin: 0px;
+}
+#sideNavBox ul.root {
+	border-top: 1px #ccc solid;
+	background: #efefef none;
+}
+#sideNavBox li.static ul.static {
+	background: #fff none;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 0px 0px 1px;
+
+}
+#sideNavBox .ms-core-listMenu-item, #sideNavBox .ms-core-listMenu-item:link, #sideNavBox .ms-core-listMenu-item:visited {
+	color: #222;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 10px 10px 10px 20px;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 0px 1px 1px;
+}
+#sideNavBox li.static li.static .ms-core-listMenu-item {
+	color: #2BA6CB;
+	border-width: 0px 1px;
+}
+li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, li > a.ms-core-listMenu-item:hover, li > a.ms-core-listMenu-item:active,
+.ms-core-listMenu-selected:link, .ms-core-listMenu-selected:visited, .ms-core-listMenu-selected {
+    background-color: #2284A1;
+    color: #fff;
+}
+li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover {
+	color: #111;
+}
+#sideNavBox li.static li.static .ms-core-listMenu-item:hover {
+	color: #111;
+}
+#sideNavBox .ms-core-navigation > a.ms-core-listMenu-item {
+	border: none;
+}
+#sideNavBox.top-bar li ul li {
+    border-left: none;
+}
+#sideNavBox.top-bar li ul li .ms-core-listMenu-item {
+	color: #2284A1;
+}
+#sideNavBox li.static li.dynamic .ms-core-listMenu-item {
+    border-width: 0px;
+    white-space: nowrap;
+}
+#sideNavBox.top-bar li ul li .selected {
+	color: #E6E6E6;
+}
+#sideNavBox .ms-core-sideNavBox-removeLeftMargin {
+	margin-left: 0px;
+}
+#sideNavBox .ms-storefront-divider {
+	display: none;
+}
+/*end left nav */
+
+/*Site Settings Page*/
+.ms-siteSettings-root h1,h2,h3{
+	line-height:24.5px;
+}
+.ms-siteSettings-root .ms-linksection-columnBox{
+	padding-right:50px;
+	vertical-align:top;
+}
+.ms-siteSettings-root h3{
+	font-size:24.5px;
+}
+/*End Site Settings page*/
+
+/* main content areas */
+div.table { 
+	margin: 0px; /*added by design manager admin page, ruins rd layout*/
+}
+.row .ms-table {
+    display: inherit;
+}
+.row .tableCol-75 {
+    display: inherit;
+}
+#ms-core-tableNoSpace {
+	display: block;
+}
+/*reset foundation tables*/
+table.ms-menutoolbar {
+	border-bottom: 1px #C6C6C6 solid;
+}
+a.ms-headerSortArrowLink {
+	display: inline;
+}
+table#onetIDListForm, table#onetIDListForm > tbody, table#onetIDListForm > tbody > tr, table#onetIDListForm > tbody > tr > td {
+	display: block;
+	width: 100%;
+}
+/*end reset*/
+/*web part zones*/
+* .columns .ms-webpart-zone, * .columns .ms-webpart-cell-vertical, * .columns .ms-webpart-chrome-vertical {
+    display: block; /*forces zone to stay within confines of responsive zone*/
+}
+/*
+* .columns .ms-WPBody > table, * .columns .ms-WPBody > table > tbody, * .columns .ms-WPBody > table > tbody > tr, * .columns .ms-WPBody > table > tbody > tr > td,
+* .columns .s4-wpcell-plain table, * .columns .s4-wpcell-plain table > tbody, * .columns .s4-wpcell-plain table > tbody > tr, * .columns .s4-wpcell-plain table > tbody > tr > td {
+	display: block;
+	width: 100%;
+}
+*/
+* .columns .ms-WPBody > table img {
+	width: 100%; /*reset back to foundation for web part images*/
+}
+.ms-SPZone.ms-webpart-zone {
+    padding: 5px;
+}
+.ms-SPZone > .s4-wpcell, .ms-SPZone > .s4-wpcell-plain, .ms-rtestate-write > .ms-rte-wpbox > div > .s4-wpcell, .ms-rtestate-write > .ms-rte-wpbox > div > .s4-wpcell-plain {
+    padding: 5px 5px 10px;
+}
+.ms-formlabel {
+    white-space: normal;
+}
+/*web part properties*/
+.ms-ToolPaneBody select, .ms-ToolPaneBody textarea, .ms-ToolPaneBody input[type="text"], .ms-ToolPaneBody input[type="password"], .ms-ToolPaneBody input[type="datetime"], .ms-ToolPaneBody input[type="datetime-local"], .ms-ToolPaneBody input[type="date"], .ms-ToolPaneBody input[type="month"], .ms-ToolPaneBody input[type="time"], .ms-ToolPaneBody input[type="week"], .ms-ToolPaneBody input[type="number"], .ms-ToolPaneBody input[type="email"], .ms-ToolPaneBody input[type="url"], .ms-ToolPaneBody input[type="search"], .ms-ToolPaneBody input[type="tel"], .ms-ToolPaneBody input[type="color"], .ms-ToolPaneBody .uneditable-input {
+	margin-bottom: 0px;
+	width: auto;
+	height: auto;
+	line-height: 20px;
+}
+.ms-ToolPaneBody label {
+	display: inline-block;
+	margin-bottom: 0px;
+}
+/*end web part properties*/
+
+@media (max-width: 966px) {
+	/*bootstrap issues*/
+	/*end bootstrap issues*/
+	#topnavbar.top-bar {
+		height: auto;
+	}
+	#topnavbar .ms-core-navigation {
+		display: block;
+	}
+	#topnavbar.top-bar .top-bar-section {
+		display: none;
+	}
+	#topnavbar.top-bar.expanded .top-bar-section {
+		display: block;
+	}
+	#topnavbar .ms-core-listMenu-horizontalBox,
+	#topnavbar .ms-core-listMenu-horizontalBox ul,
+	#topnavbar .ms-core-listMenu-horizontalBox li,
+	#topnavbar .ms-core-listMenu-horizontalBox .ms-core-listMenu-item {
+		display: block;
+	}
+	#topnavbar.top-bar .ms-core-listMenu-horizontalBox li.static > a {
+	    margin: 0 5px;
+	}
+	#topnavbar.top-bar .listMenu-display ul.dynamic, #topnavbar.top-bar .listMenu-display ul.dynamic ul.dynamic {
+		position: relative;
+		width: 95% !important;
+		left: auto !important;
+		top: auto !important;
+		margin: 0px 2.5%;
+		padding: 0px;
+		border: none;
+		background: transparent none;
+		box-shadow: none;
+	}
+	#topnavbar.top-bar .listMenu-display li.static.selected > ul.dynamic {
+		display: block;
+	}
+	.ms-core-listMenu-horizontalBox .dynamic .dynamic-children.additional-background {
+		background-image: url("/_layouts/15/images/menu-down.gif?rev=23");
+	}
+	#topnavbar.top-bar .ms-core-listMenu-horizontalBox li.dynamic > a {
+	    border: medium none;
+	    color: #777777;
+	    float: none;
+	    margin: 0;
+	    padding: 10px 15px;
+	    text-decoration: none;
+	}
+	#topnavbar.top-bar .ms-core-listMenu-horizontalBox li.dynamic > a:hover {
+	    background-color: #111111;
+	    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125) inset;
+	    color: #FFFFFF;
+	    text-decoration: none;
+	}
+	.ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+		width: 90%;
+		padding-right: 5%;
+		margin-right: 5%;
+		display: block;
+	}
+}
+@media (max-width: 767px) {
+	.uneditable-input.columns, #sideNavBox.columns {
+	    -moz-box-sizing: border-box;
+	    float: none;
+	    margin-left: 0;
+	    width: 100%;
+	}
+	.ms-core-pageTitle {
+		white-space: normal;
+		font-size: 1.5em;
+	}
+	#s4-bodyContainer {
+	    padding: 0px 5px 0px 5px;
+	}
+	.searchbox {
+		float: none;
+	}
+}
