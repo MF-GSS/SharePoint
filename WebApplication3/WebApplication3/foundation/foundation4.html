@@ -196,6 +196,14 @@ To build the master page directly from this HTML file, simply edit the page as y
 
             //]]>
         </script>
+        <script src="js/masonry.pkgd.js">
+            //<![CDATA[
+
+
+
+
+            //]]>
+        </script>
 
         <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -262,7 +270,7 @@ To build the master page directly from this HTML file, simply edit the page as y
                                 <!--MS:<SharePoint:SPLinkButton runat="server" CssClass="ms-siteicon-a" ID="x36d5bee949a7480783b3afc048c15598" NavigateUrl="~sitecollection/">-->
                                     <!--PS: Start of READ-ONLY PREVIEW (do not modify)--><!--PE: End of READ-ONLY PREVIEW-->
                                     <!--MS:<SharePoint:SiteLogoImage name="onetidHeadbnnr0" runat="server" CssClass="ms-siteicon-img" ID="x74bbee6762f840edad4fe46f496d8c78" LogoImageUrl="/_layouts/15/images/siteIcon.png">-->
-                                        <!--PS: Start of READ-ONLY PREVIEW (do not modify)--><img id="ctl00_x74bbee6762f840edad4fe46f496d8c78" class="ms-siteicon-img" name="onetidHeadbnnr0" Src="http://pmsp2013cpdev1.cld.sr/_layouts/15/images/siteIcon.png?rev=23" alt="Bootstrap One" /><!--PE: End of READ-ONLY PREVIEW-->
+                                        <!--PS: Start of READ-ONLY PREVIEW (do not modify)--><img id="ctl00_x74bbee6762f840edad4fe46f496d8c78" class="ms-siteicon-img" name="onetidHeadbnnr0" src="" alt="" /><!--PE: End of READ-ONLY PREVIEW-->
                                     <!--ME:</SharePoint:SiteLogoImage>-->
                                     <!--PS: Start of READ-ONLY PREVIEW (do not modify)--><!--PE: End of READ-ONLY PREVIEW-->
                                 <!--ME:</SharePoint:SPLinkButton>-->
@@ -623,23 +631,233 @@ To build the master page directly from this HTML file, simply edit the page as y
                             <!--CE: End Vertical Navigation Snippet-->
                         </div>
                     </nav>
+                    <div id="usacrcInformation" class="sidebar-nav ms-dialogHidden ms-forceWrap ms-noList large-3 columns nav-bar vertical">
+                        <h4>
+                            US Army Combat Readiness Center Information
+                        </h4>
+                        <div>
+                            <img src="img/bldg4905.jpg" alt="" />
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/Final_CG_Townhall_AUG2015.pptx" target="_blank">
+                                    USACRC Town Hall Brief
+                                </a>
+                                - January 29, 2015
+                            </li>
+                            <li>
+                                <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_Mission_Vision_Oct2015.pdf" target="_blank">
+                                    Mission, Vision and Goals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/Strategic_Plan_7May2014.pdf" target="_blank">
+                                    USACRC/SC &amp; ASO Strategic Plan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_Consolidated_Knowledge_Maps_24Sep2015.pdf" target="_blank">
+                                    Consolidated Knowledge Maps
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_Org_Chart_Feb2016.pdf" target="_blank">
+                                    Organizational Chart
+                                </a>
+                                - Updated June 1, 2015
+                            </li>
+                            <li>
+                                <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_and_ASO_Telephone_Roster_Diagram_19Nov2015.pdf" target="_blank">
+                                    USACRC &amp; ASO Telephone Roster Diagram
+                                </a>
+                                - Updated August 10, 2015
+                            </li>
+                            <li>
+                                <a href="https://intranet.safety.army.mil/VACANCIES/SitePages/Home.aspx">
+                                    USACRC Vacancies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div id="mainbody" class="large-9 columns">
-                        <!--CS: Start PlaceHolderMain Snippet-->
-                        <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
-                        <!--MS:<SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">-->
+                        <div class="row">
+                            <!--CS: Start PlaceHolderMain Snippet-->
+                            <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                            <!--MS:<SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">-->
                             <!--MS:<asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">-->
                             <!--ME:</asp:ContentPlaceHolder>-->
-                        <!--ME:</SharePoint:AjaxDelta>-->
-                        <!--CE: End PlaceHolderMain Snippet-->
+                            <!--ME:</SharePoint:AjaxDelta>-->
+                            <!--CE: End PlaceHolderMain Snippet-->
+                        </div>
                     </div>
                 </div>
                 <div class="row ms-dialogHidden">
                     <footer class="large-12 columns">
-                        <p>© Company 2013
-                        
-                        
-                        
-                        </p>
+                        <div class="row">
+                            <div class="large-4 columns">
+                                <h4>
+                                    Quick Links
+                                </h4>
+                                <ul style="list-style: none;">
+                                    <li>
+                                        <a href="https://safety.army.mil/">
+                                            USACRC Public Website
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Enterprise%20Email%20Outlook%20Web%20Access%20(OWA).docx">
+                                            Outlook Web Access
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/exsum/SitePages/Home.aspx">
+                                            ExSums
+                                        </a>
+                                        <span>
+                                            (Archive)
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/PR2015/SitePages/Home.aspx">
+                                            Purchase Request Site
+                                        </a>
+                                    </li>
+                                </ul>
+                                </p>
+                                <span>
+                                    IT Helpdesk / DCPA Request System
+                                </span>
+                                <h6>
+                                    Report a problem or request support.
+                                </h6>
+                                <ul class="contact">
+                                    <li class="phone">
+                                        255-2286
+                                    </li>
+                                    <li class="email">
+                                        <a href="mailto:usarmy.rucker.hqda-secarmy.mbx.safe-helpdesk@mail.mil">
+                                            Email Us
+                                        </a>
+                                    </li>
+                                    <li class="fb">
+                                        <a href="http://143.69.9.197/">
+                                            Submit a Ticket
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="large-4 columns">
+                                <h4>
+                                    What's Hot, What's New
+                                </h4>
+                                <p>
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_Form5a_01-21-2016.pdf">
+                                                USACRC Form 5A
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Enterprise%20Email%20Outlook%20Web%20Access%20(OWA).docx">
+                                                Outlook Web Access
+                                            </a>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Pentagon%20DSN%20numbers.pdf">
+                                                Pentagon DSN Numbers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/USACRC_Privileged_AUP.pdf">
+                                                USACRC Privileged AUP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/FY16_Holidays_DONSAs.PDF">
+                                                FY 16 Federal Holiday &amp; DONSA Schedule
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/DBR">
+                                                Data Business Rules
+                                            </a>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/suggestions/SitePages/Suggestion%20Box%20Disclaimer.aspx">
+                                                Submit a Suggestion
+                                            </a>
+                                            |                                             <a href="https://intranet.safety.army.mil/suggestions/Lists/ASB%20Public%202013/AllItems.aspx">
+                                                Resolved Items
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Submit%20a%20Suggestion%20-%2012.04.13.pdf">
+                                                Submit a Suggestion
+                                            </a>
+                                            <span>
+                                                - 12.04.13.pdf
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="large-4 columns">
+                                <h4>
+                                    IT Tips &amp; Training
+                                </h4>
+                                <p>
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/G3/Operations/Security/Emergency%20Management%20Document%20Library/Internal%20Response%20to%20an%20Active%20Shooter%20-%20Safety%20Center%202015%20Revised%20(2).pptx">
+                                                Internal Response to an Active Shooter
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/LOEWG.pdf">
+                                                LOEWG Slides
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/USACRC_AUP.pdf">
+                                                USACRC AUP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Blackberry_AUP.pdf">
+                                                Blackberry AUP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Web%20Site%20SOP.docx">
+                                                USACRC Website Content Management SOP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/short%20links.xls">
+                                                USACRC Website Short Links
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/USACRC_BitLocker_Guidance.pdf">
+                                                USACRC BitLocker Guidance
+                                            </a>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            <span>
+                                                Make your own short URL (link) with the
+                                            </span>
+                                            <br />
+                                            <a href="https://safec2zppub1.nase.ds.army.mil/shrinklink">
+                                                USACRC ShrinkLink tool
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
                     </footer>
                 </div>
             </div>
