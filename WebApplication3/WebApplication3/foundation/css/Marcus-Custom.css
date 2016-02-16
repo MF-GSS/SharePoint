@@ -60,7 +60,13 @@ footer a:hover {
 
 		#nav {
 			padding-left: 0 !important;
+            border-radius: 5px;
+            margin-bottom: 20px;
 		}
+
+        #nav li.static:first-of-type > a.static.menu-item.ms-core-listMenu-item.ms-displayInline.ms-navedit-linkNode.collapsible {
+            border-radius: 5px 5px 0 0;
+        }
 
 		#nav .collapsible span {
 			color: black;
@@ -114,6 +120,11 @@ div.row.masthead.ms-dialogHidden {
 	padding: 0 !important;
 }
 
+#mainbody {
+    margin-left: 20px;
+    margin-right: -20px;
+}
+
 @media (max-width:767px) {
 	#SearchBox {
 		float: right;
@@ -128,6 +139,10 @@ div.row.masthead.ms-dialogHidden {
 	}
 }
 
+#s4-bodyContainer {
+    padding-bottom: 0 !important;
+}
+
 #suiteBarLeft {
     background-color: #333;
 }
@@ -140,7 +155,7 @@ div.row.masthead.ms-dialogHidden {
     background-color: #333;
     color: #fff;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -305,4 +320,16 @@ footer h6 {
 
 .DefaultContentBlock {
     padding: 0 !important;
+}
+
+@media only screen {
+    [class*='column'] + [class*='column']:last-child {
+        float: left;
+    }
+}
+
+@media only screen and (min-width:48em) {
+    .row .large-9 {
+        width: 70%;
+    }
 }

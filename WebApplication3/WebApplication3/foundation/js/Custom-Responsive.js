@@ -6,6 +6,7 @@
             $(this).css('margin-left', '-5.5px');
         }
     });
+    $('div.ms-core-brandingText').html($('div.ms-core-brandingText').html().replace('SharePoint', 'US Army Combat Readiness Center'));
 
     $('nav#leftnav ul.root').attr('id', 'nav');
 
