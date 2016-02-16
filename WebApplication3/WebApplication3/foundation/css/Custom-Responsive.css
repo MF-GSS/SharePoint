@@ -40,10 +40,10 @@
 	float: none;  /* Remove OOTB float - this allows the search to move to the left under the top nav bar */
 } 
   
-/* Adjust padding for content containers */
+/* Adjust padding for content containers *
 #s4-bodyContainer {
-	padding-bottom: 60px;  /* Alter OOTB padding */
-}
+	padding-bottom: 60px;  /* Alter OOTB padding *
+}*/
 #contentRow {
 	padding-top: 80px;  /* Alter OOTB padding */
 }

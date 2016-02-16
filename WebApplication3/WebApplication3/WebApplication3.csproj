@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <ApplicationInsightsResourceId>/subscriptions/5d9c4502-9a23-4bb6-a36c-eb80ac1d2077/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/WebApplication3</ApplicationInsightsResourceId>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -102,6 +103,7 @@
     <Content Include="foundation\css\Marcus-Custom.css" />
     <Content Include="foundation\css\normalize.css" />
     <Content Include="foundation\foundation4.html" />
+    <Content Include="foundation\HtmlPage.html" />
     <Content Include="foundation\js\Custom-Responsive.js" />
     <Content Include="foundation\js\foundation-custom.js" />
     <Content Include="foundation\js\foundation.min.js" />
@@ -364,7 +366,7 @@
     <Content Include="spectergroup\img\banner-one.jpg" />
     <Content Include="spectergroup\img\banner-two.jpg" />
     <Content Include="spectergroup\img\bird.png" />
-    <Content Include="spectergroup\img\bldg4905.jpg" />
+    <Content Include="foundation\img\bldg4905.jpg" />
     <Content Include="spectergroup\img\bullets\arrow.png" />
     <Content Include="spectergroup\img\bullets\check.png" />
     <Content Include="spectergroup\img\bullets\heart.png" />
@@ -376,7 +378,7 @@
     <Content Include="spectergroup\img\divider-tagline.png" />
     <Content Include="spectergroup\img\glyphicons-halflings-white.png" />
     <Content Include="spectergroup\img\glyphicons-halflings.png" />
-    <Content Include="spectergroup\img\header.png" />
+    <Content Include="foundation\img\header.png" />
     <Content Include="spectergroup\img\homes-small-one.jpg" />
     <Content Include="spectergroup\img\icon-arrows-vert.png" />
     <Content Include="spectergroup\img\icon-arrows.png" />
@@ -403,7 +405,7 @@
     <Content Include="spectergroup\img\info-yellow.png" />
     <Content Include="spectergroup\img\loading.gif" />
     <Content Include="spectergroup\img\logo.gif" />
-    <Content Include="spectergroup\img\Safety_Crest_with_Army_fw.png" />
+    <Content Include="foundation\img\Safety_Crest_with_Army_fw.png" />
     <Content Include="spectergroup\img\social\500px.png" />
     <Content Include="spectergroup\img\social\AddThis.png" />
     <Content Include="spectergroup\img\social\Behance.png" />
@@ -472,7 +474,7 @@
     <Content Include="spectergroup\js\jquery.tweet.js" />
     <Content Include="spectergroup\js\Marcus-Custom-branch.js" />
     <Content Include="spectergroup\js\Marcus-Custom.js" />
-    <Content Include="spectergroup\js\masonry.pkgd.js" />
+    <Content Include="foundation\js\masonry.pkgd.js" />
     <Content Include="spectergroup\js\modernizr-2.6.2.custom.js" />
     <Content Include="spectergroup\js\poshytip-1.1\GPL-LICENSE.txt" />
     <Content Include="spectergroup\js\poshytip-1.1\jquery.poshytip.js" />
