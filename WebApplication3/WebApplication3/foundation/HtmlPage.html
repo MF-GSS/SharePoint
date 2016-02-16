@@ -1,0 +1,676 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+	<meta name="GENERATOR" content="Microsoft SharePoint" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- based on Zurb Foundation 4.0.5-->
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/foundation-custom.css" />
+	<link rel="stylesheet" href="css/Custom-Responsive.css" />
+	<link rel="stylesheet" href="css/Marcus-Custom.css" />
+	<script src="js/vendor/custom.modernizr.js">
+	</script>
+	<script src="js/vendor/jquery.js">
+	</script>
+	<script src="js/foundation.min.js">
+	</script>
+	<script src="js/foundation/foundation.dropdown.js">
+	</script>
+	<script src="js/foundation/foundation.alerts.js">
+	</script>
+	<script src="js/foundation/foundation.clearing.js">
+	</script>
+	<script src="js/foundation/foundation.placeholder.js">
+	</script>
+	<script src="js/foundation/foundation.forms.js">
+	</script>
+	<script src="js/foundation/foundation.cookie.js">
+	</script>
+	<script src="js/foundation/foundation.joyride.js">
+	</script>
+	<script src="js/foundation/foundation.magellan.js">
+	</script>
+	<script src="js/foundation/foundation.orbit.js">
+	</script>
+	<script src="js/foundation/foundation.reveal.js">
+	</script>
+	<script src="js/foundation/foundation.section.js">
+	</script>
+	<script src="js/foundation/foundation.tooltips.js">
+	</script>
+	<script src="js/foundation/foundation.topbar.js">
+	</script>
+	<script src="js/foundation-custom.js">
+	</script>
+	<script src="js/Custom-Responsive.js">
+	</script>
+    <script src="js/masonry.pkgd.js"></script>
+</head>
+<body>
+    <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+        <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+        </a>
+    </div>
+    <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+        <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+        </a>
+    </div>
+    <div id="ms-designer-ribbon">
+        <div class="DefaultContentBlock" style="background:rgb(0, 114, 198); color:white; width:100%; padding:8px; height:64px; overflow:hidden;">The SharePoint ribbon will be here when your file is either previewed on or applied to your site.</div>
+    </div>
+    <div id="s4-workspace">
+        <div id="s4-bodyContainer">
+            <div class="row masthead ms-dialogHidden">
+                <div class="header larger-12 columns clearfix">
+                    <div class="headlogo">
+                        <img id="ctl00_x74bbee6762f840edad4fe46f496d8c78" class="ms-siteicon-img" name="onetidHeadbnnr0" src="" alt="" />
+                    </div>
+                    <div class="headtitle">
+                        <h1 id="pageTitle" class="ms-core-pageTitle">
+                            <span id="ctl00_DeltaPlaceHolderPageTitleInTitleArea">Home</span>
+                        </h1>
+                    </div>
+                    <!--search-->
+                    <div class="searchbox pull-right">
+                        <div class="ms-webpart-chrome ms-webpart-chrome-fullWidth "><div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPart" width="100%" class="ms-WPBody noindex " OnlyForMePart="true" allowDelete="false" style=""><div componentid="ctl00_ctl03_csr" id="ctl00_ctl03_csr"><div id="SearchBox" name="Control"><div class="ms-srch-sb ms-srch-sb-border" id="ctl00_ctl03_csr_sboxdiv"><input type="text" value="Search..." maxlength="2048" accessKey="S" title="Search..." id="ctl00_ctl03_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find('ctl00_ctl03_csr').search($get('ctl00_ctl03_csr_sbox').value);return Srch.U.cancelEvent(event);}})" onkeydown="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_ctl03_csr');ctl.activateDefaultQuerySuggestionBehavior();})" onfocus="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_ctl03_csr');ctl.hidePrompt();ctl.setBorder(true);})" onblur="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_ctl03_csr'); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})" class="ms-textSmall ms-srch-sb-prompt ms-helperText" /><a title="Search" class="ms-srch-sb-searchLink" id="ctl00_ctl03_csr_SearchLink" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_ctl03_csr').search($get('ctl00_ctl03_csr_sbox').value);})" href="javascript: {}"><img src="http://c4968397007/_layouts/15/images/searchresultui.png?rev=23" class="ms-srch-sb-searchImg" id="searchImg" alt="Search" /></a></div></div></div><noscript><div id="ctl00_ctl03_noscript">It looks like your browser does not have JavaScript enabled. Please turn on JavaScript and try again.</div></noscript><div id="ctl00_ctl03"></div><div class="ms-clear"></div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ms-dialogHidden">
+                <div class="large-12 columns">
+                    <nav id="topnav">
+                        <div id="topnavbar" class="top-bar">
+                            <ul class="title-area">
+                                <li class="name">
+                                </li>
+                                <li class="toggle-topbar menu-icon">
+                                    <a href="#">
+                                        <span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--top nav-->
+                            <section class="top-bar-section">
+                                <span style="display:none"><table cellpadding="4" cellspacing="0" style="font:messagebox;color:buttontext;background-color:buttonface;border: solid 1px;border-top-color:buttonhighlight;border-left-color:buttonhighlight;border-bottom-color:buttonshadow;border-right-color:buttonshadow"><tr><td nowrap="nowrap"><span style="font-weight:bold">PortalSiteMapDataSource</span> - topSiteMap</td></tr><tr><td></td></tr></table></span>
+                                <a name="startNavigation">
+                                </a>
+                                <link rel="stylesheet" type="text/css" href="http://c4968397007/_layouts/15/1033/styles/menu-21.css" /><div id="zz7_TopNavigationMenu" class="nav noindex ms-core-listMenu-horizontalBox"><ul id="zz9_RootAspMenu" class="root ms-core-listMenu-root static"><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" title="Home" href="http://c4968397007/sites/bootstrap1/Pages/default.aspx" accesskey="1"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bootstrap One</span></span></a></li></ul></div>
+                            </section>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row" style="display: none;">
+                <nav class="top-bar">
+                    <ul class="title-area">
+                        <!-- Required -->
+                        <li class="name">
+                        </li>
+                        <li class="toggle-topbar menu-icon">
+                            <a href="#">
+                                <span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <section class="top-bar-section">
+                        <!-- Left Nav Section -->
+                        <ul>
+                            <li class="divider">
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    Main Item 1
+
+
+
+
+
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Main Item 2
+
+
+
+
+
+                                </a>
+                            </li>
+                            <li class="divider">
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">
+                                    Main Item 3
+
+
+
+
+
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="has-dropdown">
+                                        <a href="#">
+                                            Dropdown Level 1a
+
+
+
+
+
+                                        </a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <label>
+                                                    Dropdown Level 2 Label
+
+
+
+
+
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Dropdown Level 2a
+
+
+
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Dropdown Level 2b
+
+
+
+
+
+                                                </a>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="#">
+                                                    Dropdown Level 2c
+
+
+
+
+
+                                                </a>
+                                                <ul class="dropdown">
+                                                    <li>
+                                                        <label>
+                                                            Dropdown Level 3 Label
+
+
+
+
+
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Dropdown Level 3a
+
+
+
+
+
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Dropdown Level 3b
+
+
+
+
+
+                                                        </a>
+                                                    </li>
+                                                    <li class="divider">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Dropdown Level 3c
+
+
+
+
+
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Dropdown Level 2d
+
+
+
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Dropdown Level 2e
+
+
+
+
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Dropdown Level 2f
+
+
+
+
+
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Dropdown Level 1b
+
+
+
+
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Dropdown Level 1c
+
+
+
+
+
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Dropdown Level 1d
+
+
+
+
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Dropdown Level 1e
+
+
+
+
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Dropdown Level 1f
+
+
+
+
+
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            See all →
+
+
+
+
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider">
+                            </li>
+                        </ul>
+                        <!-- Right Nav Section -->
+                    </section>
+                </nav>
+            </div>
+            <div class="row">
+                <nav id="leftnav">
+                    <div id="sideNavBox" class="sidebar-nav ms-dialogHidden ms-forceWrap ms-noList large-3 columns nav-bar vertical">
+                    </div>
+                </nav>
+                <div id="usacrcInformation" class="sidebar-nav ms-dialogHidden ms-forceWrap ms-noList large-3 columns nav-bar vertical">
+                    <h4>
+                        US Army Combat Readiness Center Information
+                    </h4>
+                    <div>
+                        <img src="img/bldg4905.jpg" alt="" />
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/Final_CG_Townhall_AUG2015.pptx" target="_blank">
+                                USACRC Town Hall Brief
+                            </a>
+                            - January 29, 2015
+                        </li>
+                        <li>
+                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_Mission_Vision_Oct2015.pdf" target="_blank">
+                                Mission, Vision and Goals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/Strategic_Plan_7May2014.pdf" target="_blank">
+                                USACRC/SC &amp; ASO Strategic Plan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_Consolidated_Knowledge_Maps_24Sep2015.pdf" target="_blank">
+                                Consolidated Knowledge Maps
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_Org_Chart_Feb2016.pdf" target="_blank">
+                                Organizational Chart
+                            </a>
+                            - Updated June 1, 2015
+                        </li>
+                        <li>
+                            <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_and_ASO_Telephone_Roster_Diagram_19Nov2015.pdf" target="_blank">
+                                USACRC &amp; ASO Telephone Roster Diagram
+                            </a>
+                            - Updated August 10, 2015
+                        </li>
+                        <li>
+                            <a href="https://intranet.safety.army.mil/VACANCIES/SitePages/Home.aspx">
+                                USACRC Vacancies
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="mainbody" class="large-9 columns">
+                    <div class="row">
+                        <div class="large-8 columns" style="outline: 1px solid red;">
+                            <h1 style="color: #333333;">I Want To...</h1>
+                            <p style="font-size: 9px;">Click to Make a Selection</p>
+                            <div class="grid" style="height: 360px; position: relative;">
+                                <div class="grid-item" style="left: 0px; top: 0px; position: absolute;">
+                                    <div class="grid-item-content" id="box1">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/shoeprints+2.png" alt="" />
+                                        <span>Submit a Footprints Ticket</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 120px; top: 0px; position: absolute;">
+                                    <div class="grid-item-content" id="box2">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/clock+2.png" alt="" />
+                                        <span>Do My Timesheet</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 240px; top: 0px; position: absolute;">
+                                    <div class="grid-item-content" id="box3">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/calendar+2.png" alt="" />
+                                        <span>Reserve a Room</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 360px; top: 0px; position: absolute;">
+                                    <div class="grid-item-content" id="box4">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/profle+2.png" alt="" />
+                                        <span>Check Out Employee Roster</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 0px; top: 120px; position: absolute;">
+                                    <div class="grid-item-content" id="box5">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/x+2.png" alt="" />
+                                        <span>See Who&#39;s Out Today</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 120px; top: 120px; position: absolute;">
+                                    <div class="grid-item-content" id="box6">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/cart+2.png" alt="" />
+                                        <span>Go To Purchase Request Site</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 240px; top: 120px; position: absolute;">
+                                    <div class="grid-item-content" id="box7">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/travelerbag+2.png" alt="" />
+                                        <span>Make a Vacation Request</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 360px; top: 120px; position: absolute;">
+                                    <div class="grid-item-content" id="box8">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/crossroads+2.png" alt="" />
+                                        <span>Find Other Links</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 0px; top: 240px; position: absolute;">
+                                    <div class="grid-item-content" id="box9">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/arap.png" alt="" />
+                                        <span>ARAP</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 120px; top: 240px; position: absolute;">
+                                    <div class="grid-item-content" id="box10">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/grat.png" alt="" />
+                                        <span>GRAT</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 240px; top: 240px; position: absolute;">
+                                    <div class="grid-item-content" id="box11">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/trips.png" alt="" />
+                                        <span>TRiPS</span>
+                                    </div>
+                                </div>
+                                <div class="grid-item" style="left: 360px; top: 240px; position: absolute;">
+                                    <div class="grid-item-content" id="box12">
+                                        <img src="/_catalogs/masterpage/spectergroup/img/128px/rmis.png" alt="" />
+                                        <div class="ms-rtestate-read ms-rte-wpbox" contenteditable="false">
+                                            <div class="ms-rtestate-notify  ms-rtestate-read dda995f1-9271-4e6f-aa0b-695dd094d6d6" id="div_dda995f1-9271-4e6f-aa0b-695dd094d6d6">
+                                            </div>
+                                            <div id="vid_dda995f1-9271-4e6f-aa0b-695dd094d6d6" style="display: none;">
+                                            </div>
+                                        </div>
+                                        <span>RMIS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-4 columns" style="outline: 1px solid green; height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ms-dialogHidden">
+                <footer class="large-12 columns">
+                    <div class="row">
+                        <div class="large-4 columns">
+                            <h4>
+                                Quick Links
+                            </h4>
+                            <ul style="list-style: none;">
+                                <li>
+                                    <a href="https://safety.army.mil/">
+                                        USACRC Public Website
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Enterprise%20Email%20Outlook%20Web%20Access%20(OWA).docx">
+                                        Outlook Web Access
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://intranet.safety.army.mil/exsum/SitePages/Home.aspx">
+                                        ExSums
+                                    </a>
+                                    <span>
+                                        (Archive)
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="https://intranet.safety.army.mil/PR2015/SitePages/Home.aspx">
+                                        Purchase Request Site
+                                    </a>
+                                </li>
+                            </ul>
+                            </p>
+                            <span>
+                                IT Helpdesk / DCPA Request System
+                            </span>
+                            <h6>
+                                Report a problem or request support.
+                            </h6>
+                            <ul class="contact">
+                                <li class="phone">
+                                    255-2286
+                                </li>
+                                <li class="email">
+                                    <a href="mailto:usarmy.rucker.hqda-secarmy.mbx.safe-helpdesk@mail.mil">
+                                        Email Us
+                                    </a>
+                                </li>
+                                <li class="fb">
+                                    <a href="http://143.69.9.197/">
+                                        Submit a Ticket
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="large-4 columns">
+                            <h4>
+                                What's Hot, What's New
+                            </h4>
+                            <p>
+                                <ul style="list-style: none;">
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/USACRC_Form5a_01-21-2016.pdf">
+                                            USACRC Form 5A
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Enterprise%20Email%20Outlook%20Web%20Access%20(OWA).docx">
+                                            Outlook Web Access
+                                        </a>
+                                    </li>
+                                    <br />
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Pentagon%20DSN%20numbers.pdf">
+                                            Pentagon DSN Numbers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/USACRC_Privileged_AUP.pdf">
+                                            USACRC Privileged AUP
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/FY16_Holidays_DONSAs.PDF">
+                                            FY 16 Federal Holiday &amp; DONSA Schedule
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/DBR">
+                                            Data Business Rules
+                                        </a>
+                                    </li>
+                                    <br />
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/suggestions/SitePages/Suggestion%20Box%20Disclaimer.aspx">
+                                            Submit a Suggestion
+                                        </a>
+                                        |                                             <a href="https://intranet.safety.army.mil/suggestions/Lists/ASB%20Public%202013/AllItems.aspx">
+                                            Resolved Items
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Submit%20a%20Suggestion%20-%2012.04.13.pdf">
+                                            Submit a Suggestion
+                                        </a>
+                                        <span>
+                                            - 12.04.13.pdf
+                                        </span>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="large-4 columns">
+                            <h4>
+                                IT Tips &amp; Training
+                            </h4>
+                            <p>
+                                <ul style="list-style: none;">
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/G3/Operations/Security/Emergency%20Management%20Document%20Library/Internal%20Response%20to%20an%20Active%20Shooter%20-%20Safety%20Center%202015%20Revised%20(2).pptx">
+                                            Internal Response to an Active Shooter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/Intranet%20Home%20Page%20Document%20Library/LOEWG.pdf">
+                                            LOEWG Slides
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/USACRC_AUP.pdf">
+                                            USACRC AUP
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Blackberry_AUP.pdf">
+                                            Blackberry AUP
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/Web%20Site%20SOP.docx">
+                                            USACRC Website Content Management SOP
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/short%20links.xls">
+                                            USACRC Website Short Links
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://intranet.safety.army.mil/SiteAssets/SitePages/Home/USACRC_BitLocker_Guidance.pdf">
+                                            USACRC BitLocker Guidance
+                                        </a>
+                                    </li>
+                                    <br />
+                                    <li>
+                                        <span>
+                                            Make your own short URL (link) with the
+                                        </span>
+                                        <br />
+                                        <a href="https://safec2zppub1.nase.ds.army.mil/shrinklink">
+                                            USACRC ShrinkLink tool
+                                        </a>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+        </div>
+        <!--end body container-->
+    </div>
+    <!--end workspace-->
+</body>
+</html>
