@@ -129,6 +129,13 @@
     <Content Include="foundation\sidebar.html" />
     <Content Include="foundation\workspace.aspx" />
     <Content Include="foundation\workspace.html" />
+    <Content Include="ShareMouse\aw_sas32.dll" />
+    <Content Include="ShareMouse\ShareMouse.exe" />
+    <Content Include="ShareMouse\smdesk.exe" />
+    <Content Include="ShareMouse\sminst.exe" />
+    <Content Include="ShareMouse\smkey.dll" />
+    <Content Include="ShareMouse\smlang.dll" />
+    <Content Include="ShareMouse\unins000.exe" />
     <Content Include="spectergroup\css\bootstrap-full.min.css" />
     <Content Include="spectergroup\css\bootstrap-responsive.css" />
     <Content Include="spectergroup\css\bootstrap-responsive.min.css" />
@@ -506,6 +513,20 @@
     <Content Include="spectergroup\Specter Homepage.html" />
     <Content Include="spectergroup\spectergroup-branch.html" />
     <Content Include="spectergroup\spectergroup.html" />
+    <Content Include="Synergy\dnssd.dll" />
+    <Content Include="Synergy\libgcc_s_dw2-1.dll" />
+    <Content Include="Synergy\mingwm10.dll" />
+    <Content Include="Synergy\QtCore4.dll" />
+    <Content Include="Synergy\QtGui4.dll" />
+    <Content Include="Synergy\QtNetwork4.dll" />
+    <Content Include="Synergy\synergy.exe" />
+    <Content Include="Synergy\synergyc.exe" />
+    <Content Include="Synergy\synergyd.exe" />
+    <Content Include="Synergy\synergys.exe" />
+    <Content Include="Synergy\syntool.exe" />
+    <Content Include="Synergy\synwinhk.dll" />
+    <Content Include="Synergy\Win\System\msvcp100.dll" />
+    <Content Include="Synergy\Win\System\msvcr100.dll" />
     <Content Include="website4\datepicker.html" />
     <Content Include="website4\demo\ajax-init-stack.html" />
     <Content Include="website4\demo\ajax-init.html" />
@@ -1110,6 +1131,7 @@
     <Content Include="spectergroup\js\poshytip-1.1\jquery.poshytip.min.js.map" />
     <Content Include="spectergroup\spectergroup.master" />
     <Content Include="foundation\foundation4.master" />
+    <Content Include="ShareMouse\unins000.dat" />
     <None Include="website4\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
