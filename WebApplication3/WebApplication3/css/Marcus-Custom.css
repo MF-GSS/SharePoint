@@ -1,0 +1,13 @@
+﻿div.qodef-sticky-header.header-appear div.qodef-vertical-align-containers {
+    background-color: #111;
+}
+
+div.opened-panel#panel {
+    visibility: hidden;
+}
+
+@media all {
+    .qodef-main-menu ul li a {
+        color: #fff;
+    }
+}

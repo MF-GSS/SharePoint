@@ -36,10 +36,10 @@ $j(document).ready(function() {
 
 
 	$j('#tootlbar_colors .color').each(function(){
-		$j(this).on('click',function(){
+		$j(this).ready(function(){
 			$j('#tootlbar_colors .color').removeClass('active');
 			$j(this).addClass('active');
-			var color = $j(this).data('color');
+			var color = ('#ffcb05');
 
 			if ($j("#toolbar_colors_css").length > 0){
 				$j("#toolbar_colors_css").remove();
