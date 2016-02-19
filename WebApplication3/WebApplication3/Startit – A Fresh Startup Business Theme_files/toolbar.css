@@ -44,7 +44,7 @@
 	margin:0;
 }
 
-#panel-admin h5{
+/*#panel-admin h5{
 	margin: 0px 0 5px;
 	padding: 0px;
 	color: #000 !important;
@@ -57,7 +57,7 @@
 .panel-admin-options-holder{
 	display:inline-block;
 	width:100%;
-}
+}*/
 
 #panel .open{
 	background-color: #b4de50;
@@ -124,13 +124,13 @@
 	width:100%;
 }
 
-#tootlbar_colors .color.active{
+/*#tootlbar_colors .color.active{
 	border: 3px solid #e3e3e3;
 }
 
 #tootlbar_colors .color.active span{
 	color: #797979;
-}
+}*/
 
 #tootlbar_colors .color:nth-child(3n){
 	margin-right:0;

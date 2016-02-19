@@ -130,13 +130,20 @@
     <Content Include="foundation\sidebar.html" />
     <Content Include="foundation\workspace.aspx" />
     <Content Include="foundation\workspace.html" />
-    <Content Include="images\5514809430_eba39fd91d_o.jpg" />
-    <Content Include="images\6002302654_269116dc73_o.jpg" />
-    <Content Include="images\6309907570_5fdec3538b_o.jpg" />
-    <Content Include="images\6636215117_5165455ea6_o.jpg" />
-    <Content Include="images\bldg4905.jpg" />
-    <Content Include="images\header.png" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\tile2.jpg" />
+    <Content Include="images\tile3.jpg" />
+    <Content Include="images\tile5.jpg" />
+    <Content Include="images\tile11.jpg" />
+    <Content Include="images\tile10.jpg" />
+    <Content Include="images\slide3.jpg" />
+    <Content Include="images\tile1.jpg" />
+    <Content Include="images\tile6.jpg" />
     <Content Include="images\Safety_Crest_with_Army_fw.png" />
+    <Content Include="images\tile8.jpg" />
+    <Content Include="images\tile9.jpg" />
+    <Content Include="images\tile4.jpg" />
+    <Content Include="images\tile12.jpg" />
     <Content Include="ShareMouse\aw_sas32.dll" />
     <Content Include="ShareMouse\ShareMouse.exe" />
     <Content Include="ShareMouse\smdesk.exe" />
@@ -522,13 +529,13 @@
     <Content Include="spectergroup\spectergroup-branch.html" />
     <Content Include="spectergroup\spectergroup.html" />
     <Content Include="Startit – A Fresh Startup Business Theme.htm" />
-    <Content Include="images\12198629255_333260dc45_o.jpg" />
-    <Content Include="images\6875544352_c6dbc6b0cd_o.jpg" />
-    <Content Include="images\7087000863_6df2a2c618_o.jpg" />
-    <Content Include="images\8756776007_2993dce7ea_o.jpg" />
+    <Content Include="images\slide2.jpg" />
+    <Content Include="images\tile7.jpg" />
+    <Content Include="images\slide4.jpg" />
+    <Content Include="images\slide5.jpg" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\accordion.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\add-to-cart.min.js" />
-    <Content Include="images\army-background.jpg" />
+    <Content Include="images\slide1.jpg" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\ajax-loader.gif" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\analytics.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\b-image-1a.jpg" />
@@ -1254,6 +1261,13 @@
     <Content Include="Startit – A Fresh Startup Business Theme_files\css" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\css%281%29" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\js" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
     <None Include="website4\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -11,3 +11,16 @@ div.opened-panel#panel {
         color: #fff;
     }
 }
+
+div#qodef-home-main-slider {
+    margin-bottom: -8%;
+}
+
+.carousel-indicators {
+    bottom: 15%;
+}
+
+article img {
+    min-height: 290px !important;
+    max-height: 290px !important;
+}

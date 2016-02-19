@@ -26,6 +26,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GSS", "http://localhost:531
 		SlnRelativePath = "..\..\GSS\"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D08C6D90-DD7F-4FEA-9A71-AA9613D02D86}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\Content Editor.dwp = ..\..\..\..\Downloads\Content Editor.dwp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
