@@ -506,6 +506,7 @@
     <Content Include="spectergroup\Specter Homepage.html" />
     <Content Include="spectergroup\spectergroup-branch.html" />
     <Content Include="spectergroup\spectergroup.html" />
+    <Content Include="Startit – A Fresh Startup Business Theme.html" />
     <Content Include="website4\datepicker.html" />
     <Content Include="website4\demo\ajax-init-stack.html" />
     <Content Include="website4\demo\ajax-init.html" />
@@ -1127,6 +1128,7 @@
     <Content Include="z\v4.master" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Startit – A Fresh Startup Business Theme_files\" />
     <Folder Include="z\Themable\" />
   </ItemGroup>
   <PropertyGroup>
