@@ -23,3 +23,10 @@ article img {
     min-height: 290px !important;
     max-height: 290px !important;
 }
+
+@media all {
+    vc_row.wpb_row.vc_row-fluid.qodef-section.vc_custom_1446732069941.qodef-content-aligment-center.qodef-parallax-section-holder.qodef-parallax-section-holder-touch-disabled.qodef-grid-section {
+        background-position: 0 0 !important;
+        background-size: cover !important;
+    }
+}
