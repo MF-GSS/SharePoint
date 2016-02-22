@@ -1,44 +1,44 @@
 /* generated in D:\projects\lime\wp-content\themes\startit\assets\custom-styles\general-custom-styles.php qode_startit_design_styles function */
-/*.qodef-preload-background { background-image: url(http://lime.dev/wp-content/themes/startit/assets/img/preload_pattern.png) !important;}*/
+.qodef-preload-background { background-image: url(http://lime.dev/wp-content/themes/startit/assets/img/preload_pattern.png) !important;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\assets\custom-styles\general-custom-styles.php qode_startit_design_styles function */
-/*.qodef-boxed .qodef-wrapper { background-attachment: fixed;}*/
+.qodef-boxed .qodef-wrapper { background-attachment: fixed;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\assets\custom-styles\general-custom-styles.php qode_startit_text_styles function */
 p { text-transform: ;letter-spacing: px;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_text_styles_1 function */
-/*.cf7_custom_style_1 ::-webkit-input-placeholder { color: #bdbdbd;}*/
+.cf7_custom_style_1 ::-webkit-input-placeholder { color: #bdbdbd;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_text_styles_1 function */
-/*.cf7_custom_style_1 :-moz-placeholder { color: #bdbdbd;}*/
+.cf7_custom_style_1 :-moz-placeholder { color: #bdbdbd;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_text_styles_1 function */
-/*.cf7_custom_style_1 ::-moz-placeholder { color: #bdbdbd;}*/
+.cf7_custom_style_1 ::-moz-placeholder { color: #bdbdbd;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_text_styles_1 function */
-/*.cf7_custom_style_1 :-ms-input-placeholder { color: #bdbdbd;}*/
+.cf7_custom_style_1 :-ms-input-placeholder { color: #bdbdbd;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_text_styles_1 function */
-/*.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz { color: #bdbdbd;background-color: rgba(255, 255, 255, 0.01);border-color: rgba(189, 189, 189, 1);border-width: 2px;padding-top: 15px;padding-bottom: 15px;margin-top: 0px;margin-bottom: 32px;}*/
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz { color: #bdbdbd;background-color: rgba(255, 255, 255, 0.01);border-color: rgba(189, 189, 189, 1);border-width: 2px;padding-top: 15px;padding-bottom: 15px;margin-top: 0px;margin-bottom: 32px;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_focus_styles_1 function */
-/*.cf7_custom_style_1 input:focus::-webkit-input-placeholder, .cf7_custom_style_1 textarea:focus::-webkit-input-placeholder { color: #ffffff;}*/
+.cf7_custom_style_1 input:focus::-webkit-input-placeholder, .cf7_custom_style_1 textarea:focus::-webkit-input-placeholder { color: #ffffff;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_focus_styles_1 function */
-/*.cf7_custom_style_1 input:focus:-moz-placeholder, .cf7_custom_style_1 textarea:focus:-moz-placeholder { color: #ffffff;}*/
+.cf7_custom_style_1 input:focus:-moz-placeholder, .cf7_custom_style_1 textarea:focus:-moz-placeholder { color: #ffffff;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_focus_styles_1 function */
-/*.cf7_custom_style_1 input:focus::-moz-placeholder, .cf7_custom_style_1 textarea:focus::-moz-placeholder { color: #ffffff;}*/
+.cf7_custom_style_1 input:focus::-moz-placeholder, .cf7_custom_style_1 textarea:focus::-moz-placeholder { color: #ffffff;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_focus_styles_1 function */
-/*.cf7_custom_style_1 input:focus:-ms-input-placeholder, .cf7_custom_style_1 textarea:focus:-ms-input-placeholder { color: #ffffff;}*/
+.cf7_custom_style_1 input:focus:-ms-input-placeholder, .cf7_custom_style_1 textarea:focus:-ms-input-placeholder { color: #ffffff;}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_focus_styles_1 function */
-/*.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date:focus, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea:focus, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz:focus { color: #ffffff;background-color: rgba(255, 255, 255, 0.01);border-color: rgba(255, 255, 255, 1);}*/
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date:focus, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea:focus, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz:focus { color: #ffffff;background-color: rgba(255, 255, 255, 0.01);border-color: rgba(255, 255, 255, 1);}
 
 /* generated in D:\projects\lime\wp-content\themes\startit\framework\modules\contactform7\custom-styles\contact-form.php qode_startit_contact_form7_button_styles_1 function */
-/*.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit { padding-left: 50px;padding-right: 50px;}*/
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit { padding-left: 50px;padding-right: 50px;}
 
 
         

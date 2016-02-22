@@ -1,9 +1,8 @@
-﻿div.qodef-sticky-header.header-appear div.qodef-vertical-align-containers {
+﻿div.qodef-sticky-header.header-appear div.qodef-vertical-align-containers,
+div.qodef-mobile-header-inner div.qodef-mobile-header-holder,
+div.qodef-mobile-header-inner nav.qodef-mobile-nav
+ {
     background-color: #111;
-}
-
-div.opened-panel#panel {
-    visibility: hidden;
 }
 
 @media all {

@@ -203,7 +203,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-/*.icon-user:before {
+.icon-user:before {
 	content: "\e005";
 }
 .icon-people:before {
@@ -751,4 +751,4 @@
 }
 .icon-social-dropbox:before {
 	content: "\e00c";
-}*/
+}
