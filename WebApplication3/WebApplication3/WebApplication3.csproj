@@ -91,6 +91,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Marcus-Custom.css" />
+    <Content Include="fonts\dripicons.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\ionicons.svg" />
     <Content Include="fonts\Simple-Line-Icons.svg" />
     <Content Include="foundation\banded.aspx" />
     <Content Include="foundation\banded.html" />
@@ -132,6 +135,7 @@
     <Content Include="foundation\workspace.aspx" />
     <Content Include="foundation\workspace.html" />
     <Content Include="images\banner.jpg" />
+    <Content Include="images\header-banner.png" />
     <Content Include="images\tile2.jpg" />
     <Content Include="images\tile3.jpg" />
     <Content Include="images\tile5.jpg" />
@@ -531,14 +535,14 @@
     <Content Include="spectergroup\Specter Homepage.html" />
     <Content Include="spectergroup\spectergroup-branch.html" />
     <Content Include="spectergroup\spectergroup.html" />
-    <Content Include="Startit – A Fresh Startup Business Theme.htm" />
+    <Content Include="Startit – A Fresh Startup Business Theme-old.htm" />
     <Content Include="images\slide2.jpg" />
     <Content Include="images\tile7.jpg" />
     <Content Include="images\slide4.jpg" />
     <Content Include="images\slide5.jpg" />
+    <Content Include="images\slide1.jpg" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\accordion.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\add-to-cart.min.js" />
-    <Content Include="images\slide1.jpg" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\ajax-loader.gif" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\analytics.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\blog-responsive.min.css" />
@@ -546,13 +550,8 @@
     <Content Include="Startit – A Fresh Startup Business Theme_files\comment-reply.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\common.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\core.min.js" />
-    <Content Include="Startit – A Fresh Startup Business Theme_files\css%281%29.css" />
-    <Content Include="Startit – A Fresh Startup Business Theme_files\css.css" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\dripicons.css" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\font-awesome.min.css" />
-    <Content Include="fonts\dripicons.svg" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\ionicons.svg" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\greensock.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\ionicons.min.css" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\isotope.pkgd.min.js" />
@@ -561,7 +560,6 @@
     <Content Include="Startit – A Fresh Startup Business Theme_files\jquery.cookie.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\jquery.form.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\jquery.js" />
-    <Content Include="Startit – A Fresh Startup Business Theme_files\js.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\js_composer.min.css" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\js_composer_front.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\layerslider.css" />
@@ -570,6 +568,7 @@
     <Content Include="Startit – A Fresh Startup Business Theme_files\like.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\mediaelement-and-player.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\modules-responsive.min.css" />
+    <Content Include="Startit – A Fresh Startup Business Theme_files\modules.min - Copy.css" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\modules.min.css" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\modules.min.js" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\mouse.min.js" />
@@ -1219,11 +1218,15 @@
     <Content Include="spectergroup\spectergroup.master" />
     <Content Include="foundation\foundation4.master" />
     <Content Include="ShareMouse\unins000.dat" />
+    <Content Include="web.config" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\AuthenticationService.Authenticate" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\css" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\css%281%29" />
     <Content Include="Startit – A Fresh Startup Business Theme_files\js" />
-    <Content Include="web.config" />
+    <Content Include="fonts\Simple-Line-Icons.eot" />
+    <Content Include="fonts\Simple-Line-Icons.ttf" />
+    <Content Include="fonts\Simple-Line-Icons.woff" />
+    <Content Include="fonts\Simple-Line-Icons.woff2" />
     <Content Include="fonts\ionicons.eot" />
     <Content Include="fonts\ionicons.ttf" />
     <Content Include="fonts\ionicons.woff" />
@@ -1235,10 +1238,6 @@
     <Content Include="fonts\dripicons.eot" />
     <Content Include="fonts\dripicons.ttf" />
     <Content Include="fonts\dripicons.woff" />
-    <Content Include="fonts\Simple-Line-Icons.eot" />
-    <Content Include="fonts\Simple-Line-Icons.ttf" />
-    <Content Include="fonts\Simple-Line-Icons.woff" />
-    <Content Include="fonts\Simple-Line-Icons.woff2" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

@@ -1,4 +1,4 @@
-﻿a img, table {
+a img, table {
     border: none;
 }
 
@@ -2277,19 +2277,19 @@ section.parallax_section_holder.vertical_middle_align .parallax_content_outer {
     }
 
     26% {
-        -o-transform: translateX(25%)scale(1,.8);
+        -o-transform: translateX(25%) scale(1,.8);
     }
 
     40%,60% {
-        -o-transform: translateX(50%)scale(.8,.8);
+        -o-transform: translateX(50%) scale(.8,.8);
     }
 
     74% {
-        -o-transform: translate(50%,25%)scale(.6,.8);
+        -o-transform: translate(50%,25%) scale(.6,.8);
     }
 
     100%,88% {
-        -o-transform: translate(50%,50%)scale(.6,.6);
+        -o-transform: translate(50%,50%) scale(.6,.6);
     }
 }
 
@@ -2365,19 +2365,19 @@ section.parallax_section_holder.vertical_middle_align .parallax_content_outer {
     }
 
     26% {
-        -o-transform: translateX(25%)scale(1,.8);
+        -o-transform: translateX(25%) scale(1,.8);
     }
 
     40%,60% {
-        -o-transform: translateX(50%)scale(.8,.8);
+        -o-transform: translateX(50%) scale(.8,.8);
     }
 
     74% {
-        -o-transform: translate(50%,-25%)scale(.6,.8);
+        -o-transform: translate(50%,-25%) scale(.6,.8);
     }
 
     100%,88% {
-        -o-transform: translate(50%,-50%)scale(.6,.6);
+        -o-transform: translate(50%,-50%) scale(.6,.6);
     }
 }
 
@@ -2453,19 +2453,19 @@ section.parallax_section_holder.vertical_middle_align .parallax_content_outer {
     }
 
     26% {
-        -o-transform: translateX(-25%)scale(1,.8);
+        -o-transform: translateX(-25%) scale(1,.8);
     }
 
     40%,60% {
-        -o-transform: translateX(-50%)scale(.8,.8);
+        -o-transform: translateX(-50%) scale(.8,.8);
     }
 
     74% {
-        -o-transform: translate(-50%,25%)scale(.6,.8);
+        -o-transform: translate(-50%,25%) scale(.6,.8);
     }
 
     100%,88% {
-        -o-transform: translate(-50%,50%)scale(.6,.6);
+        -o-transform: translate(-50%,50%) scale(.6,.6);
     }
 }
 
@@ -2541,19 +2541,19 @@ section.parallax_section_holder.vertical_middle_align .parallax_content_outer {
     }
 
     26% {
-        -o-transform: translateX(-25%)scale(1,.8);
+        -o-transform: translateX(-25%) scale(1,.8);
     }
 
     40%,60% {
-        -o-transform: translateX(-50%)scale(.8,.8);
+        -o-transform: translateX(-50%) scale(.8,.8);
     }
 
     74% {
-        -o-transform: translate(-50%,-25%)scale(.6,.8);
+        -o-transform: translate(-50%,-25%) scale(.6,.8);
     }
 
     100%,88% {
-        -o-transform: translate(-50%,-50%)scale(.6,.6);
+        -o-transform: translate(-50%,-50%) scale(.6,.6);
     }
 }
 
@@ -3284,7 +3284,7 @@ section.parallax_section_holder.vertical_middle_align .parallax_content_outer {
         }
 
             .qodef-comment-holder .qodef-comment-text .comment-reply-link:after {
-                content: "";
+                content: "\e051";
                 font-family: simple-line-icons,sans-serif;
                 padding-left: 5px;
             }
@@ -3363,7 +3363,7 @@ section.parallax_section_holder.vertical_middle_align .parallax_content_outer {
 }
 
     #respond input[type=text]:focus, #respond textarea:focus, .post-password-form input[type=password]:focus, .wpcf7-form-control.wpcf7-date:focus, .wpcf7-form-control.wpcf7-number:focus, .wpcf7-form-control.wpcf7-quiz:focus, .wpcf7-form-control.wpcf7-select:focus, .wpcf7-form-control.wpcf7-text:focus, .wpcf7-form-control.wpcf7-textarea:focus {
-        border: 1px solid #a0a0a0;
+        border: 1px solid #A0A0A0;
     }
 
 .wpcf7-form-control.wpcf7-textarea {
@@ -3709,11 +3709,11 @@ body div.pp_default a.pp_next {
     }
 
 .ls-noskin .ls-nav-prev:before {
-    content: "";
+    content: "\f053";
 }
 
 .ls-noskin .ls-nav-next:before {
-    content: "";
+    content: "\f054";
 }
 
 .ls-noskin .ls-bottom-nav-wrapper {
@@ -3787,7 +3787,7 @@ body div.pp_default a.pp_next {
 }
 
     .wpb_image_grid .wpb_image_grid_ul a:before {
-        content: "";
+        content: "\f002";
         font-family: FontAwesome,sans-serif;
         font-size: 20px;
         position: absolute;
@@ -4940,11 +4940,11 @@ body.qodef-dropdown-slide-from-left.qodef-drop-down .narrow .second .inner ul li
     }
 
         .qodef-header-vertical .qodef-vertical-menu ul > li.menu-item-has-children > a .plus:before {
-            content: "L";
+            content: "\4c";
         }
 
     .qodef-header-vertical .qodef-vertical-menu ul > li.menu-item-has-children.current-menu-ancestor > a .plus:before, .qodef-header-vertical .qodef-vertical-menu ul > li.menu-item-has-children.open > a .plus:before {
-        content: "K";
+        content: "\4b";
     }
 
     .qodef-header-vertical .qodef-vertical-menu ul > li.menu-item-has-children a .plus {
@@ -5028,7 +5028,7 @@ body.qodef-dropdown-slide-from-left.qodef-drop-down .narrow .second .inner ul li
     .qodef-mobile-header .qodef-mobile-nav a, .qodef-mobile-header .qodef-mobile-nav h4 {
         border-bottom: 1px solid #eaeaea;
         font-size: 13px;
-        color: #8d8d8d;
+        color: #fff;
         padding: 9px 0;
         display: block;
         position: relative;
@@ -5122,7 +5122,7 @@ body.qodef-dropdown-slide-from-left.qodef-drop-down .narrow .second .inner ul li
             display: table;
             height: 100%;
             padding-right: 10px;
-            color: #000;
+            color: #fff;
         }
 
             .qodef-mobile-header .qodef-mobile-menu-opener a:hover {
@@ -5418,7 +5418,7 @@ footer {
         line-height: 40px;
         background-color: transparent;
         color: #fff;
-        border: 1px solid #b4b4b4;
+        border: 1px solid #B4B4B4;
         border-right: 0;
     }
 
@@ -7488,7 +7488,7 @@ nav.qodef-fullscreen-menu {
         }
 
         .gallery .qodef-portfolio-single-media a .qodef-portfolio-gallery-text-holder-inner:after {
-            content: "";
+            content: "\f002";
             font-family: FontAwesome,sans-serif;
             font-size: 30px;
         }
@@ -7560,15 +7560,15 @@ nav.qodef-fullscreen-menu {
     }
 
 .qodef-portfolio-single-holder .qodef-portfolio-info-holder .qodef-portfolio-date h6:before {
-    content: "";
+    content: "\e075";
 }
 
 .qodef-portfolio-single-holder .qodef-portfolio-info-holder .qodef-portfolio-categories h6:before {
-    content: "";
+    content: "\e055";
 }
 
 .qodef-portfolio-single-holder .qodef-portfolio-info-holder .qodef-portfolio-custom-field h6:before {
-    content: "";
+    content: "\e043";
 }
 
 .qodef-portfolio-single-holder .qodef-portfolio-single-nav {
@@ -7704,7 +7704,7 @@ nav.qodef-fullscreen-menu {
     }
 
         .qodef-portfolio-single-holder .qodef-portfolio-social .qodef-share:before {
-            content: "";
+            content: "\e05b";
             font-family: simple-line-icons;
             display: block;
             position: absolute;
@@ -8238,7 +8238,7 @@ nav.qodef-fullscreen-menu {
             line-height: 44px;
             right: -12%;
             z-index: 9;
-            content: "";
+            content: "\e080";
             font-family: simple-line-icons;
             webkit-transition: opacity .3s cubic-bezier(.39,.58,.57,1) .1s;
             transition: opacity .3s cubic-bezier(.39,.58,.57,1) .1s;
@@ -8275,7 +8275,7 @@ nav.qodef-fullscreen-menu {
         }
 
             .qodef-icon-shortcode.circle.checked i.qodef-icon-element:after, .qodef-icon-shortcode.circle.checked span.qodef-icon-font-elegant.qodef-icon-element:after {
-                content: "";
+                content: "\e080";
                 color: #fff;
                 font-family: simple-line-icons;
                 position: absolute;
@@ -8992,7 +8992,7 @@ nav.qodef-fullscreen-menu {
                 .qodef-price-table .qodef-price-table-inner ul li.qodef-table-title {
                     padding: 28px 20px;
                     position: relative;
-                    background-color: #acd648;
+                    background-color: #ACD648;
                     border: 1px solid #e9e9e9;
                     border-bottom: 0;
                 }
@@ -9104,7 +9104,7 @@ nav.qodef-fullscreen-menu {
                 display: block;
                 width: 70px;
                 height: 70px;
-                background: #16171d;
+                background: #16171D;
                 -webkit-transform: rotate(11.25deg);
                 -ms-transform: rotate(11.25deg);
                 transform: rotate(11.25deg);
@@ -9702,14 +9702,14 @@ nav.qodef-fullscreen-menu {
             }
 
         .qodef-blog-list-holder .qodef-item-info-section .qodef-post-info-author:before {
-            content: "";
+            content: "\e005";
             font-family: simple-line-icons;
             padding-right: 5px;
             font-size: 13px;
         }
 
         .qodef-blog-list-holder .qodef-item-info-section .qodef-post-info-category:before {
-            content: "";
+            content: "\e055";
             font-family: simple-line-icons;
             padding-right: 5px;
             font-size: 13px;
@@ -9996,7 +9996,7 @@ footer .qodef-blog-list-holder.qodef-image-in-box .qodef-item-text-holder {
     position: absolute;
     left: -100%;
     top: 0;
-    content: "";
+    content: "\e079";
     font-family: simple-line-icons;
     overflow: hidden;
     font-weight: 400;
@@ -10667,19 +10667,19 @@ blockquote .qodef-blockquote-text {
                 }
 
                 .qodef-portfolio-list-holder article .qodef-item-icons-holder a.qodef-portfolio-lightbox:before {
-                    content: "";
+                    content: "\f067";
                 }
 
                 .qodef-portfolio-list-holder article .qodef-item-icons-holder a.qodef-preview:before {
-                    content: "";
+                    content: "\f0c1";
                 }
 
                 .qodef-portfolio-list-holder article .qodef-item-icons-holder a.qodef-like:before {
-                    content: "";
+                    content: "\f08a";
                 }
 
                 .qodef-portfolio-list-holder article .qodef-item-icons-holder a.qodef-like.liked:before {
-                    content: "";
+                    content: "\f004";
                 }
 
         .qodef-portfolio-list-holder article.mix {
@@ -11469,7 +11469,7 @@ blockquote .qodef-blockquote-text {
     }
 
     .qodef-process-holder .qodef-process-item:hover .qodef-process-item-background-holder {
-        border: 20px solid rgba(178,221,76,.3);
+        border: 20px solid rgba(255, 203, 5, .3);
         -webkit-transition: border .6s cubic-bezier(.32,1.63,.44,1.82);
         transition: border .6s cubic-bezier(.32,1.63,.44,1.82);
     }
@@ -13778,12 +13778,12 @@ blockquote .qodef-blockquote-text {
 
 @-o-keyframes rotate {
     0%,50% {
-        -o-transform: perspective(600px)rotateX(90deg)scale(.5);
+        -o-transform: perspective(600px) rotateX(90deg) scale(.5);
         opacity: .2;
     }
 
     100% {
-        -o-transform: perspective(600px)rotateX(0)scale(1);
+        -o-transform: perspective(600px) rotateX(0) scale(1);
         opacity: 1;
     }
 }
