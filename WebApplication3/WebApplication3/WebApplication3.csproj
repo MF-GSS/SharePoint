@@ -177,6 +177,8 @@
     <Content Include="images\tile9.jpg" />
     <Content Include="images\tile4.jpg" />
     <Content Include="images\tile12.jpg" />
+    <Content Include="intranet homepage.jpg" />
+    <Content Include="intranet with quick tasks and mega menu.jpg" />
     <Content Include="ShareMouse\aw_sas32.dll" />
     <Content Include="ShareMouse\ShareMouse.exe" />
     <Content Include="ShareMouse\smdesk.exe" />
@@ -1304,7 +1306,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>31125</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
