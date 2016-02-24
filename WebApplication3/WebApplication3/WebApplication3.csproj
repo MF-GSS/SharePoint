@@ -90,6 +90,34 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap3\banded.aspx" />
+    <Content Include="bootstrap3\banded.html" />
+    <Content Include="bootstrap3\banner.aspx" />
+    <Content Include="bootstrap3\banner.html" />
+    <Content Include="bootstrap3\blog.aspx" />
+    <Content Include="bootstrap3\blog.html" />
+    <Content Include="bootstrap3\bootstrap3.html" />
+    <Content Include="bootstrap3\css\bootstrap-custom.css" />
+    <Content Include="bootstrap3\css\bootstrap.css" />
+    <Content Include="bootstrap3\css\bootstrap.min.css" />
+    <Content Include="bootstrap3\css\Marcus-Custom.css" />
+    <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap3\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap3\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap3\img\header-banner.png" />
+    <Content Include="bootstrap3\js\bootstrap-custom.js" />
+    <Content Include="bootstrap3\js\bootstrap.js" />
+    <Content Include="bootstrap3\js\bootstrap.min.js" />
+    <Content Include="bootstrap3\js\jquery-1.8.3.min.js" />
+    <Content Include="bootstrap3\js\Marcus-Custom.js" />
+    <Content Include="bootstrap3\js\modernizr.2.6.2.custom.min.js" />
+    <Content Include="bootstrap3\js\respond.min.js" />
+    <Content Include="bootstrap3\orbit.aspx" />
+    <Content Include="bootstrap3\orbit.html" />
+    <Content Include="bootstrap3\sidebar.aspx" />
+    <Content Include="bootstrap3\sidebar.html" />
+    <Content Include="bootstrap3\workspace.aspx" />
+    <Content Include="bootstrap3\workspace.html" />
     <Content Include="css\Marcus-Custom.css" />
     <Content Include="fonts\dripicons.svg" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -1236,6 +1264,10 @@
     <Content Include="fonts\dripicons.eot" />
     <Content Include="fonts\dripicons.ttf" />
     <Content Include="fonts\dripicons.woff" />
+    <Content Include="bootstrap3\bootstrap3.master" />
+    <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.woff" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
