@@ -254,6 +254,16 @@ To build the master page directly from this HTML file, simply edit the page as y
                                     </div>
                                     <!--/navbar-inner-->
                                 </div>
+                                <div id="sideNavContainer">
+                                    <ul>
+                                        <li><a href="#">USACRC Phone Roster</a></li>
+                                        <li><a href="#">USACRC Organization Chart</a></li>
+                                        <li><a href="#">USACRC Public Website</a></li>
+                                        <li><a href="#">Executive Summaries</a></li>
+                                        <li><a href="#">Purchase Request Form</a></li>
+                                        <li><a href="#">USACRC Policies</a></li>
+                                    </ul>
+                                </div>
                                 <!--/#topnavbar-->
                             </div>
                             <!--/col-12-->
@@ -485,17 +495,6 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                     </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qodef-footer-bottom-holder">
-                            <div class="qodef-footer-bottom-holder-inner">
-                                <div class="qodef-column-inner">
-                                    <div class="widget qodef-footer-text widget_text" id="text-2">
-                                        <div class="textwidget">
-                                            Copyright © US Army Combat Readiness Center
                                         </div>
                                     </div>
                                 </div>

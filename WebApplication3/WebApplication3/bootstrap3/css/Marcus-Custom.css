@@ -2,193 +2,182 @@
     font-family: Verdana;
 }
 
-div#ms-designer-ribbon #suiteBarLeft {
-    background: linear-gradient(to right, #111, #333);
+    #s4-workspace {
+    }
+
+        #s4-bodyContainer {
+            padding-bottom: 0 !important;
+        }
+
+            .container {
+            }
+
+            #header {
+                background-image: url('../img/homepage_banner.png');
+                background-size: 100% 110px;
+                background-repeat: no-repeat;
+
+            }
+
+                #header .container .row:last-child {
+                    height: 30px !important;
+                }
+
+                #topnavbar {
+                    background-color: #111;
+                }
+
+                    #topnavbar .nav li.static > .menu-item {
+                        padding-left: 10px;
+                        color: #fff;
+                    }
+
+                        #topnavbar .nav li.static > .menu-item:hover {
+                            color: #ffcb05;
+                            background-color: #666;
+                        }
+
+                        #topnavbar .nav .ms-navedit-editLinksText {
+                            display: none;
+                        }
+
+                        #topnavbar .nav li.static.customButton > .menu-item {
+                            border-width: 1px;
+                            border-style: solid;
+                            margin: 5px 10px;
+                            padding: 12px;
+                            height: 39px;
+                            border-radius: 4px;
+                        }
+
+                            #topnavbar .nav ul.dynamic {
+                                background-color: #eee;
+                                border: 1px solid #ddd;
+                                border-radius: 0 0 4px 4px;
+                                margin-top: 1px;
+                            }
+
+
+                                #topnavbar ul.dynamic > li {
+                                    border-top: 0 !important;
+                                }
+
+                                    ul.dynamic li a {
+                                        padding: 5px 10px;
+                                        border-width: 2px 0;
+                                        border-style: solid;
+                                        border-color: #fff transparent #bbb transparent;
+                                        margin: 0 35px !important;
+                                    }
+
+                                        ul.dynamic li a span {
+                                            color: #000 !important;
+                                        }
+
+                                            ul.dynamic li:hover a span {
+                                                text-decoration: underline;
+                                            }
+
+                            .customButton > .menu-item span {
+                                margin-top: 20px;
+                            }
+
+                        #topnavbar .nav li.static#submitTicketButton > .menu-item {
+                            background: linear-gradient(to bottom right, rgb(94, 198, 97), rgb(42, 168, 34));
+                            border-color: rgb(18, 123, 16) rgb(14, 100, 10) rgb(14, 100, 10) rgb(14, 100, 10);
+                        }
+
+                            #topnavbar .nav li.static#submitTicketButton > .menu-item:hover {
+                                background: linear-gradient(to bottom right, rgb(12, 90, 8), rgb(29, 187, 31));
+                                border-color: rgb(7, 54, 4) rgb(11, 76, 7) rgb(18, 123, 16) rgb(11, 76, 7);
+                            }
+
+
+                        #topnavbar .nav li.static#quickLinksButton > .menu-item {
+                            background: linear-gradient(to bottom right, rgb(221, 102, 99), rgb(200, 44, 39));
+                            border-color: rgb(159, 22, 18) rgb(136, 17, 14) rgb(136, 17, 14) rgb(136, 17, 14);
+                        }
+
+                            #topnavbar .nav li.static#quickLinksButton > .menu-item:hover {
+                                background: linear-gradient(to bottom right, rgb(121, 15, 11), rgb(222, 29, 24));
+                                border-color: rgb(91, 11, 9) rgb(114, 15, 11) rgb(159, 22, 18) rgb(114, 15, 11);
+                            }
+
+                                #sideNavContainer {
+                                    position: absolute;
+                                    right: 35px;
+                                    top: 51px;
+                                    background-color: #eee;
+                                    border: 1px solid #ddd;
+                                    border-radius: 0 0 4px 4px;
+                                    z-index: 99;
+                                }
+
+                                    #sideNavContainer ul {
+                                        list-style: none;
+                                    }
+                                        
+                                        #sideNavContainer ul li {
+                                            padding: 5px 10px;
+                                            border-width: 2px 0;
+                                            border-style: solid;
+                                            border-color: #fff transparent #bbb transparent;
+                                            margin-right: 35px;
+                                        }
+
+                                            #sideNavContainer ul li a {
+                                                color: #000;
+                                            }
+
+                                                #sideNavContainer ul li:hover a {
+                                                    text-decoration: underline;
+                                                    color: #000;
+                                                }
+
+                                                #sideNavContainer ul li a:visited {
+                                                    color: #000;
+                                                }
+
+                                            #sideNavContainer ul li:first-child,
+                                            #ul.dynamic li:first-child a {
+                                                border-top-color: transparent;
+                                            }
+
+                                            #sideNavContainer ul li:last-child,
+                                            ul.dynamic li:last-child a {
+                                                border-bottom-color: transparent;
+                                            }
+                            
+                    #DeltaTopNavigation {
+                    }
+
+            #main {
+            }
+
+                #mainbody {
+                    border: 1px solid #ddd;
+                    min-height: 350px;
+                    border-radius: 4px;
+                    background-color: #eee;
+                }
+
+                    .ms-rtestate-read.ms-rte-wpbox {
+                        padding: 10px;
+                        background-color: #fff !important;
+                        border-radius: 4px;
+                    }
+
+            footer {
+            }
+
+@media screen and (min-width:1200px){
+    #submitTicketButton {
+        position: absolute !important;
+        right: -720px;
+    }
+
+    #quickLinksButton {
+        position: absolute !important;
+        right: -830px;
+    }
 }
-
-    .ms-core-brandingText {
-    }
-
-#s4-bodyContainer {
-    background: linear-gradient(to bottom, #ccc, #fff);
-
-}
-
-#header {
-    background-image: url('../img/header-banner.png');
-    background-size: 100% 100px;
-    background-position-x: top;
-    background-repeat: no-repeat;
-}
-
-    div.headtitle span, div.headtitle a {
-        color: #fff !important;
-    }
-
-    div.searchbox.pull-right {
-        background-color: #fff;
-    }
-
-#topnavbar {
-    background: linear-gradient(to bottom, #555, #111);
-    border: 0;
-    z-index: 0 !important;
-}
-
-    #topnavbar a.static {
-        color: #fff;
-        font-weight: 500;
-        padding: 15px 10px !important;
-    }
-
-        #topnavbar a.static:after {
-            content: '';
-            border-style: solid;
-            border-width: 0 2px;
-            border-color: transparent #666 transparent #ccc;
-            border-radius: 5px;
-            margin-left: 12px;
-            margin-right: -12px;
-        }
-
-        #topnavbar a.static:hover {
-            background-color: #666;
-        }
-
-    li.static.ms-verticalAlignTop.ms-listMenu-editLink.ms-navedit-editArea {
-        display: none !important;
-    }
-    
-        div.customButton {
-            float: right;
-            padding: 5px 10px;
-            margin-top: 7.5px;
-            border-radius: 2px;
-            border-style: solid;
-            border-width: 2px;
-        }
-
-            .customButton a {
-                color: #fff;
-                padding: 5px 20px;
-                border: 2px solid transparent;
-                margin: -10px;
-                text-decoration: none;
-            }
-
-            .customButton#submitTicketButton {
-                background: linear-gradient(to bottom right, rgb(119, 125, 37), rgb(123, 121, 36));
-                border-color: rgb(164, 195, 101) rgb(81, 79, 28) rgb(81, 79, 28) rgb(164, 195, 101);
-                margin-right: 10px;
-            }
-
-                .customButton#submitTicketButton:hover {
-                    background: linear-gradient(to bottom right, rgb(123, 121, 36), rgb(119, 125, 37));
-                    border-color: rgb(81, 79, 28) rgb(164, 195, 101) rgb(164, 195, 101) rgb(81, 79, 28);
-                }
-
-            .customButton#quickLinksButton {
-                background: linear-gradient(to bottom right, rgb(125, 80, 23), rgb(125, 81, 34));
-                border-color: rgb(208, 178, 80) rgb(91, 42, 25) rgb(91, 42, 25) rgb(208, 178, 80);
-                margin-left: 10px;
-            }
-
-                .customButton#quickLinksButton:hover {
-                    background: linear-gradient(to bottom right, rgb(125, 81, 34), rgb(125, 80, 23));
-                    border-color: rgb(91, 42, 25) rgb(208, 178, 80) rgb(208, 178, 80) rgb(91, 42, 25);
-                }
-
-            #bannerButton {
-                margin-top: 110px;
-            }
-
-            #bannerButton .customButton {
-                background: linear-gradient(to bottom right, #666, #333);
-                border-color: #222 #ddd #ddd #222;
-                width: 185px !important;
-                height: 30px;
-                padding-top: 20px;
-                text-align: center;
-                margin-right: -13px;
-            }
-
-                #cbaButton {
-                    padding-top: 10px !important;
-                    height: 40px !important;
-                }
-
-                #bannerButton .customButton:hover {
-                    background: linear-gradient(to bottom right, #333, #666);
-                    border-color: #ddd #222 #222 #ddd;
-                }
-
-            .customButton:hover a {
-                text-decoration: none;
-                color: #ffcb05;
-            }
-
-        ul.dynamic {
-            margin-top: -10px !important;
-            border-radius: 5px;
-            opacity: 0.9;
-            color: #000;
-            z-index: 50 !important;
-        }
-
-    #main .container {
-        border: 2px solid #aaa;
-        border-radius: 5px;
-        background-color: #fff;
-        max-width: 1170px;
-        margin: 0 270px;
-        padding: 15px;
-    }
-
-        #buttonSet {
-            margin-top: -105px;
-            float: right;
-        }
-
-            #quickLinksButton {
-                position: relative;
-            }
-
-            #sideNavContainer {
-                position: absolute;
-                top: -37px;
-                right: 15px;
-                margin-top: 40px;
-                border: 2px solid #ddd;
-                border-radius: 5px;
-                background-color: #eee;
-                width: 210px !important;
-                height: 155px !important;
-            }
-
-                #sideNavContainer ul {
-                    list-style: none;
-                    padding-left: 0;
-                }
-
-        #rotator {
-            min-height: 300px;
-            padding: 19px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            width: 820px;
-            margin: -10px -130px 0 -280px;
-        }
-
-        #announcements {
-            min-height: 350px;
-            padding: 19px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            width: 820px;
-            margin: -30px -130px -30px -280px;
-        }
-
-        #sideNavBox.col-md-3 div#DeltaPlaceHolderLeftNavBar {
-            border-radius: 5px !important;
-            display: none;
-        }

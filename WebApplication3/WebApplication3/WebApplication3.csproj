@@ -106,6 +106,7 @@
     <Content Include="bootstrap3\img\glyphicons-halflings-white.png" />
     <Content Include="bootstrap3\img\glyphicons-halflings.png" />
     <Content Include="bootstrap3\img\header-banner.png" />
+    <Content Include="bootstrap3\img\homepage_banner.png" />
     <Content Include="bootstrap3\img\Safety_Crest_with_Army_fw.png" />
     <Content Include="bootstrap3\js\bootstrap-custom.js" />
     <Content Include="bootstrap3\js\bootstrap.js" />
