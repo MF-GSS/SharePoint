@@ -2,175 +2,328 @@
     font-family: Verdana;
 }
 
-    #s4-workspace {
+#suiteBarLeft {
+    background-color: #333 !important;
+}
+
+#suiteBarRight {
+    background-color: #eee !important;
+}
+
+#s4-workspace {
+}
+
+#s4-bodyContainer {
+    padding-bottom: 0 !important;
+}
+
+.container {
+}
+
+#header .container {
+    background-image: url('../img/homepage_banner.png');
+    background-size: 100% 110px;
+    background-repeat: no-repeat;
+}
+
+    .headtitle.pull-left span,
+    .headtitle.pull-left a {
+        color: #fff !important;
     }
 
-        #s4-bodyContainer {
-            padding-bottom: 0 !important;
+    .searchbox.pull-right {
+        background-color: #fff !important;
+    }
+
+    #header .container .row:last-child div.col-sm-12 {
+        padding: 0;
+    }
+
+#topnavbar {
+    background-color: #333;
+    border-color: transparent;
+}
+
+    #topnavbar .nav li.static > .menu-item {
+        padding-left: 10px;
+        color: #fff;
+    }
+
+        #topnavbar .nav li.static > .menu-item:hover {
+            color: #ffcb05;
+            background-color: #666;
         }
 
-            .container {
+    #topnavbar .nav .ms-navedit-editLinksText {
+        display: none;
+    }
+
+    #topnavbar .nav li.static.customButton > .menu-item {
+        border-width: 1px;
+        border-style: solid;
+        margin: 5px 10px;
+        padding: 12px;
+        height: 39px;
+        border-radius: 4px;
+    }
+
+    #topnavbar .nav ul.dynamic {
+        background-color: #eee;
+        border: 1px solid #ddd;
+        border-radius: 0 0 4px 4px;
+        margin-top: 1px;
+        box-shadow: 2px 2px 10px #333;
+    }
+
+
+    #topnavbar ul.dynamic > li {
+        border-top: 0 !important;
+    }
+
+ul.dynamic li a {
+    padding: 5px 10px;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #fff transparent #bbb transparent;
+    margin: 0 35px !important;
+}
+
+    ul.dynamic li a span {
+        color: #000 !important;
+    }
+    
+.customButton > .menu-item span {
+    margin-top: 20px;
+}
+
+#topnavbar .nav li.static#submitTicketButton > .menu-item {
+    background: linear-gradient(to bottom right, rgb(94, 198, 97), rgb(42, 168, 34));
+    border-color: rgb(18, 123, 16) rgb(14, 100, 10) rgb(14, 100, 10) rgb(14, 100, 10);
+}
+
+    #topnavbar .nav li.static#submitTicketButton > .menu-item:hover {
+        background: linear-gradient(to bottom right, rgb(12, 90, 8), rgb(29, 187, 31));
+        border-color: rgb(7, 54, 4) rgb(11, 76, 7) rgb(18, 123, 16) rgb(11, 76, 7);
+    }
+    
+#topnavbar .nav li.static#quickLinksButton > .menu-item {
+    background: linear-gradient(to bottom right, rgb(221, 102, 99), rgb(200, 44, 39));
+    border-color: rgb(159, 22, 18) rgb(136, 17, 14) rgb(136, 17, 14) rgb(136, 17, 14);
+}
+
+    #topnavbar .nav li.static#quickLinksButton > .menu-item:hover {
+        background: linear-gradient(to bottom right, rgb(121, 15, 11), rgb(222, 29, 24));
+        border-color: rgb(91, 11, 9) rgb(114, 15, 11) rgb(159, 22, 18) rgb(114, 15, 11);
+    }
+
+#sideNavContainer {
+    position: absolute;
+    right: 35px;
+    top: 51px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+    z-index: 99;
+        box-shadow: 2px 2px 10px #333;
+}
+
+    #sideNavContainer ul {
+        list-style: none;
+    }
+
+        #sideNavContainer ul li {
+            padding: 5px 10px;
+            border-width: 2px 0;
+            border-style: solid;
+            border-color: #fff transparent #bbb transparent;
+            margin-right: 35px;
+        }
+
+            #sideNavContainer ul li a {
+                color: #000;
             }
 
-            #header {
-                background-image: url('../img/homepage_banner.png');
-                background-size: 100% 110px;
-                background-repeat: no-repeat;
-
+            #sideNavContainer ul li a:visited {
+                color: #000;
             }
 
-                #header .container .row:last-child {
-                    height: 30px !important;
+            #sideNavContainer ul li:first-child,
+            #ul.dynamic li:first-child a {
+                border-top-color: transparent;
+            }
+
+            #sideNavContainer ul li:last-child,
+            ul.dynamic li:last-child a {
+                border-bottom-color: transparent;
+            }
+
+#DeltaTopNavigation {
+}
+
+#main {
+}
+
+#mainbody {
+    border: 1px solid #ddd;
+    min-height: 350px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.ms-rtestate-read.ms-rte-wpbox {
+    padding: 10px;
+    background-color: #fff !important;
+    border-radius: 4px;
+}
+
+#footer .container {
+    padding: 0 !important;
+}
+
+.qodef-four-columns {
+    width: 100%;
+}
+
+    .qodef-four-columns .qodef-column {
+        width: 25%;
+        float: left;
+    }
+
+footer, footer .qodef-container-inner, footer .qodef-footer-inner, footer .qodef-footer-top-holder {
+    position: relative;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    footer a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+        footer a:hover {
+            color: #ffcb05;
+        }
+
+        footer a:visited {
+            color: #a2a2a2;
+        }
+
+    footer .qodef-footer-top-holder {
+        display: block;
+        background-color: #212121;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    footer .qodef-footer-top.qodef-footer-top-full {
+        padding: 25px 15px;
+    }
+
+    footer .qodef-footer-top .qodef-column {
+        box-sizing: border-box;
+        border-right: 1px solid #3b3b3b;
+        padding: 0 20px;
+    }
+
+        footer .qodef-footer-top .qodef-column:first-child {
+            padding-left: 70px;
+        }
+
+        footer .qodef-footer-top .qodef-column:last-child {
+            border-right: 0;
+            padding-right: 85px;
+        }
+
+    footer .widget {
+        margin-bottom: 10px;
+    }
+
+        footer .widget .qodef-footer-widget-title, footer .widget h4 {
+            color: #fff;
+            margin-bottom: 25px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        footer .widget ul {
+            list-style: none;
+        }
+
+        footer .widget .textwidget {
+            color: #a2a2a2;
+        }
+
+            .textwidget a {
+                color: #fff !important;
+            }
+
+                .textwidget a:hover {
+                    color: #ffcb05 !important;
                 }
 
-                #topnavbar {
-                    background-color: #111;
-                }
+    footer .qodef-footer-top-holder .widget.widget_recent_entries li {
+        border-bottom: 1px dotted #404040;
+    }
 
-                    #topnavbar .nav li.static > .menu-item {
-                        padding-left: 10px;
-                        color: #fff;
-                    }
+        footer .qodef-footer-top-holder .widget.widget_recent_entries li a {
+            color: #a2a2a2;
+            padding: 6px 0;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+        }
 
-                        #topnavbar .nav li.static > .menu-item:hover {
-                            color: #ffcb05;
-                            background-color: #666;
-                        }
-
-                        #topnavbar .nav .ms-navedit-editLinksText {
-                            display: none;
-                        }
-
-                        #topnavbar .nav li.static.customButton > .menu-item {
-                            border-width: 1px;
-                            border-style: solid;
-                            margin: 5px 10px;
-                            padding: 12px;
-                            height: 39px;
-                            border-radius: 4px;
-                        }
-
-                            #topnavbar .nav ul.dynamic {
-                                background-color: #eee;
-                                border: 1px solid #ddd;
-                                border-radius: 0 0 4px 4px;
-                                margin-top: 1px;
-                            }
-
-
-                                #topnavbar ul.dynamic > li {
-                                    border-top: 0 !important;
-                                }
-
-                                    ul.dynamic li a {
-                                        padding: 5px 10px;
-                                        border-width: 2px 0;
-                                        border-style: solid;
-                                        border-color: #fff transparent #bbb transparent;
-                                        margin: 0 35px !important;
-                                    }
-
-                                        ul.dynamic li a span {
-                                            color: #000 !important;
-                                        }
-
-                                            ul.dynamic li:hover a span {
-                                                text-decoration: underline;
-                                            }
-
-                            .customButton > .menu-item span {
-                                margin-top: 20px;
-                            }
-
-                        #topnavbar .nav li.static#submitTicketButton > .menu-item {
-                            background: linear-gradient(to bottom right, rgb(94, 198, 97), rgb(42, 168, 34));
-                            border-color: rgb(18, 123, 16) rgb(14, 100, 10) rgb(14, 100, 10) rgb(14, 100, 10);
-                        }
-
-                            #topnavbar .nav li.static#submitTicketButton > .menu-item:hover {
-                                background: linear-gradient(to bottom right, rgb(12, 90, 8), rgb(29, 187, 31));
-                                border-color: rgb(7, 54, 4) rgb(11, 76, 7) rgb(18, 123, 16) rgb(11, 76, 7);
-                            }
-
-
-                        #topnavbar .nav li.static#quickLinksButton > .menu-item {
-                            background: linear-gradient(to bottom right, rgb(221, 102, 99), rgb(200, 44, 39));
-                            border-color: rgb(159, 22, 18) rgb(136, 17, 14) rgb(136, 17, 14) rgb(136, 17, 14);
-                        }
-
-                            #topnavbar .nav li.static#quickLinksButton > .menu-item:hover {
-                                background: linear-gradient(to bottom right, rgb(121, 15, 11), rgb(222, 29, 24));
-                                border-color: rgb(91, 11, 9) rgb(114, 15, 11) rgb(159, 22, 18) rgb(114, 15, 11);
-                            }
-
-                                #sideNavContainer {
-                                    position: absolute;
-                                    right: 35px;
-                                    top: 51px;
-                                    background-color: #eee;
-                                    border: 1px solid #ddd;
-                                    border-radius: 0 0 4px 4px;
-                                    z-index: 99;
-                                }
-
-                                    #sideNavContainer ul {
-                                        list-style: none;
-                                    }
-                                        
-                                        #sideNavContainer ul li {
-                                            padding: 5px 10px;
-                                            border-width: 2px 0;
-                                            border-style: solid;
-                                            border-color: #fff transparent #bbb transparent;
-                                            margin-right: 35px;
-                                        }
-
-                                            #sideNavContainer ul li a {
-                                                color: #000;
-                                            }
-
-                                                #sideNavContainer ul li:hover a {
-                                                    text-decoration: underline;
-                                                    color: #000;
-                                                }
-
-                                                #sideNavContainer ul li a:visited {
-                                                    color: #000;
-                                                }
-
-                                            #sideNavContainer ul li:first-child,
-                                            #ul.dynamic li:first-child a {
-                                                border-top-color: transparent;
-                                            }
-
-                                            #sideNavContainer ul li:last-child,
-                                            ul.dynamic li:last-child a {
-                                                border-bottom-color: transparent;
-                                            }
-                            
-                    #DeltaTopNavigation {
-                    }
-
-            #main {
+            ul.dynamic li a:before,
+            #sideNavContainer a:before,
+            footer .qodef-footer-top-holder .widget.widget_recent_entries li a:before {
+                content: "";
+                display: inline-block;
+                height: 48%;
+                position: absolute;
+                left: -10px;
+                border-left: 3px solid #ffcb05;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: opacity .15s ease-out;
+                opacity: 0;
             }
 
-                #mainbody {
-                    border: 1px solid #ddd;
-                    min-height: 350px;
-                    border-radius: 4px;
-                    background-color: #eee;
+                ul.dynamic li a:before,
+                #sideNavContainer a:before {
+                    left: 30px;
                 }
 
-                    .ms-rtestate-read.ms-rte-wpbox {
-                        padding: 10px;
-                        background-color: #fff !important;
-                        border-radius: 4px;
+                    #sideNavContainer a:before {
+                        max-height: 20px;
+                        top: auto;
+                        margin-top: 10px;
                     }
 
-            footer {
+            ul.dynamic li:hover span,
+            #sideNavContainer li:hover a {
+                color: #aaa !important;
+                text-decoration: none !important;
             }
 
-@media screen and (min-width:1200px){
+            footer .qodef-footer-top-holder .widget.widget_recent_entries li a:hover {
+                color: #fff;
+            }
+
+                ul.dynamic li a:hover:before,
+                #sideNavContainer li:hover a:before,
+                footer .qodef-footer-top-holder .widget.widget_recent_entries li a:hover:before {
+                    opacity: 1;
+                }
+
+@media screen and (min-width:1200px) {
     #submitTicketButton {
         position: absolute !important;
         right: -720px;

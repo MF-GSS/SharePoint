@@ -1,4 +1,6 @@
 ﻿$(document).ready(function () {
+    $('div.ms-core-brandingText').html($('div.ms-core-brandingText').html().replace('SharePoint', 'US Army Combat Readiness Center'));
+
     $('div#DeltaTopNavigation li.static span.menu-item-text').each(function () {
         var text = $(this).html();
         if (text === 'Quick Links') {

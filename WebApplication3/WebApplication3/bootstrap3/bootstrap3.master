@@ -118,7 +118,6 @@ To build the master page directly from this HTML file, simply edit the page as y
         //]]></script>
         
         
-        <link href="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/css/modules.min.css" rel="stylesheet" />
         <link href="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/css/Marcus-Custom.css" rel="stylesheet" />
         <script src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/js/Marcus-Custom.js">//<![CDATA[
         //]]></script>
@@ -154,11 +153,11 @@ To build the master page directly from this HTML file, simply edit the page as y
                                     
                                     
                                     <SharePoint:AjaxDelta id="DeltaSiteLogo" BlockElement="true" runat="server" class="pull-left">
-                                        <SharePoint:SPLinkButton runat="server" CssClass="ms-siteicon-a" ID="x36d5bee949a7480783b3afc048c15598" NavigateUrl="~sitecollection/">
-                                            <SharePoint:SiteLogoImage name="onetidHeadbnnr0" runat="server" CssClass="ms-siteicon-img" ID="x74bbee6762f840edad4fe46f496d8c78" LogoImageUrl="/_layouts/15/images/siteIcon.png">
-                                                
-                                            </SharePoint:SiteLogoImage>
-                                        </SharePoint:SPLinkButton>
+                                    <SharePoint:SPLinkButton runat="server" CssClass="ms-siteicon-a" ID="x36d5bee949a7480783b3afc048c15598" NavigateUrl="~sitecollection/">
+                                    <SharePoint:SiteLogoImage name="onetidHeadbnnr0" runat="server" CssClass="ms-siteicon-img" ID="x74bbee6762f840edad4fe46f496d8c78" LogoImageUrl="/_layouts/15/images/siteIcon.png">
+                                    
+                                    </SharePoint:SiteLogoImage>
+                                    </SharePoint:SPLinkButton>
                                     </SharePoint:AjaxDelta>
                                     
                                     <!--page title-->
@@ -205,7 +204,7 @@ To build the master page directly from this HTML file, simply edit the page as y
                                         <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
                                         
                                         <SearchWC:SearchBoxScriptWebPart UseSiteCollectionSettings="true" EmitStyleReference="false" ShowQuerySuggestions="false" ChromeType="None" UseSharedSettings="true" TryInplaceQuery="false" ServerInitialRender="true" runat="server">
-                                            
+                                        
                                         </SearchWC:SearchBoxScriptWebPart>
                                         </asp:ContentPlaceHolder>
                                         
@@ -234,18 +233,18 @@ To build the master page directly from this HTML file, simply edit the page as y
                                             
                                             
                                             <SharePoint:AjaxDelta runat="server" CssClass="ms-core-navigation ms-dialogHidden" BlockElement="True" ID="DeltaTopNavigation">
-                                                <SharePoint:DelegateControl runat="server" Id="topNavigationDelegate" ControlId="TopNavigationDataSource">
-                                                    <Template_Controls>
-                                                        <asp:SiteMapDataSource ShowStartingNode="True" SiteMapProvider="SPNavigationProvider" ID="topSiteMap" runat="server" StartingNodeUrl="sid:1002">
-                                                        </asp:SiteMapDataSource>
-                                                    </Template_Controls>
-                                                </SharePoint:DelegateControl>
-                                                <a name="startNavigation">
-                                                </a>
-                                                <asp:ContentPlaceHolder ID="PlaceHolderTopNavBar" runat="server">
-                                                    <SharePoint:AspMenu runat="server" UseSeparateCss="false" AdjustForShowStartingNode="True" StaticDisplayLevels="2" AccessKey="1" SkipLinkText="" CssClass="nav-container" EnableViewState="False" MaximumDynamicDisplayLevels="3" UseSimpleRendering="True" DataSourceID="topSiteMap" Orientation="Horizontal" ID="TopNavigationMenu">
-                                                    </SharePoint:AspMenu>
-                                                </asp:ContentPlaceHolder>
+                                            <SharePoint:DelegateControl runat="server" Id="topNavigationDelegate" ControlId="TopNavigationDataSource">
+                                            <Template_Controls>
+                                            <asp:SiteMapDataSource ShowStartingNode="True" SiteMapProvider="SPNavigationProvider" ID="topSiteMap" runat="server" StartingNodeUrl="sid:1002">
+                                            </asp:SiteMapDataSource>
+                                            </Template_Controls>
+                                            </SharePoint:DelegateControl>
+                                            <a name="startNavigation">
+                                            </a>
+                                            <asp:ContentPlaceHolder ID="PlaceHolderTopNavBar" runat="server">
+                                            <SharePoint:AspMenu runat="server" UseSeparateCss="false" AdjustForShowStartingNode="True" StaticDisplayLevels="2" AccessKey="1" SkipLinkText="" CssClass="nav-container" EnableViewState="False" MaximumDynamicDisplayLevels="3" UseSimpleRendering="True" DataSourceID="topSiteMap" Orientation="Horizontal" ID="TopNavigationMenu">
+                                            </SharePoint:AspMenu>
+                                            </asp:ContentPlaceHolder>
                                             </SharePoint:AjaxDelta>
                                             
                                             <!--end nav snippet-->
@@ -283,47 +282,47 @@ To build the master page directly from this HTML file, simply edit the page as y
                             <div id="sideNavBox" class="col-md-3 sidebar-nav ms-dialogHidden ms-forceWrap ms-noList">
                                 
                                 <SharePoint:AjaxDelta ID="DeltaPlaceHolderLeftNavBar" BlockElement="true" CssClass="ms-core-navigation well" runat="server">
-                                    <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBar" runat="server">
-                                        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarTop" runat="server">
-                                        </asp:ContentPlaceHolder>
-                                        <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchTop" runat="server">
-                                        </asp:ContentPlaceHolder>
-                                        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarDataSource" runat="server">
-                                        </asp:ContentPlaceHolder>
-                                        <asp:ContentPlaceHolder ID="PlaceHolderCalendarNavigator" runat="server">
-                                        </asp:ContentPlaceHolder>
-                                        <asp:ContentPlaceHolder ID="PlaceHolderLeftActions" runat="server">
-                                        </asp:ContentPlaceHolder>
-                                        <SharePoint:SPNavigationManager ID="QuickLaunchNavigationManager" runat="server" QuickLaunchControlId="v4QuickLaunchMenu" ContainedControl="QuickLaunch" EnableViewState="false">
-                                            <SharePoint:DelegateControl runat="server" ControlId="QuickLaunchDataSource">
-                                                <Template_Controls>
-                                                    <PublishingNavigation:PortalSiteMapDataSource runat="server" ID="SiteMapDS" SiteMapProvider="CurrentNavigation" EnableViewState="false" StartFromCurrentNode="true" ShowStartingNode="false" TrimNonCurrentTypes="Heading">
-                                                    </PublishingNavigation:PortalSiteMapDataSource>
-                                                </Template_Controls>
-                                            </SharePoint:DelegateControl>
-                                            <SharePoint:AspMenu ID="V4QuickLaunchMenu" runat="server" EnableViewState="false" DataSourceId="QuickLaunchSiteMap" UseSimpleRendering="true" Orientation="Vertical" StaticDisplayLevels="3" AdjustForShowStartingNode="true" MaximumDynamicDisplayLevels="2" SkipLinkText="">
-                                            </SharePoint:AspMenu>
-                                        </SharePoint:SPNavigationManager>
-                                        <SharePoint:SPNavigationManager ID="TreeViewNavigationManagerV4" runat="server" ContainedControl="TreeView" CssClass="ms-tv-box">
-                                            <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/{0}/viewlsts.aspx" ID="idNavLinkSiteHierarchyV4" Text="&lt;%$Resources:wss,treeview_header%&gt;" accesskey="&lt;%$Resources:wss,quiklnch_allcontent_AK%&gt;" CssClass="ms-tv-header">
-                                            </SharePoint:SPLinkButton>
-                                            <SharePoint:DelegateControl runat="server" ControlId="TreeViewAndDataSource">
-                                                <Template_Controls>
-                                                    <SharePoint:SPHierarchyDataSourceControl runat="server" ID="TreeViewDataSourceV4" RootContextObject="Web" IncludeDiscussionFolders="true">
-                                                    </SharePoint:SPHierarchyDataSourceControl>
-                                                    <SharePoint:SPRememberScroll runat="server" ID="TreeViewRememberScrollV4" onscroll="javascript:_spRecordScrollPositions(this);" style="overflow: auto;">
-                                                        <SharePoint:SPTreeView ID="WebTreeViewV4" runat="server" ShowLines="false" DataSourceId="TreeViewDataSourceV4" ExpandDepth="0" SelectedNodeStyle-CssClass="ms-tv-selected" NodeStyle-CssClass="ms-tv-item" SkipLinkText="" NodeIndent="12" ExpandImageUrl="/{0}/images/tvclosed.png" ExpandImageUrlRtl="/{0}/images/tvclosedrtl.png" CollapseImageUrl="/{0}/images/tvopen.png" CollapseImageUrlRtl="/{0}/images/tvopenrtl.png" NoExpandImageUrl="/{0}/images/tvblank.gif">
-                                                        </SharePoint:SPTreeView>
-                                                    </SharePoint:SPRememberScroll>
-                                                </Template_Controls>
-                                            </SharePoint:DelegateControl>
-                                        </SharePoint:SPNavigationManager>
-                                        <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchBottom" runat="server">
-                                            <hr />
-                                            <SharePoint:ClusteredSPLinkButton ID="idNavLinkViewAllV4" runat="server" Permissions="ViewFormPages" NavigateUrl="~site/{0}/viewlsts.aspx" Text="&lt;%$Resources:wss,quiklnch_allcontent_short%&gt;" accesskey="&lt;%$Resources:wss,quiklnch_allcontent_AK%&gt;" CssClass="ms-core-listMenu-item">
-                                            </SharePoint:ClusteredSPLinkButton>
-                                        </asp:ContentPlaceHolder>
-                                    </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBar" runat="server">
+                                <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarTop" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchTop" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarDataSource" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="PlaceHolderCalendarNavigator" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="PlaceHolderLeftActions" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <SharePoint:SPNavigationManager ID="QuickLaunchNavigationManager" runat="server" QuickLaunchControlId="v4QuickLaunchMenu" ContainedControl="QuickLaunch" EnableViewState="false">
+                                <SharePoint:DelegateControl runat="server" ControlId="QuickLaunchDataSource">
+                                <Template_Controls>
+                                <PublishingNavigation:PortalSiteMapDataSource runat="server" ID="SiteMapDS" SiteMapProvider="CurrentNavigation" EnableViewState="false" StartFromCurrentNode="true" ShowStartingNode="false" TrimNonCurrentTypes="Heading">
+                                </PublishingNavigation:PortalSiteMapDataSource>
+                                </Template_Controls>
+                                </SharePoint:DelegateControl>
+                                <SharePoint:AspMenu ID="V4QuickLaunchMenu" runat="server" EnableViewState="false" DataSourceId="QuickLaunchSiteMap" UseSimpleRendering="true" Orientation="Vertical" StaticDisplayLevels="3" AdjustForShowStartingNode="true" MaximumDynamicDisplayLevels="2" SkipLinkText="">
+                                </SharePoint:AspMenu>
+                                </SharePoint:SPNavigationManager>
+                                <SharePoint:SPNavigationManager ID="TreeViewNavigationManagerV4" runat="server" ContainedControl="TreeView" CssClass="ms-tv-box">
+                                <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/{0}/viewlsts.aspx" ID="idNavLinkSiteHierarchyV4" Text="&lt;%$Resources:wss,treeview_header%&gt;" accesskey="&lt;%$Resources:wss,quiklnch_allcontent_AK%&gt;" CssClass="ms-tv-header">
+                                </SharePoint:SPLinkButton>
+                                <SharePoint:DelegateControl runat="server" ControlId="TreeViewAndDataSource">
+                                <Template_Controls>
+                                <SharePoint:SPHierarchyDataSourceControl runat="server" ID="TreeViewDataSourceV4" RootContextObject="Web" IncludeDiscussionFolders="true">
+                                </SharePoint:SPHierarchyDataSourceControl>
+                                <SharePoint:SPRememberScroll runat="server" ID="TreeViewRememberScrollV4" onscroll="javascript:_spRecordScrollPositions(this);" style="overflow: auto;">
+                                <SharePoint:SPTreeView ID="WebTreeViewV4" runat="server" ShowLines="false" DataSourceId="TreeViewDataSourceV4" ExpandDepth="0" SelectedNodeStyle-CssClass="ms-tv-selected" NodeStyle-CssClass="ms-tv-item" SkipLinkText="" NodeIndent="12" ExpandImageUrl="/{0}/images/tvclosed.png" ExpandImageUrlRtl="/{0}/images/tvclosedrtl.png" CollapseImageUrl="/{0}/images/tvopen.png" CollapseImageUrlRtl="/{0}/images/tvopenrtl.png" NoExpandImageUrl="/{0}/images/tvblank.gif">
+                                </SharePoint:SPTreeView>
+                                </SharePoint:SPRememberScroll>
+                                </Template_Controls>
+                                </SharePoint:DelegateControl>
+                                </SharePoint:SPNavigationManager>
+                                <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchBottom" runat="server">
+                                <hr />
+                                <SharePoint:ClusteredSPLinkButton ID="idNavLinkViewAllV4" runat="server" Permissions="ViewFormPages" NavigateUrl="~site/{0}/viewlsts.aspx" Text="&lt;%$Resources:wss,quiklnch_allcontent_short%&gt;" accesskey="&lt;%$Resources:wss,quiklnch_allcontent_AK%&gt;" CssClass="ms-core-listMenu-item">
+                                </SharePoint:ClusteredSPLinkButton>
+                                </asp:ContentPlaceHolder>
+                                </asp:ContentPlaceHolder>
                                 </SharePoint:AjaxDelta>
                             </div>
                             
@@ -331,8 +330,8 @@ To build the master page directly from this HTML file, simply edit the page as y
                                 
                                 
                                 <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">
-                                    <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
-                                    </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                                </asp:ContentPlaceHolder>
                                 </SharePoint:AjaxDelta>
                                 
                             </div>
@@ -348,160 +347,164 @@ To build the master page directly from this HTML file, simply edit the page as y
                     <!--/container-->
                 </div>
                 <!--/#main-->
-                <footer>
-                    <div class="qodef-footer-inner clearfix">
-                        <div class="qodef-footer-top-holder">
-                            <div class="qodef-footer-top  qodef-footer-top-full">
-                                <div class="qodef-four-columns clearfix">
-                                    <div class="qodef-four-columns-inner">
-                                        <div class="qodef-column">
-                                            <div class="qodef-column-inner">
-                                                <div class="widget qodef-footer-column-1 widget_text" id="text-3">
-                                                    <div class="textwidget">
-                                                        <div class="vc_empty_space" style="height: 24px;">
-                                                            <span class="vc_empty_space_inner"></span>
+                <div id="footer">
+                    <div class="container">
+                        <footer>
+                            <div class="qodef-footer-inner clearfix">
+                                <div class="qodef-footer-top-holder">
+                                    <div class="qodef-footer-top  qodef-footer-top-full">
+                                        <div class="qodef-four-columns clearfix">
+                                            <div class="qodef-four-columns-inner">
+                                                <div class="qodef-column">
+                                                    <div class="qodef-column-inner">
+                                                        <div class="widget qodef-footer-column-1 widget_text" id="text-3">
+                                                            <div class="textwidget">
+                                                                <div class="vc_empty_space" style="height: 24px;">
+                                                                    <span class="vc_empty_space_inner"></span>
+                                                                </div>
+                                                                <a href="#">
+                                                                    <img alt="logo" src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/img/Safety_Crest_with_Army_fw.png" style="width: 150px;" />
+                                                                </a>
+                                                                <div class="vc_empty_space" style="height: 24px;">
+                                                                    <span class="vc_empty_space_inner"></span>
+                                                                </div>
+                                                                <p>US Army Combat Readiness Center</p>
+                                                                <br />
+                                                                <p>Building 4905</p>
+                                                                <p>255-2286</p>
+                                                                <p>
+                                                                    <a href="#">Email Us</a>
+                                                                </p>
+                                                                <p>
+                                                                    <a href="#">Submit a Ticket</a>
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                        <a href="#">
-                                                            <img alt="logo" src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/img/Safety_Crest_with_Army_fw.png" style="width: 150px;" />
-                                                        </a>
-                                                        <div class="vc_empty_space" style="height: 24px;">
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                        <p>US Army Combat Readiness Center</p>
-                                                        <br />
-                                                        <p>Building 4905</p>
-                                                        <p>255-2286</p>
-                                                        <p>
-                                                            <a href="#">Email Us</a>
-                                                        </p>
-                                                        <p>
-                                                            <a href="#">Submit a Ticket</a>
-                                                        </p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-column">
-                                            <div class="qodef-column-inner">
-                                                <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-2">
-                                                    <h4 class="qodef-footer-widget-title">Quick Links</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#news-app-deliveres-fresh-ideas/">
-                                                                USACRC Public Website
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#dave-gardner/">ExSums <span style="color: white;">(Archive)</span></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#tech-conference-2016/">
-                                                                Purchase Request Site
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#interview-with-ceo-of-big-startup/">
-                                                                Submit a Suggestion
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#apps-update-reaches-more-customers/">
-                                                                Resolved Items
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#new-trends-in-responsive-design/">
-                                                                Outlook Web Access
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                <div class="qodef-column">
+                                                    <div class="qodef-column-inner">
+                                                        <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-2">
+                                                            <h4 class="qodef-footer-widget-title">Quick Links</h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#news-app-deliveres-fresh-ideas/">
+                                                                        USACRC Public Website
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#dave-gardner/">ExSums <span style="color: white;">(Archive)</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#tech-conference-2016/">
+                                                                        Purchase Request Site
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#interview-with-ceo-of-big-startup/">
+                                                                        Submit a Suggestion
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#apps-update-reaches-more-customers/">
+                                                                        Resolved Items
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#new-trends-in-responsive-design/">
+                                                                        Outlook Web Access
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-column">
-                                            <div class="qodef-column-inner">
-                                                <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-3">
-                                                    <h4 class="qodef-footer-widget-title">What's Hot, What's New</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#news-app-deliveres-fresh-ideas/">
-                                                                Internal Response to an Active Shooter
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#news-app-deliveres-fresh-ideas/">
-                                                                USACRC Form 5A
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#dave-gardner/">
-                                                                Pentagon DSN Numbers
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#interview-with-ceo-of-big-startup/">
-                                                                FY 16 Federal Holiday &amp; DONSA Schedule
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#apps-update-reaches-more-customers/">
-                                                                USACRC Website Content Management SOP
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#new-trends-in-responsive-design/">
-                                                                Data Business Rules
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                <div class="qodef-column">
+                                                    <div class="qodef-column-inner">
+                                                        <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-3">
+                                                            <h4 class="qodef-footer-widget-title">What's Hot, What's New</h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#news-app-deliveres-fresh-ideas/">
+                                                                        Internal Response to an Active Shooter
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#news-app-deliveres-fresh-ideas/">
+                                                                        USACRC Form 5A
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#dave-gardner/">
+                                                                        Pentagon DSN Numbers
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#interview-with-ceo-of-big-startup/">
+                                                                        FY 16 Federal Holiday &amp; DONSA Schedule
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#apps-update-reaches-more-customers/">
+                                                                        USACRC Website Content Management SOP
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#new-trends-in-responsive-design/">
+                                                                        Data Business Rules
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="qodef-column">
-                                            <div class="qodef-column-inner">
-                                                <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-3">
-                                                    <h4 class="qodef-footer-widget-title">IT Tips &amp; Training</h4>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#dave-gardner/">
-                                                                LOEWG Slides
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#tech-conference-2016/">
-                                                                USACRC AUP
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#tech-conference-2016/">
-                                                                USACRC Privileged AUP
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#interview-with-ceo-of-big-startup/">
-                                                                Blackberry AUP
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#apps-update-reaches-more-customers/">
-                                                                USACRC Website Short Links
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#new-trends-in-responsive-design/">
-                                                                USACRC BitLocker Guidance
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                <div class="qodef-column">
+                                                    <div class="qodef-column-inner">
+                                                        <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-3">
+                                                            <h4 class="qodef-footer-widget-title">IT Tips &amp; Training</h4>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#dave-gardner/">
+                                                                        LOEWG Slides
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#tech-conference-2016/">
+                                                                        USACRC AUP
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#tech-conference-2016/">
+                                                                        USACRC Privileged AUP
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#interview-with-ceo-of-big-startup/">
+                                                                        Blackberry AUP
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#apps-update-reaches-more-customers/">
+                                                                        USACRC Website Short Links
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#new-trends-in-responsive-design/">
+                                                                        USACRC BitLocker Guidance
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </footer>
                     </div>
-                </footer>
+                </div>
                 <!--/mastfooter-->
             </div>
             <!--/body container-->
