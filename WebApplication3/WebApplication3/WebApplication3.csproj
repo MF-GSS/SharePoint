@@ -101,7 +101,6 @@
     <Content Include="bootstrap3\css\bootstrap.css" />
     <Content Include="bootstrap3\css\bootstrap.min.css" />
     <Content Include="bootstrap3\css\Marcus-Custom.css" />
-    <Content Include="bootstrap3\css\modules.min.css" />
     <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="bootstrap3\img\glyphicons-halflings-white.png" />
     <Content Include="bootstrap3\img\glyphicons-halflings.png" />

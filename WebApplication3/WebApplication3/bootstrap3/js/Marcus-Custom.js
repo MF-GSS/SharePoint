@@ -32,4 +32,23 @@
     });
 
     $('#sideNavRemoval').closest('.ms-rtestate-read.ms-rte-wpbox').css('display', 'none');
+
+    $('div.ms-rtestate-read.ms-rte-wpbox td.ms-vb2').each(function () {
+        var value = $(this).html();
+        if (value === 'Not Started') {
+            $(this).attr('value', 'blue');
+        }
+        if (value === 'In Progress') {
+            $(this).attr('value', 'yellow');
+        }
+        if (value === 'Completed') {
+            $(this).attr('value', 'green');
+        }
+        if (value === 'Deferred') {
+            $(this).attr('value', 'red');
+        }
+        if (value === 'Waiting on someone else') {
+            $(this).attr('value', 'gray');
+        }
+    });
 });

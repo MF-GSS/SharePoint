@@ -21,7 +21,7 @@ img {
 	width: auto;
 }
 * [class^="col-"] img {
-	max-width: 100%; /*for images inside span grid*/
+	/*max-width: 100%; for images inside span grid*/
 }
 #scriptWPQ2 img, img.ms-webpart-menuArrowImg, #applist img, .ms-core-menu-icon > img {
 	width: auto; /*within a span may still need to have width of image not 100% for SP2013 OOTB features/imges*/
