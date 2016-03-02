@@ -36,19 +36,26 @@
     $('div.ms-rtestate-read.ms-rte-wpbox td.ms-vb2').each(function () {
         var value = $(this).html();
         if (value === 'Not Started') {
-            $(this).attr('value', 'blue');
+            $(this).attr('value', 'blue').wrapInner('<span></span>');
         }
         if (value === 'In Progress') {
-            $(this).attr('value', 'yellow');
+            $(this).attr('value', 'yellow').wrapInner('<span></span>');
         }
         if (value === 'Completed') {
-            $(this).attr('value', 'green');
+            $(this).attr('value', 'green').wrapInner('<span></span>');
         }
         if (value === 'Deferred') {
-            $(this).attr('value', 'red');
+            $(this).attr('value', 'red').wrapInner('<span></span>');
         }
         if (value === 'Waiting on someone else') {
-            $(this).attr('value', 'gray');
+            $(this).attr('value', 'gray').wrapInner('<span></span>');
+        }
+    });
+
+    $('.ms-webpart-titleText span').each(function () {
+        var workflow = $(this).html();
+        if (workflow === 'Workflow Tasks') {
+            $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().attr('id', 'workflowWP');
         }
     });
 });
