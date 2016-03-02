@@ -1274,6 +1274,8 @@
     <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Button Set.dwp" />
+    <Content Include="NavigationTiles.dwp" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
