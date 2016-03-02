@@ -184,7 +184,7 @@ ul.dynamic li a {
 #workflowWP table[summary='Workflow Tasks'] thead:before {
     content: "Schedule";
     background-color: #0a9393;
-    padding: 10px 610px 10px 50px;
+    padding: 10px 603px 10px 50px;
     border-radius: 4px 4px 0 0;
     position: absolute;
     top: 5px;
@@ -199,32 +199,37 @@ ul.dynamic li a {
     #workflowWP table[summary='Workflow Tasks'] thead th.ms-vh-icon:last-of-type {
         display: none;
     }
-
-        td.ms-vb2[value] {
+    
+        td.ms-vb2[value] span {
+            padding: 5px 10px;
+            min-width: 150px;
             border-radius: 5px;
-            margin: 5px !important;
+            color: #fff;
+            margin: 5px;
+            text-align: center;
+            float: right;
         }
-
-        td.ms-vb2[value=blue] {
+        td.ms-vb2[value=blue] span {
             border-color: #ccc #aaa #777 #aaa;
-            background-color: #0a9393;
+            background-color: #0000ff;
         }
-        td.ms-vb2[value=yellow] {
+        td.ms-vb2[value=yellow] span {
             border-color: #ccc #aaa #777 #aaa;
             background-color: #ffff00;
+            color: black;
         }
-        td.ms-vb2[value=green] {
+        td.ms-vb2[value=green] span {
             border-color: #ccc #aaa #777 #aaa;
             background-color: #00ff00;
         }
-        td.ms-vb2[value=red] {
+        td.ms-vb2[value=red] span {
             border-color: #ccc #aaa #777 #aaa;
             background-color: #ff0000;
         }
-        td.ms-vb2[value=gray] {
+        /*td.ms-vb2[value=gray] span {
             border-color: #ccc #aaa #777 #aaa;
             background-color: #000000;
-        }
+        }*/
 
 
     #workflowWP table[summary='Workflow Tasks'] tbody tr {

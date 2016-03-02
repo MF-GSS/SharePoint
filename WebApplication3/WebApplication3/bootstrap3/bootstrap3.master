@@ -2,7 +2,7 @@
 
 This HTML file has been associated with a SharePoint Master Page (.master file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .master file, and any rename, move, or deletion operations will be reciprocated.
 
-To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://safea0zbspdev01/sites/MarcusTraining/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fsafea0zbspdev01%2Fsites%2FMarcusTraining%2F%5Fcatalogs%2Fmasterpage%2Fbootstrap3%2Fbootstrap3%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
+To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://safec2zaspwfe1:22000/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fsafec2zaspwfe1%3A22000%2F%5Fcatalogs%2Fmasterpage%2Fbootstrap3%2Fbootstrap3%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
 
  --%>
 <%@Master language="C#"%>
@@ -70,21 +70,22 @@ To build the master page directly from this HTML file, simply edit the page as y
         </SharePoint:CssRegistration>
         
         
-        <link href="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/css/bootstrap.css" rel="stylesheet" />
-        <link href="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/css/bootstrap-custom.css" rel="stylesheet" />
-        <script src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/js/modernizr.2.6.2.custom.min.js">//<![CDATA[
+        <link href="/_catalogs/masterpage/bootstrap3/css/bootstrap.css" rel="stylesheet" />
+        <link href="/_catalogs/masterpage/bootstrap3/css/bootstrap-custom.css" rel="stylesheet" />
+        <script src="/_catalogs/masterpage/bootstrap3/js/modernizr.2.6.2.custom.min.js">//<![CDATA[
         
 
 
 
         
     
+        
         
         //]]></script>
         <!--[if lt IE 9]>
     <script src="/_catalogs/masterpage/bootstrap3/js/respond.min.js">//<![CDATA[//]]></script>
     <![endif]-->
-        <script src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/js/jquery-1.8.3.min.js">//<![CDATA[
+        <script src="/_catalogs/masterpage/bootstrap3/js/jquery-1.8.3.min.js">//<![CDATA[
         
 
 
@@ -92,8 +93,9 @@ To build the master page directly from this HTML file, simply edit the page as y
         
     
         
+        
         //]]></script>
-        <script src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/js/jquery-ui.min.js">//<![CDATA[
+        <script src="/_catalogs/masterpage/bootstrap3/js/jquery-ui.min.js">//<![CDATA[
             
 
 
@@ -102,8 +104,9 @@ To build the master page directly from this HTML file, simply edit the page as y
 
             
         
+        
         //]]></script>
-        <script src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/js/bootstrap.min.js">//<![CDATA[
+        <script src="/_catalogs/masterpage/bootstrap3/js/bootstrap.min.js">//<![CDATA[
         
 
 
@@ -111,8 +114,9 @@ To build the master page directly from this HTML file, simply edit the page as y
         
     
         
+        
         //]]></script>
-        <script src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/js/bootstrap-custom.js">//<![CDATA[
+        <script src="/_catalogs/masterpage/bootstrap3/js/bootstrap-custom.js">//<![CDATA[
         
 
 
@@ -120,11 +124,13 @@ To build the master page directly from this HTML file, simply edit the page as y
         
     
         
+        
         //]]></script>
         
         
-        <link href="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/css/Marcus-Custom.css" rel="stylesheet" />
-        <script src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/js/Marcus-Custom.js">//<![CDATA[
+        <link href="/_catalogs/masterpage/bootstrap3/css/Marcus-Custom.css" rel="stylesheet" />
+        <script src="/_catalogs/masterpage/bootstrap3/js/Marcus-Custom.js">//<![CDATA[
+        
         
         //]]></script>
     </head>
@@ -263,26 +269,32 @@ To build the master page directly from this HTML file, simply edit the page as y
                                     <ul>
                                         <li>
                                             <a href="#">USACRC Phone Roster
+                                            
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">USACRC Org Chart
+                                            
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">USACRC Public Website
+                                            
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">Executive Summaries
+                                            
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">Purchase Request Form
+                                            
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">USACRC Policies
+                                            
                                             </a>
                                         </li>
                                     </ul>
@@ -388,25 +400,30 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                                     </span>
                                                                 </div>
                                                                 <a href="#">
-                                                                    <img alt="logo" src="/sites/MarcusTraining/_catalogs/masterpage/bootstrap3/img/Safety_Crest_with_Army_fw.png" style="width: 150px;" />
+                                                                    <img alt="logo" src="/_catalogs/masterpage/bootstrap3/img/Safety_Crest_with_Army_fw.png" style="width: 150px;" />
                                                                 </a>
                                                                 <div class="vc_empty_space" style="height: 24px;">
                                                                     <span class="vc_empty_space_inner">
                                                                     </span>
                                                                 </div>
                                                                 <p>US Army Combat Readiness Center
+                                                                
                                                                 </p>
                                                                 <br />
                                                                 <p>Building 4905
+                                                                
                                                                 </p>
                                                                 <p>255-2286
+                                                                
                                                                 </p>
                                                                 <p>
                                                                     <a href="#">Email Us
+                                                                    
                                                                     </a>
                                                                 </p>
                                                                 <p>
                                                                     <a href="#">Submit a Ticket
+                                                                    
                                                                     </a>
                                                                 </p>
                                                             </div>
@@ -417,17 +434,21 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                     <div class="qodef-column-inner">
                                                         <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-2">
                                                             <h4 class="qodef-footer-widget-title">Quick Links
+                                                            
                                                             </h4>
                                                             <ul>
                                                                 <li>
                                                                     <a href="#news-app-deliveres-fresh-ideas/">
                                                                         USACRC Public Website
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#dave-gardner/">ExSums 
+                                                                        
                                                                         <span style="color: white;">(Archive)
+                                                                        
                                                                         </span>
                                                                     </a>
                                                                 </li>
@@ -435,11 +456,13 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                                     <a href="#tech-conference-2016/">
                                                                         Purchase Request Site
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#interview-with-ceo-of-big-startup/">
                                                                         Submit a Suggestion
+                                                                    
                                                                     
                                                                     </a>
                                                                 </li>
@@ -447,11 +470,13 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                                     <a href="#apps-update-reaches-more-customers/">
                                                                         Resolved Items
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#new-trends-in-responsive-design/">
                                                                         Outlook Web Access
+                                                                    
                                                                     
                                                                     </a>
                                                                 </li>
@@ -463,11 +488,13 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                     <div class="qodef-column-inner">
                                                         <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-3">
                                                             <h4 class="qodef-footer-widget-title">What's Hot, What's New
+                                                            
                                                             </h4>
                                                             <ul>
                                                                 <li>
                                                                     <a href="#news-app-deliveres-fresh-ideas/">
                                                                         Internal Response to an Active Shooter
+                                                                    
                                                                     
                                                                     </a>
                                                                 </li>
@@ -475,11 +502,13 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                                     <a href="#news-app-deliveres-fresh-ideas/">
                                                                         USACRC Form 5A
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#dave-gardner/">
                                                                         Pentagon DSN Numbers
+                                                                    
                                                                     
                                                                     </a>
                                                                 </li>
@@ -487,17 +516,20 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                                     <a href="#interview-with-ceo-of-big-startup/">
                                                                         FY 16 Federal Holiday &amp; DONSA Schedule
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#apps-update-reaches-more-customers/">
                                                                         USACRC Website Content Management SOP
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#new-trends-in-responsive-design/">
                                                                         Data Business Rules
+                                                                    
                                                                     
                                                                     </a>
                                                                 </li>
@@ -509,11 +541,13 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                     <div class="qodef-column-inner">
                                                         <div class="widget qodef-footer-column-2 widget_recent_entries" id="recent-posts-3">
                                                             <h4 class="qodef-footer-widget-title">IT Tips &amp; Training
+                                                            
                                                             </h4>
                                                             <ul>
                                                                 <li>
                                                                     <a href="#dave-gardner/">
                                                                         LOEWG Slides
+                                                                    
                                                                     
                                                                     </a>
                                                                 </li>
@@ -521,11 +555,13 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                                     <a href="#tech-conference-2016/">
                                                                         USACRC AUP
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#tech-conference-2016/">
                                                                         USACRC Privileged AUP
+                                                                    
                                                                     
                                                                     </a>
                                                                 </li>
@@ -533,17 +569,20 @@ To build the master page directly from this HTML file, simply edit the page as y
                                                                     <a href="#interview-with-ceo-of-big-startup/">
                                                                         Blackberry AUP
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#apps-update-reaches-more-customers/">
                                                                         USACRC Website Short Links
                                                                     
+                                                                    
                                                                     </a>
                                                                 </li>
                                                                 <li>
                                                                     <a href="#new-trends-in-responsive-design/">
                                                                         USACRC BitLocker Guidance
+                                                                    
                                                                     
                                                                     </a>
                                                                 </li>

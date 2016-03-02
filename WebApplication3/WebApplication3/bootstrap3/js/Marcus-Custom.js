@@ -47,9 +47,9 @@
         if (value === 'Deferred') {
             $(this).attr('value', 'red').wrapInner('<span></span>');
         }
-        if (value === 'Waiting on someone else') {
-            $(this).attr('value', 'gray').wrapInner('<span></span>');
-        }
+        //if (value === 'Waiting on someone else') {
+        //    $(this).attr('value', 'gray').wrapInner('<span></span>');
+        //}
     });
 
     $('.ms-webpart-titleText span').each(function () {
