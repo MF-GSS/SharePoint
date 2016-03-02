@@ -177,39 +177,64 @@ ul.dynamic li a {
     border-radius: 4px;
 }
 
+#workflowWP table[summary='Workflow Tasks'] {
+    font-weight: 600;
+}
 
-    .ms-rte-wpbox td.ms-vb2:after {
-        content: "";
-        display: inline-block;
-        height: 10px;
-        width: 10px;
-        border-radius: 100%;
-        position: absolute;
-        right: 0;
-        border: 2px solid transparent;
-        background-color: transparent;
+#workflowWP table[summary='Workflow Tasks'] thead:before {
+    content: "Schedule";
+    background-color: #0a9393;
+    padding: 10px 610px 10px 50px;
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    top: 5px;
+    color: #fff;
+}
+
+    #workflowWP table[summary='Workflow Tasks'] thead {
+        background-color: #242487;
+        padding-top: 20px !important;
     }
 
-        td.ms-vb2[value=blue]:after {
-            border-color: #ccc #aaa #777 #aaa;
-            background-color: #0000ff;
+    #workflowWP table[summary='Workflow Tasks'] thead th.ms-vh-icon:last-of-type {
+        display: none;
+    }
+
+        td.ms-vb2[value] {
+            border-radius: 5px;
+            margin: 5px !important;
         }
-        td.ms-vb2[value=yellow]:after {
+
+        td.ms-vb2[value=blue] {
+            border-color: #ccc #aaa #777 #aaa;
+            background-color: #0a9393;
+        }
+        td.ms-vb2[value=yellow] {
             border-color: #ccc #aaa #777 #aaa;
             background-color: #ffff00;
         }
-        td.ms-vb2[value=green]:after {
+        td.ms-vb2[value=green] {
             border-color: #ccc #aaa #777 #aaa;
             background-color: #00ff00;
         }
-        td.ms-vb2[value=red]:after {
+        td.ms-vb2[value=red] {
             border-color: #ccc #aaa #777 #aaa;
             background-color: #ff0000;
         }
-        td.ms-vb2[value=gray]:after {
+        td.ms-vb2[value=gray] {
             border-color: #ccc #aaa #777 #aaa;
             background-color: #000000;
         }
+
+
+    #workflowWP table[summary='Workflow Tasks'] tbody tr {
+        padding-right: 15px;
+    }
+
+    #workflowWP table[summary='Workflow Tasks'] tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+
 #footer .container {
     padding: 0 !important;
 }

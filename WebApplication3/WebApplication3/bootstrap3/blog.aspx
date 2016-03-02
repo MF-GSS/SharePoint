@@ -2,7 +2,7 @@
 
 This HTML file has been associated with a SharePoint Page Layout (.aspx file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .aspx file, and any rename, move, or deletion operations will be reciprocated.
 
-To build the page layout directly from this HTML file, simply fill in the contents of content placeholders.  Use the Snippet Generator at http://safec2zaspwfe1:22000/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fsafec2zaspwfe1%3A22000%2F%5Fcatalogs%2Fmasterpage%2Fbootstrap3%2Fblog%2Easpx to create and customize additional content placeholders and other useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file within content placeholders will automatically sync to the associated page layout.
+To build the page layout directly from this HTML file, simply fill in the contents of content placeholders.  Use the Snippet Generator at http://safea0zbspdev01/sites/MarcusTraining/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fsafea0zbspdev01%2Fsites%2FMarcusTraining%2F%5Fcatalogs%2Fmasterpage%2Fbootstrap3%2Fblog%2Easpx to create and customize additional content placeholders and other useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file within content placeholders will automatically sync to the associated page layout.
 
  --%>
 <%@Page language="C#" Inherits="Microsoft.SharePoint.Publishing.PublishingLayoutPage, Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
