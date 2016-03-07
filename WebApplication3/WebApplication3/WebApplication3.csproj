@@ -191,6 +191,9 @@
     <Content Include="ShareMouse\smkey.dll" />
     <Content Include="ShareMouse\smlang.dll" />
     <Content Include="ShareMouse\unins000.exe" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\res\logo.png" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\res\start.png" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\Setup.exe" />
     <Content Include="spectergroup\css\bootstrap-full.min.css" />
     <Content Include="spectergroup\css\bootstrap-responsive.css" />
     <Content Include="spectergroup\css\bootstrap-responsive.min.css" />
@@ -1277,6 +1280,14 @@
     <Content Include="bootstrap3\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Button Set.dwp" />
     <Content Include="NavigationTiles.dwp" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\Install.SPCDemoMySitesPackage.ps1" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\Install.SPCDemoPackage.ps1" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\res\EULA.rtf" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\res\SPCDemo.SP2013.wsp" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\res\SPCDemoMySites.SP2013.wsp" />
+    <Content Include="SPCDemo.SP2013\FarmSolution\Setup.exe.config" />
+    <Content Include="SPCDemo.SP2013\SandboxSolution\Package.for.Office365.PublicFacing\SPCDemo.SP2013-Public.wsp" />
+    <Content Include="SPCDemo.SP2013\SandboxSolution\SPCDemo.SP2013.wsp" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
