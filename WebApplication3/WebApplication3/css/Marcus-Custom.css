@@ -1,0 +1,32 @@
+﻿div.qodef-sticky-header.header-appear div.qodef-vertical-align-containers,
+div.qodef-mobile-header-inner div.qodef-mobile-header-holder,
+div.qodef-mobile-header-inner nav.qodef-mobile-nav
+ {
+    background-color: #111;
+}
+
+@media all {
+    .qodef-main-menu ul li a {
+        color: #fff;
+    }
+}
+
+div#qodef-home-main-slider {
+    margin-bottom: -8%;
+}
+
+.carousel-indicators {
+    bottom: 15%;
+}
+
+article img {
+    min-height: 290px !important;
+    max-height: 290px !important;
+}
+
+@media all {
+    vc_row.wpb_row.vc_row-fluid.qodef-section.vc_custom_1446732069941.qodef-content-aligment-center.qodef-parallax-section-holder.qodef-parallax-section-holder-touch-disabled.qodef-grid-section {
+        background-position: 0 0 !important;
+        background-size: cover !important;
+    }
+}
