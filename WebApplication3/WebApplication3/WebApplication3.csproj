@@ -1289,6 +1289,7 @@
     <Content Include="SPCDemo.SP2013\SandboxSolution\Package.for.Office365.PublicFacing\SPCDemo.SP2013-Public.wsp" />
     <Content Include="SPCDemo.SP2013\SandboxSolution\SPCDemo.SP2013.wsp" />
     <Content Include="solution items\Intranet Theme.pptx" />
+    <Content Include="PERSONNEL ACCOUNTABILITY.dwp" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
