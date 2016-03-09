@@ -29,17 +29,23 @@
   <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
   <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
   <![CDATA[
-  <div class="buttonSet">
-    <div class="button">
-      <div>Army Knowledge Online</div>
-    </div>
-    <div class="button">
-      <div>Defense Travel System</div>
-    </div>
-    <div class="button">
-      <div>Staff Directory</div>
-    </div>
-  </div>
+<div class="grid" style="height: 360px; position: relative;">
+   <div class="grid-item" style="left: 0px; top: 0px; position: absolute;">
+      <div class="grid-item-content" id="box1">
+         <img src="../_catalogs/masterpage/spectergroup/img/128px/shoeprints+2.png" alt=""../>
+         <span>Submit a Footprints Ticket</span> </div>
+   </div>
+   <div class="grid-item" style="left: 120px; top: 0px; position: absolute;">
+      <div class="grid-item-content" id="box2">
+         <img src="../_catalogs/masterpage/spectergroup/img/128px/clock+2.png" alt=""../>
+         <span>Do My Timesheet</span> </div>
+   </div>
+   <div class="grid-item" style="left: 240px; top: 0px; position: absolute;">
+      <div class="grid-item-content" id="box3">
+         <img src="../_catalogs/masterpage/spectergroup/img/128px/calendar+2.png" alt=""../>
+         <span>Reserve a Room</span> </div>
+   </div>
+</div>
   ]]>
   <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
 </WebPart>
