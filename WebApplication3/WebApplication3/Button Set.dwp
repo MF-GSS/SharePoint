@@ -28,11 +28,175 @@
   <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
   <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
   <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
-    <div>
-      <div>Army Knowledge Online</div>
-      <div>Defense Travel System</div>
-      <div>Staff Directory</div>
-    </div>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(153, 236, 132);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">Command Group</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160311." style="font-family: Arial; font-size: 9pt; cursor: help;">COL Lewis</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160313." style="font-family: Arial; font-size: 9pt; cursor: help;">COL Romine</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160310." style="font-family: Arial; font-size: 9pt; cursor: help;">CSM Cain</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(100, 149, 237);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">Special Staff</td>
+                  </tr>
+                  <tr>
+                    <td title="On LS until 20160311." style="font-family: Arial; font-size: 9pt; cursor: help;">Teresa Williams</td>
+                    <td style="font-family: Arial; font-size: 9pt;">LS</td>
+                  </tr>
+                  <tr>
+                    <td title="On LA until 20160318." style="font-family: Arial; font-size: 9pt; cursor: help;">Ellie (Victoria) LLanes-Diaz</td>
+                    <td style="font-family: Arial; font-size: 9pt;">LA</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(192, 192, 192);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">G-1</td>
+                  </tr>
+                  <tr>
+                    <td title="On LA until 20160310." style="font-family: Arial; font-size: 9pt; cursor: help;">Charles Wigglesworth</td>
+                    <td style="font-family: Arial; font-size: 9pt;">LA</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(255, 0, 0);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">G-8</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160309." style="font-family: Arial; font-size: 9pt; cursor: help;">Matthew Reed</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160309." style="font-family: Arial; font-size: 9pt; cursor: help;">Chris Bokenfohr</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(128, 0, 128);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">G-6</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160311." style="font-family: Arial; font-size: 9pt; cursor: help;">James Jones</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(70, 130, 180);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">DCPA</td>
+                  </tr>
+                  <tr>
+                    <td title="On LA until 20160309." style="font-family: Arial; font-size: 9pt; cursor: help;">Nathaniel (Nate) Johnson</td>
+                    <td style="font-family: Arial; font-size: 9pt;">LA</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(107, 142, 35);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">G-3</td>
+                  </tr>
+                  <tr>
+                    <td title="On TCS until 20160513." style="font-family: Arial; font-size: 9pt; cursor: help;">LTC OConnell</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TCS</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160402." style="font-family: Arial; font-size: 9pt; cursor: help;">MAJ Walker</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                  <tr>
+                    <td title="On LV until 20160311." style="font-family: Arial; font-size: 9pt; cursor: help;">MAJ Klear</td>
+                    <td style="font-family: Arial; font-size: 9pt;">LV</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160402." style="font-family: Arial; font-size: 9pt; cursor: help;">CW4 Zinski</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160311." style="font-family: Arial; font-size: 9pt; cursor: help;">William (Rae) McInnis</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160425." style="font-family: Arial; font-size: 9pt; cursor: help;">Travis Plunk</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                  <tr>
+                    <td title="On LS until 20160430." style="font-family: Arial; font-size: 9pt; cursor: help;">Clyde                     Moore                    </td>
+                    <td style="font-family: Arial; font-size: 9pt;">LS</td>
+                  </tr>
+                  <tr>
+                    <td title="On KA until 20160708." style="font-family: Arial; font-size: 9pt; cursor: help;">James Hofer</td>
+                    <td style="font-family: Arial; font-size: 9pt;">KA</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(112, 128, 144);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">G-7</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160311." style="font-family: Arial; font-size: 9pt; cursor: help;">Wesley (Wes) Hedman</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160311." style="font-family: Arial; font-size: 9pt; cursor: help;">Beth Nielsen-Smith</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(102, 0, 51);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">Aviation Directorate</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160401." style="font-family: Arial; font-size: 9pt; cursor: help;">LTC Donovan</td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(0, 0, 153);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">Ground Directorate</td>
+                  </tr>
+                  <tr>
+                    <td title="On TDY until 20160309." style="font-family: Arial; font-size: 9pt; cursor: help;">Peggy                     Adams                    </td>
+                    <td style="font-family: Arial; font-size: 9pt;">TDY</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="250">
+                <tbody>
+                  <tr>
+                    <td title="Click to view printable version of Personnel Roster." align="Center" style="border: 1px solid rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: Arial; font-size: 10pt; cursor: pointer; background-color: rgb(153, 153, 153);" onclick="window.open('LeaveCard.aspx',null,'height=600, width=600,status= no, resizable= yes, scrollbars=yes, toolbar=yes,location=no,menubar=yes ');" colspan="2">Programs &amp; Analysis</td>
+                  </tr>
+                  <tr>
+                    <td title="On LS until 20160309." style="font-family: Arial; font-size: 9pt; cursor: help;">Lisa Rivers</td>
+                    <td style="font-family: Arial; font-size: 9pt;">LS</td>
+                  </tr>
+                </tbody>
+              </table>
   </Content>
   <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
 </WebPart>
