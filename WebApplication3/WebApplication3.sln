@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\Downloads\Content Editor.dwp = ..\..\..\..\Downloads\Content Editor.dwp
 		HTMLPage1.html = HTMLPage1.html
+		HTMLPage2.html = HTMLPage2.html
 		V:\Common\harlow\Intranet Theme.pptx = V:\Common\harlow\Intranet Theme.pptx
 		WE-Palette.css = WE-Palette.css
 	EndProjectSection
