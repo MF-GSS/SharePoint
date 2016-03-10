@@ -1293,12 +1293,18 @@
     <Content Include="PERSONNEL ACCOUNTABILITY.dwp">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="bootstrap3\js\bootstrap.min.js.map">
+      <DependentUpon>bootstrap.min.js</DependentUpon>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+    <Content Include="website4\jquery-ui.min.js.map">
+      <DependentUpon>jquery-ui.min.js</DependentUpon>
+    </Content>
     <None Include="website4\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
