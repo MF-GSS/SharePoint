@@ -191,6 +191,7 @@
     <Content Include="ShareMouse\smkey.dll" />
     <Content Include="ShareMouse\smlang.dll" />
     <Content Include="ShareMouse\unins000.exe" />
+    <Content Include="solution items\HTMLPage2.html" />
     <Content Include="SPCDemo.SP2013\FarmSolution\res\logo.png" />
     <Content Include="SPCDemo.SP2013\FarmSolution\res\start.png" />
     <Content Include="SPCDemo.SP2013\FarmSolution\Setup.exe" />
@@ -1289,7 +1290,9 @@
     <Content Include="SPCDemo.SP2013\SandboxSolution\Package.for.Office365.PublicFacing\SPCDemo.SP2013-Public.wsp" />
     <Content Include="SPCDemo.SP2013\SandboxSolution\SPCDemo.SP2013.wsp" />
     <Content Include="solution items\Intranet Theme.pptx" />
-    <Content Include="PERSONNEL ACCOUNTABILITY.dwp" />
+    <Content Include="PERSONNEL ACCOUNTABILITY.dwp">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
