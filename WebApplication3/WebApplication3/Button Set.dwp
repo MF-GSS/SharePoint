@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
-  <Title></Title>
+  <Title />
   <FrameType>Default</FrameType>
-  <Description></Description>
+  <Description />
   <IsIncluded>true</IsIncluded>
   <ZoneID>wpz</ZoneID>
-  <PartOrder>4</PartOrder>
+  <PartOrder>0</PartOrder>
   <FrameState>Normal</FrameState>
   <Height />
   <Width />
@@ -27,25 +27,12 @@
   <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
   <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
   <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
-  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
-  <![CDATA[
-<div class="grid" style="height: 360px; position: relative;">
-   <div class="grid-item" style="left: 0px; top: 0px; position: absolute;">
-      <div class="grid-item-content" id="box1">
-         <img src="../_catalogs/masterpage/spectergroup/img/128px/shoeprints+2.png" alt=""../>
-         <span>Submit a Footprints Ticket</span> </div>
-   </div>
-   <div class="grid-item" style="left: 120px; top: 0px; position: absolute;">
-      <div class="grid-item-content" id="box2">
-         <img src="../_catalogs/masterpage/spectergroup/img/128px/clock+2.png" alt=""../>
-         <span>Do My Timesheet</span> </div>
-   </div>
-   <div class="grid-item" style="left: 240px; top: 0px; position: absolute;">
-      <div class="grid-item-content" id="box3">
-         <img src="../_catalogs/masterpage/spectergroup/img/128px/calendar+2.png" alt=""../>
-         <span>Reserve a Room</span> </div>
-   </div>
-</div>
-  ]]>
+  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+    <div>
+      <div>Army Knowledge Online</div>
+      <div>Defense Travel System</div>
+      <div>Staff Directory</div>
+    </div>
+  </Content>
   <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
 </WebPart>
